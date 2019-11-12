@@ -1,0 +1,13 @@
+---
+title: Landmark - Hillside
+---
+
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Hub umami locavore.</span>
+    <span class="h1 enlighten">Typewriter pin <b>chambray mixtape</b></span>
+  </h1>
+  <div slot="paragraph">
+    <p>Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat" aria-label="Additional information 1">1</a></p>
+  </div>
+</ns-landmark>
