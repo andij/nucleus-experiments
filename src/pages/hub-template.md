@@ -17,12 +17,13 @@ title: Hub - Template
 <ns-panel>
   <div class="splish">
     <h2>Bushwick kitsch truffaut bespoke stumptown</h2>
+    <p class="p-feature">Coloring book palo santo drinking vinegar twee heirloom iceland la croix listicle.</p>
   </div>
   <div class="splish triple" role="list">
     <ns-card role="listitem" type="section" decoration="gas">
       <h3 slot="heading">Sriracha hashtag fixie neutra</h3>
       <div slot="paragraph">
-        <p>Coloring book palo santo drinking vinegar twee heirloom iceland la croix listicle.</p>
+        <p>Twee cronut iceland la croix party listicle shaman.</p>
       </div>
       <a slot="cta" href="#!">
         <ns-cta type="direct">Distillery kinfolk</ns-cta>
