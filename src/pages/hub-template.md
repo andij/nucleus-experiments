@@ -1,0 +1,203 @@
+---
+title: Hub - Template
+---
+
+<ns-landmark type="summit" image="https://andijcdn.sirv.com/nds/testcard-16x9-landmark.png">
+  <h1 slot="heading">
+    <span class="h5">Ennui umami locavore.</span>
+    <span class="h1 enlighten">Typewriter enamel pin post-ironic. <b>chambray mixtape</b></span>
+  </h1>
+  <div slot="paragraph">
+    <p>Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party.</p>
+  </div>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">Single-origin coffee</ns-cta>
+  </a>
+</ns-landmark>
+<ns-panel>
+  <div class="splish">
+    <h2>Bushwick kitsch truffaut bespoke stumptown</h2>
+  </div>
+  <div class="splish triple" role="list">
+    <ns-card role="listitem" type="section" decoration="gas">
+      <h3 slot="heading">Sriracha hashtag fixie neutra</h3>
+      <div slot="paragraph">
+        <p>Coloring book palo santo drinking vinegar twee heirloom iceland la croix listicle.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Distillery kinfolk</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="section" decoration="home">
+      <h3 slot="heading">Organic</h3>
+      <div slot="paragraph">
+        <p>Bushwick tumeric before they sold out.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Migas franzen drink</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="section" decoration="boiler">
+      <h3 slot="heading">Bespoke stumptown</h3>
+      <div slot="paragraph">
+        <p>Knausgaard flannel organic tote bag prism pug.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Art party</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+<ns-panel decoration="circle-yellow-left">
+  <ns-lockup  reverse ratio="4x3" type="lockjaw" decoration="bulb">
+    <h2 slot="heading">
+      <span class="h5">Bespoke squid wolf.</span>
+      <span class="h1 enlighten"><b>Cardigan sriracha</b> shaman meditation kinfolk readymade</span>
+    </h2>
+    <div slot="paragraph">
+      <p>Mustache cronut leggings offal tote bag. Twee vaporware organic distillery trust fund kinfolk gentrify letterpress freegan.</p>
+    </div>
+    <div slot="paragraph">
+      <p>Flexitarian tumeric banjo, <strong>squid chicharrones</strong> pinterest craft beer pop-up portland pork belly. Ramps skateboard umami, jean shorts marfa roof party yuccie. <a href="#caveat" aria-label="Additional information 2">2</a></p>
+    </div>
+    <a slot="cta" href="#!">
+      <ns-cta type="direct">Echo park</ns-cta>
+    </a>
+    <ns-image slot="image" ratio="4x3" src="https://andijcdn.sirv.com/nds/testcard-4x3.png?scale.width&#x3D;720&amp;text.0.text&#x3D;720x540&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2"></ns-image>
+  </ns-lockup>
+</ns-panel>
+<ns-panel decoration="circle-green-right">
+  <ns-lockup  ratio="4x3" type="lockjaw" decoration="bulb">
+    <h2 slot="heading">
+      <span class="h5">Bespoke squid wolf.</span>
+      <span class="h1 enlighten"><b>Cardigan sriracha</b> shaman meditation kinfolk readymade</span>
+    </h2>
+    <div slot="paragraph">
+      <p>Mustache cronut leggings offal tote bag. Twee vaporware organic distillery trust fund kinfolk gentrify letterpress freegan.</p>
+    </div>
+    <div slot="paragraph">
+      <p>Flexitarian tumeric banjo, <strong>squid chicharrones</strong> pinterest craft beer pop-up portland pork belly. Ramps skateboard umami, jean shorts marfa roof party yuccie. <a href="#caveat" aria-label="Additional information 2">2</a></p>
+    </div>
+    <a slot="cta" href="#!">
+      <ns-cta type="direct">Echo park</ns-cta>
+    </a>
+    <ns-image slot="image" ratio="4x3" src="https://andijcdn.sirv.com/nds/testcard-4x3.png?scale.width&#x3D;720&amp;text.0.text&#x3D;720x540&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2"></ns-image>
+  </ns-lockup>
+</ns-panel>
+<ns-panel>
+  <div class="splash">
+    <h2>Bushwick kitsch truffaut bespoke stumptown</h2>
+  </div>
+  <div class="splash triple" role="list">
+    <ns-card role="listitem" type="support">
+      <h3 slot="heading">Gastropub</h3>
+      <div slot="paragraph">
+        <p>Tacos hammock waistcoat asymmetrical plaid palo santo vexillologist keffiyeh lomo banjo gluten-free salvia.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Cleanse kale chips</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="support">
+      <h3 slot="heading">Mumblecore</h3>
+      <div slot="paragraph">
+        <p>Helvetica mlkshk tofu mustache humblebrag pickled chicharrones ethical pitchfork yr readymade deep v thundercats bicycle.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Subway tile schlitz</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="support">
+      <h3 slot="heading">Tattooed prism</h3>
+      <div slot="paragraph">
+        <p>Coloring book man braid roof party, <strong>pop-up trade unicorn</strong>.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Venmo hexagon meggings</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+<ns-panel>
+  <div class="splash malcolm triple">
+    <ns-image background ratio="16x9" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2"></ns-image>
+    <ns-image ratio="16x9" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Rewards"></ns-image>
+    <ns-image background ratio="16x9" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2"></ns-image>
+  </div>
+  <div class="splash">
+    <h2>Viral copper mug keytar selfies</h2>
+  </div>
+  <div class="splash triple" role="list">
+    <ns-card role="listitem" type="support" image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2">
+      <h3 slot="heading">Cardigan pitchfork</h3>
+      <div slot="paragraph">
+        <p>Tacos hammock waistcoat asymmetrical plaid palo santo vexillologist keffiyeh lomo banjo gluten-free salvia.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Subway tile</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="support" image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2">
+      <h3 slot="heading">Vinegar quinoa</h3>
+      <div slot="paragraph">
+        <p>Helvetica mlkshk tofu mustache humblebrag pickled chicharrones ethical pitchfork yr readymade deep v thundercats bicycle.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Cleanse kale chips</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="support" image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2">
+      <h3 slot="heading">Normcore</h3>
+      <div slot="paragraph">
+        <p>Coloring book man braid roof party, <strong>pop-up trade unicorn</strong>.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Venmo hexagon</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+<ns-panel>
+  <div class="splash triple" role="list">
+    <ns-card role="listitem" type="flat">
+      <h3 slot="heading">Gastropub</h3>
+      <div slot="paragraph">
+        <p>Tacos hammock waistcoat asymmetrical plaid palo santo vexillologist keffiyeh lomo banjo gluten-free salvia.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Cleanse kale chips</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="flat">
+      <h3 slot="heading">Mumblecore</h3>
+      <div slot="paragraph">
+        <p>Helvetica mlkshk tofu mustache humblebrag pickled chicharrones ethical pitchfork yr readymade deep v thundercats bicycle.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Subway tile schlitz</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card role="listitem" type="flat">
+      <h3 slot="heading">Tattooed prism</h3>
+      <div slot="paragraph">
+        <p>Coloring book man braid roof party, <strong>pop-up trade unicorn</strong>.</p>
+      </div>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Venmo hexagon meggings</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+<ns-caveat type="standard">
+  <h2 slot="heading">Additional information</h2>
+  <div slot="caveat">
+    <ol>
+      <li>
+        <p>Offer is available to customers who sign up to Homecare Two, Three or Four online between <b>8th January and 18th February 2019</b>. The cost of 11 months HomeCare cover will be spread over 12 monthly payments. Offer is not available with any other offer or promotion and is available for the first year only.</p>
+      </li>
+      <li>
+        <p>£50 discount is available to new and existing British Gas energy, HomeCare and 5 Year Warranty customers only. Discount is off hivehome.com RRP: <a href="http://www.hivehome.com/products/hive-active-heating">www.hivehome.com/products/hive-active-heating</a> Amazon Echo Dot (3rd Gen) offer is limited to one per customer, is subject to availability and runs between 12th September 2018 and 31st March 2019. Offer only available when bought with Hive Active Heating or Hive Heating Plan. Offer cannot be used on pre-existing orders or in conjunction with any other offer. Offer must be redeemed by 30th April 2019. Terms apply. <a href="http://www.hivehome.com/terms">www.hivehome.com/terms</a></p>
+      </li>
+    </ol>
+  </div>
+</ns-caveat>
