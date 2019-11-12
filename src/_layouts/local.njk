@@ -2,6 +2,7 @@
 title: Local development
 tools: true
 ---
+
 <!doctype html>
 <html class="tools-{{tools}}" lang="en">
 <head>
@@ -13,11 +14,13 @@ tools: true
   <link rel="stylesheet" href="/nucleus/dist/styles.min.css">
 </head>
 <body>
-  {% include 'p-header.njk' %}
+  {% include 'tools-header.njk' %}
   <div class="ndsn">
+    <ns-header></ns-header>
     <main>
       {{content | safe}}
     </main>
+    <ns-footer></ns-footer>
   </div>
   <script type="text/javascript" src="/nucleus/dist/polyfill.js"></script>
   <script type="text/javascript" src="/nucleus/dist/components.js"></script>
