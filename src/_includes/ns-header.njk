@@ -1,0 +1,25 @@
+<ns-header>
+  <ul>
+    <li>
+      <h2><a href="/">Examples</a></h2>
+      <ul>
+        <li>
+          <h3>Components</h3>
+          <ul>
+            {%- for component in collections.components %}
+            <li><a href="{{ component.url }}">{{ component.data.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+        <li>
+          <h3>Pages</h3>
+          <ul>
+            {%- for page in collections.pages %}
+            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</ns-header>
