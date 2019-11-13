@@ -1,1 +1,4 @@
-{ "layout": "live.njk" }
+{
+  "layout": "local.njk",
+  "tags": "components"
+}
