@@ -1,5 +1,5 @@
 ---
-layout: branch.njk
+layout: live.njk
 title: Home
 ---
 
@@ -9,16 +9,16 @@ title: Home
   </div>
   <div class="splosh">
     <nav>
+      <h3>Components</h3>
       <ul class="ul-bullet">
-        Components
         {%- for component in collections.components %}
-        <li><a href="{{ component.url }}">{{ component.data.title }}</a></li>
+        <li><a href="{{ component.url }}">{{ component.url }}</a></li>
         {%- endfor -%}
       </ul>
+      <h3>Pages</h3>
       <ul class="ul-bullet">
-        Pages
         {%- for page in collections.pages %}
-        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+        <li><a href="{{ page.url }}">{{ page.url }}</a></li>
         {%- endfor -%}
       </ul>
     </nav>
