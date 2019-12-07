@@ -1,4 +1,4 @@
 {
-  "layout": "local.njk",
+  "layout": "live.njk",
   "tags": "pages"
 }
