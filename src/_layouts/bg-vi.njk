@@ -1,0 +1,28 @@
+---
+title: BG-VI development
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="https://www.britishgas.co.uk/aem6/etc/designs/britishgas/clientlib.min.css">
+  <link rel="stylesheet" href="/nucleus/dist/styles.min.css">
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <div class="ndsn">
+    {% include 'ns-header.njk' %}
+    <main>
+      {{content | safe}}
+    </main>
+    <ns-footer></ns-footer>
+  </div>
+  <!-- <script type="text/javascript" src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script> -->
+  <script type="text/javascript" src="/nucleus/dist/polyfill.js"></script>
+  <script type="text/javascript" src="/nucleus/dist/components.js"></script>
+</body>
+</html>
