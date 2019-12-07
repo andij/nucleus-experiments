@@ -7,7 +7,7 @@
           <h3>Components</h3>
           <ul>
             {%- for component in collections.components %}
-            <li><a href="{{ component.url }}">{{ component.data.title }}</a></li>
+            <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -15,7 +15,15 @@
           <h3>Pages</h3>
           <ul>
             {%- for page in collections.pages %}
-            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+            <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+        <li>
+          <h3>Combinations</h3>
+          <ul>
+            {%- for combination in collections.combinations %}
+            <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
