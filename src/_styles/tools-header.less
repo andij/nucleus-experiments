@@ -5,45 +5,9 @@ tools-header {
   top: 0;
   z-index: 4;
   &::before {
-    padding: 0.5em;
     position: absolute;
-    top: 1em;
-    right: 1em;
-  }
-  nav {
-    background-color: rgba(orange, 0.25);
-    width: 100vw;
-    opacity: 0;
-    transition: opacity 0.375s;
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-    a,
-    span {
-      display: inline-block;
-      padding: 0.25em 0.5em;
-      color: black;
-    }
-    span {
-      cursor: default;
-    }
-    a {
-      background-color: rgba(orange, 0.50);
-      &:hover {
-        background-color: rgba(darkorange, 0.80);
-      }
-    }
-  }
-  &:focus,
-  &:hover,
-  &:active {
-    nav {
-      opacity: 1;
-      transition: opacity 0.375s;
-    }
+    top: 0.5em;
+    left: 0.5em;
   }
 }
 
