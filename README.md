@@ -93,7 +93,7 @@ Create a symlink in the `/dist` folder with the name of `nucleus` pointing to `~
 Navigate to `~/Projects/nucleus-prototype/dist`
 
 ```bash
-🔹 ln -s nucleus ../../nucleus
+🔹 ln -s ../../nucleus nucleus
 ```
 
 This will generate a symlink `nucleus -> ../../nucleus`
