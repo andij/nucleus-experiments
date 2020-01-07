@@ -1,0 +1,52 @@
+---
+title: ns-inputter-masked
+layout: local.njk
+---
+
+<ns-panel>
+  <div class="splosh">
+    <h1>Masked ns-inputter</h1>
+    <ns-inputter mask="00-00-00" seperator="-" validation="[&quot;isRequired&quot;]" value="" helper="" name="sort-code">
+      <label slot="label">Sort code</label>
+      <input type="text">
+    </ns-inputter>
+    <ns-inputter mask="DD-MM-YYYY" seperator="-" validation="[&quot;isRequired&quot;]" value="" helper="" name="date-of-birth">
+      <label slot="label">Date of birth</label>
+      <input type="text">
+    </ns-inputter>
+    <ns-inputter>
+      <label slot="label">Text</label>
+      <input type="text">
+    </ns-inputter>
+    <ns-inputter>
+      <label slot="label">Email</label>
+      <input type="email" name="email" placeholder="e.g. email@address.co.uk">
+    </ns-inputter>
+    <ns-inputter>
+      <label slot="label">Testarea</label>
+      <textarea></textarea>
+    </ns-inputter>
+    <ns-inputter validation='["isRequired"]' heading="Select from here" name="select-02">
+      <label slot="label">Select number two</label>
+      <select name="select-02">
+        <option value="">Please select an option</option>
+        <option value="value-02">Two</option>
+        <option value="value-03">Three</option>
+        <option value="value-04">Four</option>
+        <option value="100">100</option>
+      </select>
+    </ns-inputter>
+    <ns-inputter heading="How would you prefer to be receive updates?">
+      <input type="radio" id="radio-d-1" name="radio-d" value="first" checked>
+      <label for="radio-d-1">Email</label>
+      <input type="radio" id="radio-d-2" name="radio-d" value="second">
+      <label for="radio-d-2">Text message</label>
+    </ns-inputter>
+    <ns-inputter heading="Checkbox">
+      <input type="checkbox" id="checkbox-b-1" name="thing" value="first">
+      <label for="checkbox-b-1">Jaga</label>
+      <input type="checkbox" id="checkbox-b-2" name="thing" value="second" checked>
+      <label for="checkbox-b-2">Tygra</label>
+    </ns-inputter>
+  </div>
+</ns-panel>
