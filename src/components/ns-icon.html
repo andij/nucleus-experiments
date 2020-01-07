@@ -1,0 +1,41 @@
+---
+title: Icons
+pagination:
+  data: testdata
+  size: 100
+testdata:
+ - appliance
+ - bill
+ - boiler
+ - electricity
+ - error
+ - energy
+ - gas
+ - home
+ - info
+ - meter
+ - protect
+ - rewards
+ - success
+ - warning
+---
+
+<ns-panel>
+  <div class="splash prototype-ns-icon">
+    {%- for item in pagination.items %}
+    <div class="icon">
+      <ns-icon type="{{ item }}-outline"></ns-icon>
+      <div class="label">{{ item }}</div>
+    </div>
+    {% endfor -%}
+  </div>
+  <div class="splash prototype-ns-icon">
+    {%- for item in pagination.items %}
+    <div class="icon">
+      <ns-icon type="{{ item }}-solid"></ns-icon>
+      <div class="label">{{ item }}</div>
+    </div>
+    {% endfor -%}
+  </div>
+</ns-panel>
+
