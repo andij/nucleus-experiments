@@ -13,12 +13,16 @@ tools-header {
 
 // .reload
 .reload {
-  display: none;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  text-indent: -99em;
 }
 
 // @squash-court
 tools-header {
   &::before {
+    pointer-events: none;
     content: "⚫️";
   }
 }
