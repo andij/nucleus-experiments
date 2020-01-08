@@ -1,18 +1,12 @@
-# nucleus-prototype
+# Nucleus prototype
 
-A Nucleus prototype environment using eleventy and less compiler.
-
-Learnings from:
-
-https://www.11ty.io/docs/getting-started/
-
-https://www.npmjs.com/package/less-watch-compiler
+A Nucleus prototype environment 
 
 ## Installation
 
 Clone or download the GitHub repository: https://github.com/andij/nucleus-prototype
 
-Open the /nucleus-prototype folder using a favourite terminal. Mine is [iTerm2](https://iterm2.com/).
+Open the `/nucleus-prototype` folder using terminal.
 
 Assuming Node.js https://nodejs.org/ is installed.
 
@@ -22,96 +16,27 @@ Assuming Node.js https://nodejs.org/ is installed.
 🔹  npm i
 ```
 
-## Starting the environment
+### Starting the environment
 
-Continue running a few more commands in terminal.
+Launch Eleventy with this terminal command.
 
-### Run the less-watch-compiler to compile the styles
-
-This will produce the `main.css` in the `/dist` folder.
-
-```bash
-🔹  npx less-watch-compiler
-```
-
-#### Optional
-
-Anytime the styles for the nucleus-prototype are changed, run this command.
-
-If lots of styling is being worked on, change `runOnce` flag in `less-watch-compiler.config.json`
-
-* From
-
-```json
-"runOnce": true
-```
-
-* To
-
-```json
-"runOnce": false
-```
-
-This will continue to watch the `_styles` folder for any changes and recompile `main.css`.
-
-### Launch Eleventy
 ```bash
 🔹  npx @11ty/eleventy --serve
 ```
-Open your browser at http://localhost:8080 and relish in the vanilla prototype environment you have started.
 
-Using `_layouts/basic.njk` will show the page as raw HTML, with no styles and no javascript.
+### View in your browser
 
-## Connecting Nucleus
-
-This step is where we pick up the CDN of the Nucleus library and include it into our template.
-
-The `_layouts/live.njk` includes the Nucleus javascript library at `https://nucleus.bgdigital.xyz/nucleus.min.js`.
-
-Change the layout file in the frontmatter of index.md
-
-* From
-
-```json
-layout: basic.njk
-```
-* To
-
-```json
-layout: live.njk
-```
-Refreshing the browser will show the Nucleus font. Indicating that Nucleus is available.
-
-## Developing Web Components using nucleus-prototype
-
-Introducing local development of Nucleus alongside this prototype environment is achieved by creating a symbolic link and changing the location of scripts.
-
-Assuming Nucleus https://github.com/ConnectedHomes/nucleus is installed and running locally with PaDL https://github.com/britishgas-engineering/padl.
-
-Create a symlink in the `/dist` folder with the name of `nucleus` pointing to `~/Projects/nucleus/dist` allows these two projects to adjoin.
-
-Navigate to `~/Projects/nucleus-prototype/dist`
-
-```bash
-🔹 ln -s ../../nucleus nucleus
-```
-
-This will generate a symlink `nucleus -> ../../nucleus`
-
-Switch the layout to `_layouts/local.njk` and refresh the browser.
-
-The addition of the symlink, and referencing the local Nucleus scripts using this symlink it's now possible to include the local development of Web Component statically.
+Open your browser at http://localhost:8080 to view the Nucleus prototype environment.
 
 ### Displaying a Nucleus page
 
 In the `/src` folder we create a folder. Any name will do, let's use `/pages`.
 
-create a Markdown file `my-page.md` and include a `title` and a `layout` in the frontmatter.
+create a Markdown file `my-page.md` and include a `title` in the frontmatter.
 
 ```json
 ---
 title: Page title
-layout: live.njk
 ---
 ```
 
@@ -172,3 +97,89 @@ Then add some more stuff.
 Repeat the process, create other pages etc.
 
 🤩
+
+
+
+# Optionally setup a local Nucleus development environment
+
+If you're developing Nucleus components, it's often useful to test and develop these in a contextual environment.
+
+## Changing layouts
+
+Using `_layouts/basic.njk` will show the page as raw HTML, with no styles and no javascript.
+
+## Connecting Nucleus
+
+This step is where we pick up the CDN of the Nucleus library and include it into our template.
+
+The `_layouts/live.njk` includes the Nucleus javascript library at `https://britishgas.co.uk/nucleus/nucleus.min.js`.
+
+Change the layout file in the frontmatter of index.md
+
+* From
+
+```json
+layout: basic.njk
+```
+* To
+
+```json
+layout: live.njk
+```
+Refreshing the browser will show the Nucleus font. Indicating that Nucleus is available.
+
+## Developing Web Components using nucleus-prototype
+
+Introducing local development of Nucleus alongside this prototype environment is achieved by creating a symbolic link and changing the location of scripts.
+
+Assuming Nucleus https://github.com/ConnectedHomes/nucleus is installed and running locally with PaDL https://github.com/britishgas-engineering/padl.
+
+Create a symlink in the `/dist` folder with the name of `nucleus` pointing to `~/Projects/nucleus/dist` allows these two projects to adjoin.
+
+Navigate to `~/Projects/nucleus-prototype/dist`
+
+```bash
+🔹 ln -s ../../nucleus nucleus
+```
+
+This will generate a symlink `nucleus -> ../../nucleus`
+
+Switch the layout to `_layouts/local.njk` and refresh the browser.
+
+The addition of the symlink, and referencing the local Nucleus scripts using this symlink it's now possible to include the local development of Web Component statically.
+
+
+## Modify the prototype
+
+This prototype has been developed using eleventy.
+
+Learnings from: https://www.11ty.io/docs/getting-started/
+
+### Run the less-watch-compiler if you'd like to modify the styles of this prototype
+
+https://www.npmjs.com/package/less-watch-compiler
+
+This will produce the `main.css` in the `/dist` folder.
+
+```bash
+🔹  npx less-watch-compiler
+```
+
+Anytime the styles for the nucleus-prototype are changed, run this command.
+
+If lots of styling is being worked on, change `runOnce` flag in `less-watch-compiler.config.json`
+
+* From
+
+```json
+"runOnce": true
+```
+
+* To
+
+```json
+"runOnce": false
+```
+
+This will continue to watch the `_styles` folder for any changes and recompile `main.css`.
+
