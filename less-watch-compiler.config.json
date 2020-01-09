@@ -1,6 +1,6 @@
 {
   "watchFolder": "src",
   "outputFolder": "dist",
-  "runOnce": true,
+  "runOnce": false,
   "mainFile": "main.less"
 }
