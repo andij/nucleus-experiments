@@ -42,5 +42,18 @@
         </li>
       </ul>
     </li>
+    <li>
+      <h2><a href="?">Experiences</a></h2>
+      <ul>
+        <li>
+          <h3>Address</h3>
+          <ul>
+            {%- for experience in collections.experiences %}
+            <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </ns-header>
