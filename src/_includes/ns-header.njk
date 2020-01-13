@@ -1,21 +1,13 @@
 <ns-header>
   <ul>
     <li>
-      <h2><a href="?">Examples</a></h2>
+      <h2><a href="?">Components</a></h2>
       <ul>
         <li>
-          <h3>Components</h3>
+          <h3>Individual</h3>
           <ul>
             {%- for component in collections.components %}
             <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
-            {%- endfor -%}
-          </ul>
-        </li>
-        <li>
-          <h3>Pages</h3>
-          <ul>
-            {%- for page in collections.pages %}
-            <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -30,13 +22,34 @@
       </ul>
     </li>
     <li>
-      <h2><a href="?">Journeys</a></h2>
+      <h2><a href="?">Examples</a></h2>
       <ul>
         <li>
-          <h3>Partnerships</h3>
+          <h3>Pages</h3>
+          <ul>
+            {%- for page in collections.pages %}
+            <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+        <li>
+          <h3>Journeys</h3>
           <ul>
             {%- for journey in collections.journeys %}
             <li><a href="{{ journey.url }}">{{ journey.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h2><a href="?">Presentations</a></h2>
+      <ul>
+        <li>
+          <h3>Presentations</h3>
+          <ul>
+            {%- for presentation in collections.presentations %}
+            <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>

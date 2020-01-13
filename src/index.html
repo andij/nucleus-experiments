@@ -27,6 +27,12 @@ title: Home
         <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
+      <h3>Presentations</h3>
+      <ul>
+        {%- for presentation in collections.presentations %}
+        <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
     </nav>
   </div>
 </ns-panel>
