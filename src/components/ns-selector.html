@@ -1,0 +1,34 @@
+---
+title: ns-selector
+layout: local.njk
+---
+
+<ns-panel>
+  <div class="splash triple">
+    <ns-selector decoration="protect">
+      <input type="checkbox" id="checkbox-a-3" name="checkbox-a" value="insurance" aria-describedby="item-3">
+      <label for="checkbox-a-3">Home Services</label>
+      <div slot="description" id="item-3">
+        <p>We’ll give you a new price for your home based on your current cover, excess and payment option.</p>
+      </div>
+    </ns-selector>
+    <ns-selector decoration="boiler">
+      <input type="checkbox" id="checkbox-a-1" name="checkbox-a" value="gas" aria-describedby="item-1">
+      <label for="checkbox-a-1">Gas supply</label>
+      <div slot="description" id="item-1">
+        <p>We’ll set up your new account using your existing tariff and payment details.</p>
+      </div>
+    </ns-selector>
+    <ns-selector decoration="home">
+      <input type="checkbox" id="checkbox-a-2" name="checkbox-a" value="electric" aria-describedby="item-2">
+      <label for="checkbox-a-2">Electrical energy supply</label>
+      <div slot="description" id="item-2">
+        <p class="fq-heading">HomeEnergy Secure May 2021</p>
+        <ul class="ul-ticked">
+          <li>Two turtle doves</li>
+          <li>A partridge in a pear tree</li>
+        </ul>
+      </div>
+    </ns-selector>
+  </div>
+</ns-panel>
