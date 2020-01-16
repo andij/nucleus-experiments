@@ -15,6 +15,18 @@ title: Home
         <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
+      <h3>Templates</h3>
+      <ul>
+        {%- for template in collections.templates %}
+        <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+      <h3>Guidance</h3>
+      <ul>
+        {%- for guidance in collections.guidances %}
+        <li><a href="{{ guidance.url }}">{{ guidance.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
       <h3>Pages</h3>
       <ul>
         {%- for page in collections.pages %}

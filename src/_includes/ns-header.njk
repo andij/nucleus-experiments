@@ -1,4 +1,4 @@
-<ns-header>
+<ns-header logo="drew.svg" alt="Drew Co">
   <ul>
     <li>
       <h2><a href="?">Components</a></h2>
@@ -16,6 +16,27 @@
           <ul>
             {%- for combination in collections.combinations %}
             <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h2><a href="?">Templates</a></h2>
+      <ul>
+        <li>
+          <h3>Templates</h3>
+          <ul>
+            {%- for template in collections.templates %}
+            <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+        <li>
+          <h3>Guidance</h3>
+          <ul>
+            {%- for guidance in collections.guidances %}
+            <li><a href="{{ guidance.url }}">{{ guidance.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -40,6 +61,14 @@
             {%- endfor -%}
           </ul>
         </li>
+        <li>
+          <h3>Experiences</h3>
+          <ul>
+            {%- for experience in collections.experiences %}
+            <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
       </ul>
     </li>
     <li>
@@ -50,19 +79,6 @@
           <ul>
             {%- for presentation in collections.presentations %}
             <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
-            {%- endfor -%}
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <h2><a href="?">Experiences</a></h2>
-      <ul>
-        <li>
-          <h3>Address</h3>
-          <ul>
-            {%- for experience in collections.experiences %}
-            <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
