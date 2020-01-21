@@ -84,5 +84,18 @@
         </li>
       </ul>
     </li>
+    <li>
+      <h2><a href="?">Support</a></h2>
+      <ul>
+        <li>
+          <h3>Support</h3>
+          <ul>
+            {%- for support in collections.supports %}
+            <li><a href="{{ support.url }}">{{ support.fileSlug }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </ns-header>
