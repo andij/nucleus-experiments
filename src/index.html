@@ -21,12 +21,6 @@ title: Home
         <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
-      <h3>Guidance</h3>
-      <ul>
-        {%- for guidance in collections.guidances %}
-        <li><a href="{{ guidance.url }}">{{ guidance.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
       <h3>Pages</h3>
       <ul>
         {%- for page in collections.pages %}
@@ -37,12 +31,6 @@ title: Home
       <ul>
         {%- for combination in collections.combinations %}
         <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-      <h3>Presentations</h3>
-      <ul>
-        {%- for presentation in collections.presentations %}
-        <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
     </nav>
