@@ -17,13 +17,16 @@ tools: true
   {% include 'tools-header.njk' %}
   <div class="ndsn">
     {% include 'ns-header.njk' %}
-    <main>
-      {{content | safe}}
-    </main>
-    <ns-footer></ns-footer>
   </div>
-  <script type="text/javascript" src="/nsx/dist/polyfill.js"></script>
-  <script type="text/javascript" src="/nsx/dist/components.js"></script>
+  <main class="ndsn">
+    {{content | safe}}
+  </main>
+  <div class="ndsn">
+    <nsx-footer></nsx-footer>
+  </div>
+  <script src="https://www.britishgas.co.uk/nucleus-experiences/components.min.js"></script>
+  <!-- <script type="text/javascript" src="/nsx/dist/polyfill.js"></script> -->
+  <!-- <script type="text/javascript" src="/nsx/dist/components.js"></script> -->
   <script type="text/javascript" src="/nucleus/dist/polyfill.js"></script>
   <script type="text/javascript" src="/nucleus/dist/components.js"></script>
 </body>
