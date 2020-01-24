@@ -1,6 +1,8 @@
 # Nucleus prototype
 
-A Nucleus prototype environment 
+A Nucleus prototype environment published at: https://nucleus-prototype.drew-jones.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/90b95afb-1b42-47c5-8e81-4f4e03816e6d/deploy-status)](https://app.netlify.com/sites/keen-franklin-5ffbd4/deploys)
 
 ## Installation
 
