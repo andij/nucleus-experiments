@@ -1,4 +1,4 @@
 {
-  "layout": "nsx.njk",
+  "layout": "local-nsx.njk",
   "tags": "experiences"
 }
