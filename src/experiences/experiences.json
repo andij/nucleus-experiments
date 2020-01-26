@@ -1,4 +1,4 @@
 {
-  "layout": "local-nsx.njk",
+  "layout": "live.njk",
   "tags": "experiences"
 }
