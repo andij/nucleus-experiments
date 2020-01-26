@@ -1,0 +1,243 @@
+.tools-true tools-header {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+.tools-true tools-header::before {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+}
+.tools-true .reload {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  text-indent: -99em;
+}
+.tools-true tools-header::before {
+  pointer-events: none;
+  content: "⚫️";
+}
+@media only screen and (min-width: 30em) {
+  .tools-true tools-header::before {
+    content: "🎾";
+  }
+}
+@media only screen and (min-width: 45em) {
+  .tools-true tools-header::before {
+    content: "🏀";
+  }
+}
+@media only screen and (min-width: 67.5em) {
+  .tools-true tools-header::before {
+    content: "🏑";
+  }
+}
+@media only screen and (min-width: 101.25em) {
+  .tools-true tools-header::before {
+    content: "🏉";
+  }
+}
+@media only screen and (min-width: 151.875em) {
+  .tools-true tools-header::before {
+    content: "👕";
+  }
+}
+.tools-true h1,
+.tools-true .h-one,
+.tools-true h2,
+.tools-true .h-two,
+.tools-true h3,
+.tools-true .h-three,
+.tools-true h4,
+.tools-true .h-four,
+.tools-true h5,
+.tools-true .h-five,
+.tools-true h6,
+.tools-true .h6-six {
+  background-color: rgba(0, 0, 255, 0.0875);
+}
+.tools-true p,
+.tools-true .p-normal {
+  background-color: rgba(0, 128, 0, 0.0875);
+}
+.tools-true ul,
+.tools-true ol {
+  background-color: rgba(255, 165, 0, 0.0875);
+}
+.tools-true h1,
+.tools-true .h-one,
+.tools-true h2,
+.tools-true .h-two,
+.tools-true h3,
+.tools-true .h-three,
+.tools-true h4,
+.tools-true .h-four,
+.tools-true h5,
+.tools-true .h-five,
+.tools-true h6,
+.tools-true .h-six,
+.tools-true p,
+.tools-true .p-normal,
+.tools-true ul,
+.tools-true ol,
+.tools-true .splish,
+.tools-true .splash,
+.tools-true .splosh {
+  position: relative;
+}
+.tools-true h1::after,
+.tools-true .h-one::after,
+.tools-true h2::after,
+.tools-true .h-two::after,
+.tools-true h3::after,
+.tools-true .h-three::after,
+.tools-true h4::after,
+.tools-true .h-four::after,
+.tools-true h5::after,
+.tools-true .h-five::after,
+.tools-true h6::after,
+.tools-true .h-six::after,
+.tools-true p::after,
+.tools-true .p-normal::after,
+.tools-true ul::after,
+.tools-true ol::after,
+.tools-true .splish::after,
+.tools-true .splash::after,
+.tools-true .splosh::after {
+  content: attr(class);
+  background-color: rgba(255, 255, 255, 0.375);
+  opacity: 0.5;
+  border-top-left-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: "BG Flame Light", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.tools-true main {
+  counter-reset: nds-structure-item-counter;
+}
+.tools-true tools-placeholder {
+  position: relative;
+  display: block;
+  padding-bottom: 5em;
+  background-color: rgba(0, 0, 255, 0.25);
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 255, 0.75);
+}
+.tools-true tools-placeholder:before {
+  pointer-events: none;
+  counter-increment: nds-structure-item-counter;
+  content: counter(nds-structure-item-counter);
+  position: absolute;
+  bottom: 0;
+  left: 0.5em;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.tools-true ns-panel,
+.tools-true ns-landmark,
+.tools-true ns-editorial {
+  position: relative;
+}
+.tools-true ns-panel::before,
+.tools-true ns-landmark::before,
+.tools-true ns-editorial::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 128, 0, 0.025);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23fae1ea' fill-opacity='0.25' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1px 0 rgba(128, 0, 128, 0.75);
+}
+.tools-true ns-panel .splish,
+.tools-true ns-landmark .splish,
+.tools-true ns-editorial .splish,
+.tools-true ns-panel .splash,
+.tools-true ns-landmark .splash,
+.tools-true ns-editorial .splash,
+.tools-true ns-panel .splosh,
+.tools-true ns-landmark .splosh,
+.tools-true ns-editorial .splosh {
+  position: relative;
+}
+.tools-true ns-panel .splish::before,
+.tools-true ns-landmark .splish::before,
+.tools-true ns-editorial .splish::before,
+.tools-true ns-panel .splash::before,
+.tools-true ns-landmark .splash::before,
+.tools-true ns-editorial .splash::before,
+.tools-true ns-panel .splosh::before,
+.tools-true ns-landmark .splosh::before,
+.tools-true ns-editorial .splosh::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(0, 128, 0, 0.025);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23fae1ea' fill-opacity='0.25' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+  box-shadow: inset 0 0 1px 0 rgba(0, 128, 0, 0.85);
+}
+.tools-true ns-card {
+  position: relative;
+}
+.tools-true ns-card::after {
+  pointer-events: none;
+  box-shadow: inset 0 0 1px 0 rgba(255, 0, 0, 0.85);
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.tools-true ns-inputter {
+  background-color: rgba(255, 255, 0, 0.25);
+}
+.tools-true code {
+  display: block;
+  padding: 1em;
+  position: relative;
+}
+.tools-true code::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(255, 192, 203, 0.85);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23fae1ea' fill-opacity='.25' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  box-shadow: inset 0 0 1px 0 rgba(255, 192, 203, 0.85);
+}
+.prototype-ns-icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prototype-ns-icon .icon {
+  margin-right: 0.5em;
+}
+.prototype-ns-icon .icon .label {
+  text-align: center;
+}
+.prototype-ns-icon .icon ns-icon {
+  width: 4em;
+  height: 4em;
+}
