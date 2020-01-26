@@ -3,22 +3,21 @@ title: Live development
 ---
 
 <!doctype html>
-<html class="tools-{{tools}}" lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <title>{{title}}</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{title}}">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="/main.css">
+  <title>{{title}}</title>
 </head>
-<body>
-  <div class="ndsn">
-    {% include 'ns-header.njk' %}
-    <main>
-      {{content | safe}}
-    </main>
-    <ns-footer></ns-footer>
-  </div>
-  <script type="text/javascript" src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
+<body class="ndsn">
+  {% include 'ns-header.njk' %}
+  <main>
+    {{content | safe}}
+  </main>
+  <nsx-footer></nsx-footer>
+  <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
+  <script src="https://www.britishgas.co.uk/nucleus-experiences/only.components.min.js"></script>
 </body>
 </html>
