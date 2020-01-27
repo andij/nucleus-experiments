@@ -83,7 +83,8 @@
 .tools-true ol,
 .tools-true .splish,
 .tools-true .splash,
-.tools-true .splosh {
+.tools-true .splosh,
+.tools-true .ns-panel {
   position: relative;
 }
 .tools-true h1::after,
@@ -104,7 +105,8 @@
 .tools-true ol::after,
 .tools-true .splish::after,
 .tools-true .splash::after,
-.tools-true .splosh::after {
+.tools-true .splosh::after,
+.tools-true .ns-panel::after {
   content: attr(class);
   background-color: rgba(255, 255, 255, 0.375);
   opacity: 0.5;
