@@ -62,8 +62,16 @@
   background-color: rgba(0, 128, 0, 0.0875);
 }
 .tools-true ul,
-.tools-true ol {
+.tools-true ol,
+.tools-true dl {
   background-color: rgba(255, 165, 0, 0.0875);
+}
+.tools-true li {
+  background-color: rgba(0, 128, 0, 0.0875);
+}
+.tools-true dt,
+.tools-true dd {
+  background-color: rgba(128, 0, 128, 0.0875);
 }
 .tools-true h1,
 .tools-true .h-one,
@@ -81,6 +89,7 @@
 .tools-true .p-normal,
 .tools-true ul,
 .tools-true ol,
+.tools-true dl,
 .tools-true .splish,
 .tools-true .splash,
 .tools-true .splosh,
@@ -103,6 +112,7 @@
 .tools-true .p-normal::after,
 .tools-true ul::after,
 .tools-true ol::after,
+.tools-true dl::after,
 .tools-true .splish::after,
 .tools-true .splash::after,
 .tools-true .splosh::after,
@@ -242,4 +252,63 @@
 .prototype-ns-icon .icon ns-icon {
   width: 4em;
   height: 4em;
+}
+.ndsn dl {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 1em;
+}
+.ndsn dl dt {
+  font-family: "BG Flame Bold", sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+.ndsn dl dd {
+  margin-left: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+@media only screen and (min-width: 30em) {
+  .ndsn dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ndsn dl dt {
+    width: 34%;
+    padding-right: 1em;
+  }
+  .ndsn dl dd {
+    margin-left: 0;
+    width: 66%;
+  }
+}
+.ndsn dl dt,
+.ndsn dl dd {
+  max-width: 32em;
+}
+.ndsn dl dt p,
+.ndsn dl dd p {
+  margin-bottom: inherit;
+}
+.ndsn dl dt p:last-child,
+.ndsn dl dd p:last-child {
+  margin-bottom: 0;
+}
+.ndsn dl dt:first-of-type,
+.ndsn dl dd:first-of-type {
+  margin-top: 0;
+}
+.ndsn dl dt:last-of-type,
+.ndsn dl dd:last-of-type {
+  margin-bottom: 0;
+}
+.ndsn dl ol:not([slot]),
+.ndsn dl ul:not([slot]) {
+  margin-bottom: 0;
+}
+.ndsn em {
+  font-family: "BG Flame Bold", sans-serif;
+  background-color: pink;
+  font-style: normal;
+  text-decoration: overline;
 }
