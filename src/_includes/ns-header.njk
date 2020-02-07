@@ -7,7 +7,7 @@
           <h3>Individual</h3>
           <ul>
             {%- for component in collections.components %}
-            <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
+            <li><a href="{{ component.url }}">{{ component.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -15,7 +15,7 @@
           <h3>Combinations</h3>
           <ul>
             {%- for combination in collections.combinations %}
-            <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
+            <li><a href="{{ combination.url }}">{{ combination.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -28,7 +28,7 @@
           <h3>Templates</h3>
           <ul>
             {%- for template in collections.templates %}
-            <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
+            <li><a href="{{ template.url }}">{{ template.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -36,7 +36,7 @@
           <h3>Guidance</h3>
           <ul>
             {%- for guidance in collections.guidances %}
-            <li><a href="{{ guidance.url }}">{{ guidance.fileSlug }}</a></li>
+            <li><a href="{{ guidance.url }}">{{ guidance.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -49,7 +49,7 @@
           <h3>Pages</h3>
           <ul>
             {%- for page in collections.pages %}
-            <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -57,7 +57,7 @@
           <h3>Journeys</h3>
           <ul>
             {%- for journey in collections.journeys %}
-            <li><a href="{{ journey.url }}">{{ journey.fileSlug }}</a></li>
+            <li><a href="{{ journey.url }}">{{ journey.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -65,7 +65,7 @@
           <h3>Experiences</h3>
           <ul>
             {%- for experience in collections.experiences %}
-            <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
+            <li><a href="{{ experience.url }}">{{ experience.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -78,7 +78,7 @@
           <h3>Presentations</h3>
           <ul>
             {%- for presentation in collections.presentations %}
-            <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
+            <li><a href="{{ presentation.url }}">{{ presentation.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>
@@ -91,7 +91,7 @@
           <h3>Support</h3>
           <ul>
             {%- for support in collections.supports %}
-            <li><a href="{{ support.url }}">{{ support.fileSlug }}</a></li>
+            <li><a href="{{ support.url }}">{{ support.data.title }}</a></li>
             {%- endfor -%}
           </ul>
         </li>

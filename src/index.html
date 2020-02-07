@@ -12,31 +12,31 @@ title: Home
       <h3>Components</h3>
       <ul>
         {%- for component in collections.components %}
-        <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
+        <li><a href="{{ component.url }}">{{ component.data.title }}</a></li>
         {%- endfor -%}
       </ul>
       <h3>Templates</h3>
       <ul>
         {%- for template in collections.templates %}
-        <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
+        <li><a href="{{ template.url }}">{{ template.data.title }}</a></li>
         {%- endfor -%}
       </ul>
       <h3>Pages</h3>
       <ul>
         {%- for page in collections.pages %}
-        <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
         {%- endfor -%}
       </ul>
       <h3>Combinations</h3>
       <ul>
         {%- for combination in collections.combinations %}
-        <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
+        <li><a href="{{ combination.url }}">{{ combination.data.title }}</a></li>
         {%- endfor -%}
       </ul>
       <h3>Experiments</h3>
       <ul>
         {%- for experiment in collections.experiments %}
-        <li><a href="{{ experiment.url }}">{{ experiment.fileSlug }}</a></li>
+        <li><a href="{{ experiment.url }}">{{ experiment.data.title }}</a></li>
         {%- endfor -%}
       </ul>
     </nav>
