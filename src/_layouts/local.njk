@@ -14,15 +14,13 @@ tools: true
   <link rel="stylesheet" href="/nucleus/dist/styles.min.css">
   <title>{{title}}</title>
 </head>
-<body>
+<body class="ndsn">
   {% include 'tools-header.njk' %}
-  <div class="ndsn">
-    {% include 'ns-header.njk' %}
-    <main>
-      {{content | safe}}
-    </main>
-    {% include 'ns-footer.njk' %}
-  </div>
+  {% include 'ns-header.njk' %}
+  <main>
+    {{content | safe}}
+  </main>
+  {% include 'ns-footer.njk' %}
   <script type="text/javascript" src="/nucleus/dist/polyfill.js"></script>
   <script type="text/javascript" src="/nucleus/dist/components.js"></script>
 </body>
