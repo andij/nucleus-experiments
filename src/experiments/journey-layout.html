@@ -1,6 +1,6 @@
 ---
 title: journey-layout
-layout: live.njk
+layout: local.njk
 ---
 
 <ns-landmark type="lakeside">
@@ -12,51 +12,47 @@ layout: live.njk
 </ns-landmark>
 
 <ns-panel>
-  <div class="splosh">
-    <h3>Decide on some bits</h3>
-    <ns-inputter validation='["isRequired"]' heading="Select from here" name="select-02">
-      <label slot="label">Select number two</label>
-      <select name="select-02">
-        <option value="">Please select an option</option>
-        <option value="value-02">Two</option>
-        <option value="value-03">Three</option>
-        <option value="value-04">Four</option>
-        <option value="100">100</option>
-      </select>
-    </ns-inputter>
-    <ns-inputter heading="How would you prefer to be receive updates?">
-      <input type="radio" id="radio-d-1" name="radio-d" value="first" checked>
-      <label for="radio-d-1">Email</label>
-      <input type="radio" id="radio-d-2" name="radio-d" value="second">
-      <label for="radio-d-2">Text message</label>
-    </ns-inputter>
-    <h3>Check your input</h3>
-    <ns-inputter heading="This is my heading">
-      <input type="checkbox" id="checkbox-d-1" name="checkbox-d">
-      <label for="checkbox-d-1">Alpha</label>
-      <input type="checkbox" id="checkbox-d-2" name="checkbox-d" checked>
-      <label for="checkbox-d-2">Bravo</label>
-      <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
-      <label for="checkbox-d-3">Charlie</label>
-    </ns-inputter>
-  </div>
-</ns-panel>
-
-<ns-panel>
   <div class="splash">
-    <ns-inputter validation='["isRequired"]' class="triple" heading="Where abouts does your flue exit the building?" helper="">
-      <ns-selector image="https://andijcdn.sirv.com/nds/new-boiler-below-second-floor.jpg">
-        <input type="checkbox" id="checkbox-f-1" name="checkbox-f" value="below">
-        <label for="checkbox-f-1">Below the second floor</label>
-      </ns-selector>
-      <ns-selector image="https://andijcdn.sirv.com/nds/new-boiler-above-second-floor.jpg">
-        <input type="checkbox" id="checkbox-f-2" name="checkbox-f" value="above">
-        <label for="checkbox-f-2">Above the second floor</label>
-      </ns-selector>
-      <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=640x360&text.0.position=center&text.0.outline.width=2">
-        <input type="checkbox" id="checkbox-f-3" name="checkbox-f" value="dark">
-        <label for="checkbox-f-3">In the dark</label>
-      </ns-selector>
-    </ns-inputter>
+    <h3>Decide on some bits</h3>
+    <ns-form>
+      <ns-inputter validation='["isRequired"]' heading="Select from here" name="select-02">
+        <label slot="label">Select number two</label>
+        <select name="select-02">
+          <option value="">Please select an option</option>
+          <option value="value-02">Two</option>
+          <option value="value-03">Three</option>
+          <option value="value-04">Four</option>
+          <option value="100">100</option>
+        </select>
+      </ns-inputter>
+      <ns-inputter heading="How would you prefer to be receive updates?">
+        <input type="radio" id="radio-d-1" name="radio-d" value="first" checked>
+        <label for="radio-d-1">Email</label>
+        <input type="radio" id="radio-d-2" name="radio-d" value="second">
+        <label for="radio-d-2">Text message</label>
+      </ns-inputter>
+      <ns-inputter heading="This is my heading">
+        <input type="checkbox" id="checkbox-d-1" name="checkbox-d">
+        <label for="checkbox-d-1">Alpha</label>
+        <input type="checkbox" id="checkbox-d-2" name="checkbox-d" checked>
+        <label for="checkbox-d-2">Bravo</label>
+        <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
+        <label for="checkbox-d-3">Charlie</label>
+      </ns-inputter>
+      <ns-inputter validation='["isRequired"]' class="triple" heading="Where abouts does your flue exit the building?" helper="">
+        <ns-selector image="https://andijcdn.sirv.com/nds/new-boiler-below-second-floor.jpg">
+          <input type="checkbox" id="checkbox-f-1" name="checkbox-f" value="below">
+          <label for="checkbox-f-1">Below the second floor</label>
+        </ns-selector>
+        <ns-selector image="https://andijcdn.sirv.com/nds/new-boiler-above-second-floor.jpg">
+          <input type="checkbox" id="checkbox-f-2" name="checkbox-f" value="above">
+          <label for="checkbox-f-2">Above the second floor</label>
+        </ns-selector>
+        <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=640x360&text.0.position=center&text.0.outline.width=2">
+          <input type="checkbox" id="checkbox-f-3" name="checkbox-f" value="dark">
+          <label for="checkbox-f-3">In the dark</label>
+        </ns-selector>
+      </ns-inputter>
+    </ns-form>
   </div>
 </ns-panel>
