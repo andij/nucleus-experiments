@@ -1,0 +1,62 @@
+---
+title: rewards-join-oam-dashboard
+---
+
+<!-- NOTE @drew 2020-01-23 this mockup for the OAM header is not to be distributed -->
+<ns-panel class="ns-panel" decoration="invert-concave-blue">
+  <div class="splash">
+    <p>61 Rage Road, Ragefield, R4 6ED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Moving home?</u>&nbsp; | &nbsp;<u>Account overview</u></p>
+  </div>
+</ns-panel>
+
+<ns-tabs>
+
+  <ns-tab icon="gas" slot="tab">Gas</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      Gas content
+    </div>
+  </ns-panel>
+
+  <ns-tab icon="electricity" slot="tab">Electricity</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      Electricity content
+    </div>
+  </ns-panel>
+
+  <ns-tab icon="rewards" slot="tab" selected="true">Rewards</ns-tab>
+  <ns-panel slot="panel">
+    <ns-lockup type="locknut" decoration="">
+      <h2 slot="heading">
+        <span class="h5">British Gas Rewards.</span>
+        <span class="h1 enlighten">Your <b>rewards</b> are waiting</span>
+      </h2>
+      <div slot="paragraph">
+        <p>Not got much on for the weekend? Join Rewards and snap up great offers on <b>restaurants</b>, <b>movie nights</b> and <b>family days out</b>. Just for being with us.</p>
+      </div>
+      <div slot="image">
+        <ns-image src="https://user-images.githubusercontent.com/52657167/73752750-64fa2d00-4759-11ea-95b7-eef9fb37c964.jpg" alt="Rewards"></ns-image>
+      </div>
+    </ns-lockup>
+
+    <div class="splash">
+      <ns-form>
+        <ns-inputter validation="[&quot;isRequired&quot;]" heading="Do you agree" helper="" name="legal">
+          <p class="p-normal">By joining, you agree to our <a href="#!">terms and conditions</a>, and to get personalised offers and marketing communications.</p>
+          <p class="p-normal">You can change your communications preferences in your account.</p>
+          <p class="p-normal">Find out we use your data in our <a href="#" class="">Privacy policy</a>.</p>
+          <input type="checkbox" id="terms" name="terms" value="1">
+          <label for="terms">Yes, I agree</label>
+        </ns-inputter>
+        <ns-cta onclick="submitForm()">Join Rewards</ns-cta>
+      </ns-form>
+    </div>
+
+  </ns-panel>
+
+</ns-tabs>
+
+
+
+​
