@@ -1,55 +1,34 @@
 ---
 title: ns-highlighter
-layout: local.njk
+layout: commit.njk
 tools: false
 ---
 
+<ns-highlighter>
+  <h2 slot="heading">Occupy craft beer</h2>
+  <p>Pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party.</p>
+</ns-highlighter>
+
 <ns-panel>
   <div class="splash">
+    <h1 class="enlighten">ns-highlighter</h1>
+  </div>
+  <div class="splash">
     <ns-highlighter type="info">
-      <h3 slot="heading">Priority Services Register</h3>
-      <p slot="paragraph">You may be able to receive free priority support, <a href="#!">find out if you qualify</a>.</p>
+      <h2 slot="heading">Occupy craft beer</h2>
+      <p>Pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party.</p>
     </ns-highlighter>
   </div>
   <div class="splash">
-    <ns-highlighter type="warning">
-      <h3 slot="heading">We have received your meter reading</h3>
-      <p slot="paragraph">Thank you for provinding your meter reading, it helps to keep your bills accurate.</p>
-    </ns-highlighter>
-  </div>
-  <div class="splash">
-    <ns-highlighter type="success">
-      <h3 slot="heading">Sorry, there has been a problem</h3>
-      <p slot="paragraph">Unfortunately, we were <b>unable to update your account</b> with the details you have provided.</p>
-      <p slot="paragraph">Please call us on <a href="#!">0333 202 9802</a> to change your account details. <a href="#caveat">1</a></p>
-    </ns-highlighter>
-  </div>
-  <div class="splash">
-    <ns-highlighter type="error">
-      <h3 slot="heading">Unfortunately, we're having technical problems at the moment.</h3>
-      <p slot="paragraph">Either stay on this page and try again in a few moments, or try again later.</p>
-      <p slot="paragraph">Thank you for your patience. We’re sorry for the inconvenience this might cause.</p>
-    </ns-highlighter>
+    <h2>☝️</h2>
   </div>
 </ns-panel>
 
 <ns-panel>
-  <div class="splash">
-    <ns-inputter class="triple" heading="Which do you want to bring to your new home?">
-      <ns-selector decoration="gas">
-        <input type="radio" id="question-gas" name="question" value="gas">
-        <label for="question-gas">Gas</label>
-        <div slot="description">
-          <p>Wolf plaid crucifix hammock Kale chips live-edge Subway tile squid godard occupy shabby chic blog hell</p>
-        </div>
-      </ns-selector>
-      <ns-selector decoration="bulb">
-        <input type="radio" id="question-electricity" name="question" value="electricity">
-        <label for="question-electricity">Electricity</label>
-        <div slot="description">
-          <p>Wolf plaid crucifix hammock Kale chips live-edge Subway tile squid godard occupy shabby chic blog hell</p>
-        </div>
-      </ns-selector>
-    </ns-inputter>
+  <div class="splash triple">
+    <ns-card type="support">
+      <h2 slot="heading">Occupy craft beer</h2>
+      <p slot="paragraph">Pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party.</p>
+    </ns-card>
   </div>
 </ns-panel>
