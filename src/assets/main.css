@@ -1,45 +1,45 @@
-.tools-true tools-header {
+tools-header {
   position: absolute;
   top: 0;
   z-index: 4;
 }
-.tools-true tools-header::before {
+tools-header::before {
   position: absolute;
   top: 0.5em;
   left: 0.5em;
 }
-.tools-true .reload {
+.reload {
   display: block;
   width: 2.5em;
   height: 2.5em;
   text-indent: -99em;
 }
-.tools-true tools-header::before {
+tools-header::before {
   pointer-events: none;
   content: "⚫️";
 }
 @media only screen and (min-width: 30em) {
-  .tools-true tools-header::before {
+  tools-header::before {
     content: "🎾";
   }
 }
 @media only screen and (min-width: 45em) {
-  .tools-true tools-header::before {
+  tools-header::before {
     content: "🏀";
   }
 }
 @media only screen and (min-width: 67.5em) {
-  .tools-true tools-header::before {
+  tools-header::before {
     content: "🏑";
   }
 }
 @media only screen and (min-width: 101.25em) {
-  .tools-true tools-header::before {
+  tools-header::before {
     content: "🏉";
   }
 }
 @media only screen and (min-width: 151.875em) {
-  .tools-true tools-header::before {
+  tools-header::before {
     content: "👕";
   }
 }
