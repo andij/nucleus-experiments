@@ -1,0 +1,38 @@
+---
+title: ev-charger-installation
+layout: local.njk
+---
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Let's get you started.</span>
+    <span class="h1 enlighten">Welcome to your electric vehicle <b>charger installation</b></span>
+  </h1>
+  <p slot="paragraph">Please enter your details below to begin tracking the progress of your installation.</p>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <ns-form>
+      <ns-inputter validation="[&quot;isRequired&quot;]" name="surname" value="">
+        <label slot="label" for="surname">Surname</label>
+        <input id="surname" autocomplete="family-name" type="text">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;]" name="postcode" value="">
+        <label slot="label" for="postcode">Postcode</label>
+        <input id="postcode" autocomplete="postal-code" type="text">
+      </ns-inputter>
+      <ns-inputter mask="ELLIXX-000000-0000000" separator="-" validation="[&quot;isRequired&quot;]" value="ELLI"
+        helper="Don't know your order number?" name="order-number">
+        <div slot="tip-details">You can find it in the email you received from Elli.</div>
+        <label slot="label">Order number</label>
+        <input type="text">
+      </ns-inputter>
+    </ns-form>
+  </div>
+  <div class="splash">
+    <a href="../ev-charger-installation-02">
+      <ns-cta>Continue</ns-cta>
+    </a>
+  </div>
+</ns-panel>
