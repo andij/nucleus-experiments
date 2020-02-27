@@ -1,0 +1,319 @@
+---
+title: Lists
+layout: local.njk
+tools: false
+---
+
+<pre>hillside landmark with dl-label-data inside paragraph</pre>
+
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Thank you.</span>
+    <span class="h1 enlighten">We've got your <b>opening meter reading</b></span>
+  </h1>
+  <div slot="paragraph">
+    <dl class="dl-label-data">
+      <dt>Gas reading</dt>
+      <dd>00836</dd>
+      <dt>Electricity day reading</dt>
+      <dd>18273</dd>
+      <dt>Electricity night reading</dt>
+      <dd>98732</dd>
+    </dl>
+    <p>Once your meter readings have been checked and agreed, they'll be used to help make sure your first bill is accurate.</p>
+  </div>
+</ns-landmark>
+
+<pre>tabs with a dl-label-data list displaying details of Move out</pre>
+
+<ns-tabs>
+  <ns-tab slot="tab">Moving out</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      <h2 class="h5">Move out date.</h2>
+      <p class="h2 enlighten">Wednesday <b>14th August</b> 2020</p>
+      <dl class="dl-label-data">
+        <dt>Move out address</dt>
+        <dd>1 Garstang road north</dd>
+        <dd>Address line 2</dd>
+        <dd>Salford</dd>
+        <dd>Lancashire</dd>
+        <dd>M16 8FH</dd>
+
+        <dt>Forwarding address</dt>
+        <dd>22 Woodmill Court</dd>
+        <dd>Ascot</dd>
+        <dd>SL5 Bff</dd>
+
+        <dt>Gas reading</dt>
+        <dd>00836</dd>
+        <dt>Electricity day reading</dt>
+        <dd>18273</dd>
+        <dt>Electricity night reading</dt>
+        <dd>98732</dd>
+      </dl>
+    </div>
+  </ns-panel>
+  <ns-tab slot="tab">Moving in</ns-tab>
+  <ns-panel slot="panel">
+  </ns-panel>
+</ns-tabs>
+
+<pre>a page mockup using landmark and a collection of flat cards with the dl-label-data in the paragraph slot</pre>
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1">Opening meter reading</span>
+  </h1>
+  <div slot="paragraph">
+    <p>The following information will be used to record your opening meter reading.</p>
+  </div>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <ns-card type="flat">
+      <h3 slot="heading">Property details</h3>
+      <div slot="paragraph">
+        <dl class="dl-label-data">
+          <dt>Address</dt>
+          <dd>1 Garstang road north</dd>
+          <dd>Address line 2</dd>
+          <dd>Salford</dd>
+          <dd>Lancashire</dd>
+          <dd>M16 8FH</dd>
+        </dl>
+      </div>
+      <a href="#!" slot="cta">
+        <ns-cta type="text">Pick a different address</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+  <div class="splash">
+    <ns-card type="flat">
+      <h3 slot="heading">The energy services you're switching to us</h3>
+      <div slot="paragraph">
+        <dl class="dl-label-data">
+          <dt>Gas</dt>
+          <dd>Standard</dd>
+          <dt>Electricity</dt>
+          <dd>Economy 7</dd>
+        </dl>
+      </div>
+      <a href="#!" slot="cta">
+        <ns-cta type="text">Change energy services</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+  <div class="splash">
+    <ns-card type="flat">
+      <h3 slot="heading">Your meter readings</h3>
+      <div slot="paragraph">
+        <dl class="dl-label-data">
+          <dt>Gas meter reading</dt>
+          <dd>48237</dd>
+          <dt>Electricity meter reading</dt>
+          <dd>987234</dd>
+        </dl>
+      </div>
+      <a href="#!" slot="cta">
+        <ns-cta type="text">Change energy services</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+  <div class="splash">
+    <ns-card type="flat">
+      <h3 slot="heading">Confirm your details</h3>
+      <div slot="paragraph">
+        <p>By clicking below you're confirming that the address and meter readings you've given are correct to the best of your knowledge.</p>
+      </div>
+      <a href="#!" slot="cta">
+        <ns-cta type="direct">Submit meter reading</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+
+<pre>dl-description-list</pre>
+
+<ns-panel>
+  <div class="splash">
+    <h2 class="h4">Polaroid Description List</h2>
+    <dl class="dl-label-data">
+      <dt>Description Term</dt>
+      <dd>Description Details One</dd>
+      <dd>Description Details Two</dd>
+      <dd>Description Details Three</dd>
+      <dt>Echo park iPhone</dt>
+      <dd>
+        <p>Aesthetic tumeric</p>
+        <p>Stumptown messenger</p>
+        <p>Bag keffiyeh twee</p>
+      </dd>
+      <dt>Bicycle rights artisan seitan mustache party</dt>
+      <dd>
+        <ul class="ul-ticked">
+          <li>Literally photo booth.</li>
+          <li>Woke try-hard lo-fi organic viddl</li>
+        </ul>
+      </dd>
+      <dt>Cred fixie vexillologist</dt>
+      <dd>
+        <ol class="ol-numbered">
+          <li>90's asymmetrical intelligentsia</li>
+          <li>Four pound toast lumbersexual readymade
+            <ol>
+              <li>Pour-over DIY wayfarers blue bottle</li>
+              <li>Green juice street art stumptown food truck distillery</li>
+              <li>Retro mixtape</li>
+            </ol>
+          </li>
+          <li>Tumeric pabst roof party waistcoat ramps chicharrones</li>
+        </ol>
+      </dd>
+      <dt>Heirloom brooklyn iPhone</dt>
+      <dd>Tumeric microdosing fixie, polaroid seitan mustache party waistcoat ramps</dd>
+      <dt>Hell of enamel seitan mustache party</dt>
+      <dd>Pin selvage snackwave tilde typewriter banh</dd>
+      <dt>Mumblecore +1</dt>
+      <dd>Kickstarter before they sold out pork belly air plant bottle hot chicken retro sriracha bicycle hoodie biodiesel</dd>
+    </dl>
+
+    <h2 class="h4">Address details</h2>
+    <dl class="dl-label-data">
+      <dt>Name</dt>
+      <dd>Felstead Stan</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">name</span></a>
+      </dd>
+
+      <dt>Installation address</dt>
+      <dd>1 Garstang road north</dd>
+      <dd>Address line 2</dd>
+      <dd>Salford</dd>
+      <dd>Lancashire</dd>
+      <dd>M16 8FH</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">installation address</span></a>
+      </dd>
+
+      <dt>Email address</dt>
+      <dd>felstead.stan@email.com</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">email address</span></a>
+      </dd>
+
+      <dt>Phone number</dt>
+      <dd>07421890035</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">phone number</span></a>
+      </dd>
+    </dl>
+  </div>
+</ns-panel>
+
+<pre>ul-bullet</pre>
+
+<ns-panel>
+  <div class="splash">
+    <ul class="ul-bullet">
+      <li>Echo park iPhone aesthetic, tumeric stumptown messenger bag keffiyeh twee</li>
+      <li>Bicycle rights artisan literally photo booth. Woke try-hard lo-fi organic vinyl
+        <ul>
+          <li>Cred fixie vexillologist, retro aesthetic chambray hoodie biodiesel vinyl neutra migas deep v semiotics church-key marfa</li>
+          <li>Heirloom brooklyn iPhone tumeric microdosing fixie, polaroid seitan mustache</li>
+        </ul>
+      </li>
+      <li>Hell of enamel pin selvage snackwave tilde typewriter banh mi</li>
+      <li>Mumblecore +1 kickstarter before they sold out pork belly air plant</li>
+    </ul>
+  </div>
+</ns-panel>
+
+<pre>ul-ticked</pre>
+
+<ns-panel>
+  <div class="splash">
+    <ul class="ul-ticked">
+      <li>Chartreuse thundercats cliche try-hard</li>
+      <li>Gentrify shoreditch truffaut brunch woke VHS
+        <ul>
+          <li>iPhone letterpress franzen banjo actually tofu marfa, vinyl post-ironic scenester vaporware</li>
+          <li>Ethical cred flannel PBR&B. Direct trade hashtag try-hard keffiyeh</li>
+          <li>Artisan offal glossier <a href="#!">microdosing everyday</a> carry blue bottle hot chicken retro cardigan man braid franzen tote bag sriracha bicycle rights</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</ns-panel>
+
+<pre>ol-numbered</pre>
+
+<ns-panel>
+  <div class="splash">
+    <ol class="ol-numbered">
+      <li>Occupy vegan lumbersexual, cray pabst keytar farm-to-table put a bird on it polaroid you probably haven't heard of them jean shorts tilde disrupt
+        <ol>
+          <li>90's asymmetrical intelligentsia</li>
+          <li>Four pound toast lumbersexual readymade
+            <ol>
+              <li>Pour-over DIY wayfarers blue bottle</li>
+              <li>Green juice street art stumptown food truck distillery</li>
+              <li>Retro mixtape</li>
+            </ol>
+          </li>
+          <li>Tumeric pabst roof party waistcoat ramps chicharrones</li>
+        </ol>
+      </li>
+      <li>Food truck neutra humblebrag, bitters sustainable kickstarter stumptown williamsburg authentic fingerstache</li>
+      <li>Chicharrones lyft twee cold-pressed vice slow-carb +1 gochujang</li>
+    </ol>
+  </div>
+</ns-panel>
+
+<ns-tabs>
+  <ns-tab slot="tab">Rewards sumary</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      <dl class="dl-label-data">
+        <dt>Offers you've chosen</dt>
+        <dd>2</dd>
+        <dt>Estimated savings so far</dt>
+        <dd><ns-price pence="8700"></ns-price></dd>
+        <dt>Free loyalty days</dt>
+        <dd>0</dd>
+        <dt>Prize draws entered</dt>
+        <dd>2</dd>
+      </dl>
+    </div>
+  </ns-panel>
+  <ns-tab slot="tab">Claimed offers</ns-tab>
+  <ns-panel slot="panel">
+    <ns-table>
+      <table>
+        <caption>Financial Report</caption>
+        <tbody>
+          <tr>
+            <th>Offers you've chosen</th>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th>Estimated savings so far</th>
+            <td><ns-price pence="8700"></ns-price></td>
+          </tr>
+          <tr>
+            <th>Free loyalty days</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Prize draws entered</th>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </ns-table>
+  </ns-panel>
+  <ns-tab slot="tab">Saved offers</ns-tab>
+  <ns-panel slot="panel">
+  </ns-panel>
+</ns-tabs>
