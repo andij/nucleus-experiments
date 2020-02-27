@@ -221,24 +221,6 @@ tools-header::before {
 .tools-true ns-inputter {
   background-color: rgba(255, 255, 0, 0.25);
 }
-.tools-true code {
-  display: block;
-  padding: 1em;
-  position: relative;
-}
-.tools-true code::before {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
-  background-color: rgba(255, 192, 203, 0.85);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23fae1ea' fill-opacity='.25' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
-  box-shadow: inset 0 0 1px 0 rgba(255, 192, 203, 0.85);
-}
 .prototype-ns-icon {
   display: flex;
   flex-wrap: wrap;
@@ -253,58 +235,23 @@ tools-header::before {
   width: 4em;
   height: 4em;
 }
-.ndsn dl {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  font-size: 1em;
+pre {
+  margin: 0;
+  padding: 1em;
+  position: relative;
 }
-.ndsn dl dt {
-  font-family: "BG Flame Bold", sans-serif;
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-}
-.ndsn dl dd {
-  margin-left: 2em;
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-}
-@media only screen and (min-width: 30em) {
-  .ndsn dl {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .ndsn dl dt {
-    width: 34%;
-    padding-right: 1em;
-  }
-  .ndsn dl dd {
-    margin-left: 0;
-    width: 66%;
-  }
-}
-.ndsn dl dt,
-.ndsn dl dd {
-  max-width: 32em;
-}
-.ndsn dl dt p,
-.ndsn dl dd p {
-  margin-bottom: inherit;
-}
-.ndsn dl dt p:last-child,
-.ndsn dl dd p:last-child {
-  margin-bottom: 0;
-}
-.ndsn dl dt:first-of-type,
-.ndsn dl dd:first-of-type {
-  margin-top: 0;
-}
-.ndsn dl dt:last-of-type,
-.ndsn dl dd:last-of-type {
-  margin-bottom: 0;
-}
-.ndsn dl ol:not([slot]),
-.ndsn dl ul:not([slot]) {
-  margin-bottom: 0;
+pre::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: rgba(255, 192, 203, 0.85);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23fae1ea' fill-opacity='.25' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+  box-shadow: inset 0 0 1px 0 rgba(255, 192, 203, 0.85);
 }
 .ndsn em {
   font-family: "BG Flame Bold", sans-serif;
