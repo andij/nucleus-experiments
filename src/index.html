@@ -3,40 +3,84 @@ layout: live.njk
 title: Home
 ---
 
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Nucleus prototype.</span>
+    <span class="h1 enlighten">Home of the <b>prototypes</b></span>
+  </h1>
+</ns-landmark>
+
 <ns-panel>
-  <div class="splash">
-    <h1>Nucleus prototype</h1>
-  </div>
   <div class="splosh">
     <nav>
-      <h3>Components</h3>
-      <ul>
-        {%- for component in collections.components %}
-        <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-      <h3>Templates</h3>
-      <ul>
-        {%- for template in collections.templates %}
-        <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-      <h3>Pages</h3>
-      <ul>
-        {%- for page in collections.pages %}
-        <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-      <h3>Combinations</h3>
+
+      <h2 class="h5">Combinations</h2>
       <ul>
         {%- for combination in collections.combinations %}
         <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
-      <h3>Experiments</h3>
+
+      <h2 class="h5">Components</h2>
+      <ul>
+        {%- for component in collections.components %}
+        <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Experiences</h2>
+      <ul>
+        {%- for experience in collections.experiences %}
+        <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Experiments</h2>
       <ul>
         {%- for experiment in collections.experiments %}
         <li><a href="{{ experiment.url }}">{{ experiment.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">guidances</h2>
+      <ul>
+        {%- for guidance in collections.guidances %}
+        <li><a href="{{ guidance.url }}">{{ guidance.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">journeys</h2>
+      <ul>
+        {%- for journey in collections.journeys %}
+        <li><a href="{{ journey.url }}">{{ journey.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Pages</h2>
+      <ul>
+        {%- for page in collections.pages %}
+        <li><a href="{{ page.url }}">{{ page.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Presentations</h2>
+      <ul>
+        {%- for presentation in collections.presentations %}
+        <li><a href="{{ presentation.url }}">{{ presentation.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Supports</h2>
+      <ul>
+        {%- for support in collections.supports %}
+        <li><a href="{{ support.url }}">{{ support.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
+      <h2 class="h5">Templates</h2>
+      <ul>
+        {%- for template in collections.templates %}
+        <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
     </nav>
