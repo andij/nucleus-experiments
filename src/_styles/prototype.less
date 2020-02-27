@@ -14,56 +14,8 @@
   }
 }
 
-// NOTE: @drew-jones - 2020-01-29 - this is to go into list.less
+// NOTE: @drew-jones - 2020-01-29 - this could to go towards the emphasised content RFC
 .ndsn {
-  dl {
-    margin-top: 0;
-    margin-bottom: 3rem;
-    font-size: 1em;
-    dt {
-      font-family: "BG Flame Bold", sans-serif;
-      margin-top: 0.5em;
-      margin-bottom: 0.25em;
-    }
-    dd {
-      margin-left: 2em;
-      margin-top: 0.5em;
-      margin-bottom: 0.25em;
-    }
-    // @tennis-court
-    @media only screen and (min-width: 30em) {
-      display: flex;
-      flex-wrap: wrap;
-      dt {
-        width: 34%;
-        padding-right: 1em;
-      }
-      dd {
-        margin-left: 0;
-        width: 66%;
-      }
-    }
-    dt,
-    dd {
-      max-width: 32em; // setting the maximum line length to be about 70 charachters // http://webtypography.net/2.1.2
-      p {
-        margin-bottom: inherit;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-      &:first-of-type {
-        margin-top: 0;
-      }
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-    ol:not([slot]),
-    ul:not([slot]) {
-      margin-bottom: 0; // NOTE: @drew-jones - 2020-01-29 - this is if we nest a `ul` in our `dl`
-    }
-  }
   em {
     font-family: "BG Flame Bold", sans-serif;
     background-color: pink;
