@@ -4,7 +4,7 @@ title: Lists
 
 <pre>hillside landmark with dl-label-data inside paragraph</pre>
 
-<ns-landmark type="hillside">
+<ns-landmark type="lakeside">
   <h1 slot="heading">
     <span class="h5">Thank you.</span>
     <span class="h1 enlighten">We've got your <b>opening meter reading</b></span>
@@ -132,8 +132,43 @@ title: Lists
   </div>
 </ns-panel>
 
-<pre>dl-description-list</pre>
+<pre>example displaying personal information and a link to 'Change'. Included within this link is `sr-only` content providing context for each Change link.</pre>
+<ns-panel>
+  <div class="splash">
+    <h2 class="h4">Address details</h2>
+    <dl class="dl-label-data">
+      <dt>Name</dt>
+      <dd>Felstead Stan</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">name</span></a>
+      </dd>
 
+      <dt>Installation address</dt>
+      <dd>1 Garstang road north</dd>
+      <dd>Address line 2</dd>
+      <dd>Salford</dd>
+      <dd>Lancashire</dd>
+      <dd>M16 8FH</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">installation address</span></a>
+      </dd>
+
+      <dt>Email address</dt>
+      <dd>felstead.stan@email.com</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">email address</span></a>
+      </dd>
+
+      <dt>Phone number</dt>
+      <dd>07421890035</dd>
+      <dd>
+        <a href="#!">Change <span class="sr-only">phone number</span></a>
+      </dd>
+    </dl>
+  </div>
+</ns-panel>
+
+<pre>comprehensive list with nested lists</pre>
 <ns-panel>
   <div class="splash">
     <h2 class="h4">Polaroid Description List</h2>
@@ -175,37 +210,6 @@ title: Lists
       <dd>Pin selvage snackwave tilde typewriter banh</dd>
       <dt>Mumblecore +1</dt>
       <dd>Kickstarter before they sold out pork belly air plant bottle hot chicken retro sriracha bicycle hoodie biodiesel</dd>
-    </dl>
-
-    <h2 class="h4">Address details</h2>
-    <dl class="dl-label-data">
-      <dt>Name</dt>
-      <dd>Felstead Stan</dd>
-      <dd>
-        <a href="#!">Change <span class="sr-only">name</span></a>
-      </dd>
-
-      <dt>Installation address</dt>
-      <dd>1 Garstang road north</dd>
-      <dd>Address line 2</dd>
-      <dd>Salford</dd>
-      <dd>Lancashire</dd>
-      <dd>M16 8FH</dd>
-      <dd>
-        <a href="#!">Change <span class="sr-only">installation address</span></a>
-      </dd>
-
-      <dt>Email address</dt>
-      <dd>felstead.stan@email.com</dd>
-      <dd>
-        <a href="#!">Change <span class="sr-only">email address</span></a>
-      </dd>
-
-      <dt>Phone number</dt>
-      <dd>07421890035</dd>
-      <dd>
-        <a href="#!">Change <span class="sr-only">phone number</span></a>
-      </dd>
     </dl>
   </div>
 </ns-panel>
@@ -287,29 +291,31 @@ title: Lists
   </ns-panel>
   <ns-tab slot="tab">Claimed offers</ns-tab>
   <ns-panel slot="panel">
-    <ns-table>
-      <table>
-        <caption>Financial Report</caption>
-        <tbody>
-          <tr>
-            <th>Offers you've chosen</th>
-            <td>2</td>
-          </tr>
-          <tr>
-            <th>Estimated savings so far</th>
-            <td><ns-price pence="8700"></ns-price></td>
-          </tr>
-          <tr>
-            <th>Free loyalty days</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th>Prize draws entered</th>
-            <td>2</td>
-          </tr>
-        </tbody>
-      </table>
-    </ns-table>
+    <div class="splash">
+      <ns-table>
+        <table>
+          <caption>Claimed offers</caption>
+          <tbody>
+            <tr>
+              <th>Offers you've chosen</th>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th>Estimated savings so far</th>
+              <td><ns-price pence="8700"></ns-price></td>
+            </tr>
+            <tr>
+              <th>Free loyalty days</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Prize draws entered</th>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </ns-table>
+    </div>
   </ns-panel>
   <ns-tab slot="tab">Saved offers</ns-tab>
   <ns-panel slot="panel">
