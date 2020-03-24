@@ -1,7 +1,6 @@
 ---
 title: rewards-details-wilbur-event-won
-layout: branch.njk
-branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
+layout: staging.njk
 ---
 <style>
   .nav-footer nav { padding-top: 1em; padding-bottom: 1em; }
@@ -26,41 +25,40 @@ branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
   </ns-panel>
 </div>
 
-<ns-landmark type="lakeside">
+<ns-landmark type="summit" image="https://user-images.githubusercontent.com/52657167/77082497-0da3d980-69f4-11ea-994f-42d1e57147f2.jpg">
   <h1 slot="heading">
     <span class="h5">Congratulations!</span>
-    <span class="h1 enlighten"><b>You've won</b> a cute, cuddly Wilbur the penguin</span>
+    <span class="h1 enlighten">You've won a cute, cuddly <b>Wilbur the penguin</b></span>
   </h1>
   <div slot="paragraph">
-    <p>Accept your prize by <b>30th April</b> and we'll send you your Wilbur.</p>
-    <dl class="dl-stacked">
-      <div>
-        <dt>Confirm that you'd like your prize sent here</dt>
-        <dd>Dee Leahy</dd>
-        <dd>71a Daimler Road</dd>
-        <dd>Kingston-upon-Thames</dd>
-        <dd>Surrey</dd>
-        <dd>KT2 6ES</dd>
-      </div>
-    </dl>
+    <p>Accept your prize by 30th April and we'll send you your Wilbur.</p>
+    <p>Read the terms and conditions for <a href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/downloads/rewards/CLUB10130-01-Hive-Active-Heating-35Feb20.pdf"><ns-icon style="width: 1em; height: 1em; position: relative; top: 0.15em;" type="download"></ns-icon>Wilbur prize draw (<abbr title="Portable Document Format">PDF</abbr> 46<abbr title="Kilobytes">kB</abbr>)</a>.</p>
   </div>
-  <a slot="cta" href="#!">
-    <ns-cta>Send to this address</ns-cta>
-  </a>
 </ns-landmark>
 
-<ns-panel decoration="circle-green-right">
-  <ns-lockup ratio="4x3" type="lockjaw" decoration="gas">
+<ns-panel decoration="">
+  <ns-lockup reverse ratio="1x1" type="lockbox" decoration="">
     <h2 slot="heading">
-      <span class="h5">You're a prize winner!</span>
-      <span class="h2">What happens next</span>
+      <span class="h5">Wilbur prize draw.</span>
+      <span class="h1">Accept your prize</span>
     </h2>
-    <p slot="paragraph">Read the terms and conditions for <a href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/downloads/rewards/CLUB10130-01-Hive-Active-Heating-35Feb20.pdf"><ns-icon style="width: 1em; height: 1em; position: relative; top: 0.15em;" type="download"></ns-icon>Wilbur prize draw (<abbr title="Portable Document Format">PDF</abbr> 46<abbr title="Kilobytes">kB</abbr>)</a></p>
-    <p slot="paragraph">If you like, you can send your prize to <b>a different address</b>.</p>
+
+    <div slot="paragraph">
+      <dl class="dl-stacked">
+        <div>
+          <dt>Confirm that you'd like your prize sent here:</dt>
+          <dd>Dee Leahy</dd>
+          <dd>71a Daimler Road</dd>
+          <dd>Kingston-upon-Thames</dd>
+          <dd>Surrey</dd>
+          <dd>KT2 6ES</dd>
+        </div>
+      </dl>
+    </div>
     <a slot="cta" href="#!">
-      <ns-cta type="text">Send to a different address</ns-cta>
+      <ns-cta>Send to this address</ns-cta>
     </a>
-    <ns-image slot="image" ratio="4x3" src="https://user-images.githubusercontent.com/28779/77336369-51ae1b80-6d1f-11ea-8626-a77aee2f8c2b.jpg"></ns-image>
+    <ns-image slot="image" ratio="4x3" src="https://user-images.githubusercontent.com/52657167/77426475-73b1a780-6dcc-11ea-909e-838688cae347.jpg"></ns-image>
   </ns-lockup>
 </ns-panel>
 
@@ -74,7 +72,7 @@ branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
   </div>
 </ns-panel>
 
-<ns-panel decoration="invert-bridge-green-light">
+<ns-panel decoration="invert-bridge-yellow">
   <div class="splash">
     <h2>All your offers</h2>
   </div>
@@ -84,27 +82,21 @@ branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
       <h3 slot="heading">Win a cheque for one year’s worth of energy</h3>
       <p slot="paragraph">Enter our prize draw today and you could win a cheque worth £1,157.</p>
       <p slot="paragraph"><b>Ends tomorrow 11:59pm</b></p>
-      <a slot="cta" href="rewards-details-cheque-v1.nucleus.html">
-        <ns-cta type="text">Find out more about one year's worth of energy</ns-cta>
-      </a>
+      <ns-cta slot="cta" type="text" href="rewards-details-cheque-v1.nucleus.html">Find out more about one year's worth of energy</ns-cta>
     </ns-card>
 
     <ns-card type="support" image="https://user-images.githubusercontent.com/52657167/74230845-20244800-4cbd-11ea-96db-cacf26274105.jpg">
       <h3 slot="heading">Get free electricity with Loyalty Days</h3>
       <p slot="paragraph">To thank you for being a customer we're giving you 6 days of free daytime electricity, over a year.</p>
       <p slot="paragraph"><b>Ends Friday 28 February</b></p>
-      <a slot="cta" href="rewards-details-free-v1.nucleus.html">
-        <ns-cta type="text">Find out more about Loyalty Days</ns-cta>
-      </a>
+      <ns-cta slot="cta" type="text" href="rewards-details-free-v1.nucleus.html">Find out more about Loyalty Days</ns-cta>
     </ns-card>
 
     <ns-card type="support" image="https://user-images.githubusercontent.com/52657167/75148341-4d2e1d00-56f7-11ea-96a1-a64d9dbef212.jpg">
       <h3 slot="heading">Get 35% off Hive Active Heating</h3>
       <p slot="paragraph">We’ll also send one of our trusted British Gas engineers to do your installation.</p>
       <p slot="paragraph"><b>Ends Thursday 30 April</b></p>
-      <a slot="cta" href="rewards-details-hive-v1.nucleus.html">
-        <ns-cta type="text">Find out more about Hive Heating offer</ns-cta>
-      </a>
+      <ns-cta slot="cta" type="text" href="rewards-details-hive-v1.nucleus.html">Find out more about Hive Heating offer</ns-cta>
     </ns-card>
   </div>
 </ns-panel>
@@ -145,7 +137,6 @@ branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
 
   <ns-panel slot="panel">
     <div class="splash triple">
-
       <ns-card type="support">
         <h3 slot="heading">20% discount on Local Heroes jobs</h3>
         <div slot="paragraph">
@@ -158,7 +149,6 @@ branch: e8c5f02537d01fb1c3d28df1978daf5511476bc0
           <ns-cta type="text">Visit Local Heroes to use your offer</ns-cta>
         </a>
       </ns-card>
-
     </div>
   </ns-panel>
 
