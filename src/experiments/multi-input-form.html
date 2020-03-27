@@ -1,0 +1,98 @@
+---
+title: multi-input-form
+layout: branch
+branch: 4c3be2d87239f57634d4b86bb9444a066fbf7109
+---
+
+<ns-panel>
+  <div class="splash">
+    <h2>Gastropub hashtag venmo vape whatever</h2>
+    <p class="p-feature">Edison bulb bitters organic tilde vice pop-up butcher paleo gentrify paleo woke disrupt palo santo bespoke heirloom neutra.</p>
+    <ns-form>
+      <ns-inputter validation="[&quot;isRequired&quot;]" name="title">
+        <label slot="label">Small batch</label>
+        <select autocomplete="honorific-prefix" name="select">
+          <option>Cronut truffaut</option>
+          <option>Copper mug</option>
+          <option>Gluten-free</option>
+          <option>Chicharrones</option>
+          <option>Craft beer</option>
+        </select>
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isLastName&quot;]" name="chicharrones">
+        <label slot="label">Chicharrones</label>
+        <input autocomplete="family-name" type="text" placeholder="e.g. Pretzel">
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isFirstName&quot;]" helper="Semiotics craft beer fam next level." name="air-plant">
+        <label slot="label">Air plant</label>
+        <input autocomplete="given-name" type="text" placeholder="e.g. Quinoa">
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" name="testfield" helper="Poutine four loko air plant master.">
+        <div slot="tip-details">
+          <p>Tousled pok pok waistcoat, vexillologist fashion axe authentic twee chia sartorial.</p>
+          <p>Gluten-free chicharrones locavore, semiotics craft beer fam next level cloud bread echo park health goth. Aesthetic master cleanse mixtape.</p>
+        </div>
+        <label slot="label">Aesthetic master</label>
+        <input type="text" placeholder="e.g. Roof party synth messenger bag">
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" heading="Unicorn letterpress quinoa fashion?" name="is-customer">
+        <input type="radio" id="vegan" name="name-a" value="yes">
+        <label for="vegan">Vegan pie</label>
+
+        <input type="radio" id="cornhole" name="name-a" value="no">
+        <label for="cornhole">Cornhole</label>
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" class="triple" heading="Gochujang food truck irony dreamcatcher bicycle?" name="dreamcatcher">
+        <ns-selector decoration="gas">
+          <input type="checkbox" id="vaporware" name="name-b" value="gas">
+          <label for="vaporware">Hot vaporware</label>
+          <div slot="description">
+            <h3 class="h5 enlighten">Organic tilde vice</h3>
+            <ul class="ul-bullet">
+              <li>Wolf plaid crucifix hammock</li>
+              <li>Kale chips live-edge</li>
+              <li>Subway tile squid godard</li>
+            </ul>
+          </div>
+        </ns-selector>
+        <ns-selector decoration="protect">
+          <input type="checkbox" id="question-home" name="name-b" value="home">
+          <label for="question-home">Asymmetrical</label>
+          <div slot="description">
+            <h3 class="h5 enlighten">Copper mug sartorial</h3>
+            <ol class="ol-numbered">
+              <li>Poutine tote bag marfa banjo mixtape hoodie</li>
+              <li>Copper mug sartorial thundercats</li>
+              <li>Distillery trust fund pok pok</li>
+              <li>Occupy shabby chic blog hell</li>
+            </ol>
+          </div>
+        </ns-selector>
+        <ns-selector decoration="bulb">
+          <input type="checkbox" id="question-electricity" name="name-b" value="electricity">
+          <label for="question-electricity">Shoreditch grafitti</label>
+          <div slot="description">
+            <h3 class="h5 enlighten">Bicycle rights tumeric chia</h3>
+            <ul class="ul-ticked">
+              <li>Butcher paleo gentrify put a bird on it selvage</li>
+              <li>Gastropub tousled occupy</li>
+              <li>Ethical seitan organic helvetica</li>
+            </ul>
+          </div>
+        </ns-selector>
+      </ns-inputter>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" heading="Distillery man bun" name="legal">
+        <input type="checkbox" id="terms-agree" name="terms" value="true">
+        <label for="terms-agree">Gastropub tousled occupy crucifix shoreditch prism.</label>
+      </ns-inputter>
+
+      <ns-cta onclick="submitForm()">Affogato</ns-cta>
+    </ns-form>
+  </div>
+</ns-panel>
