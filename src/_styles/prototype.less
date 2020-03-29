@@ -39,9 +39,41 @@ pre {
 .ndsn {
   em {
     font-family: "BG Flame Bold", sans-serif;
-    background-color: pink;
     font-style: normal;
-    text-decoration: overline;
+
+    // /* technique 3 */
+    outline-offset: 0;
+    outline-width: 0.1875em;
+    outline-style: solid;
+    outline-color: pink;
+    background-color: pink;
+
+
+    // /* technique 2 */
+    // background-color: pink;
+    // box-shadow: 0 0 0 0.125em pink;
+    // border-top-right-radius: 0.035em;
+    // border-bottom-right-radius: 0.035em;
+    // border-bottom-left-radius: 0.035em;
+
+    // /* technique 1 */
+    // font-size: 1.5em;
+    // position: relative;
+    // padding-left: 0.35em;
+    // padding-right: 0.35em;
+    // &::before {
+    //   border-top-right-radius: 0.35em;
+    //   border-bottom-right-radius: 0.35em;
+    //   border-bottom-left-radius: 0.35em;
+    //   z-index: 0;
+    //   position: absolute;
+    //   border: 0.2em solid orange;
+    //   content: "";
+    //   top: -0.125em;
+    //   right: 0;
+    //   bottom: -0.125em;
+    //   left: 0;
+    // }
   }
 }
 
