@@ -1,0 +1,33 @@
+---
+title: ns-horizon
+---
+
+<!-- NOTE @drew 2020-02-18 this is a mockup for logged in navigation -->
+<style>
+  .nav-footer nav { padding-top: 1em; padding-bottom: 1em; }
+  .nav-footer nav span { margin-right: 1em; }
+  .nav-footer nav span a { color: white; text-decoration-color: white; }
+  .nav-footer nav span a:hover { color: white; text-decoration-color: white; }
+  @media only screen and (max-width: 600px) {
+    .nav-footer nav span { display: block; margin: 0; }
+  }
+</style>
+<div class="nav-footer">
+  <ns-panel type="nav" decoration="invert-bridge-blue">
+    <nav class="splash">
+      <span>Drew Jones, 61 Rage Road</span>
+      <span><a href="#!">Moving home?</a></span>
+      <span><a href="#!">Account overview</a></span>
+    </nav>
+  </ns-panel>
+</div>
+
+<ns-landmark type="hillside" decoration="invert-concave-blue">
+  <h1 slot="heading">
+    <span class="h5">Hub umami locavore.</span>
+    <span class="h1 enlighten">Typewriter pin <b>chambray mixtape</b></span>
+  </h1>
+  <div slot="paragraph">
+    <p>Cred sartorial shaman pitchfork mumblecore braid cronut shaman gastropub taiyaki godard roof party. <a href="#caveat" aria-label="Additional information 1">1</a></p>
+  </div>
+</ns-landmark>
