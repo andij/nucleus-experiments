@@ -1,4 +1,8 @@
+const pluginNavigation = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPlugin(pluginNavigation);
 
   eleventyConfig.setBrowserSyncConfig({
     // https://www.browsersync.io/docs/options
