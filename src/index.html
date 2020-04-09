@@ -1,6 +1,6 @@
 ---
-layout: live.njk
 title: Home
+layout: live
 ---
 
 <ns-landmark type="hillside">
@@ -13,6 +13,13 @@ title: Home
 <ns-panel>
   <div class="splosh">
     <nav>
+
+      <h2 class="h5">Foundations</h2>
+      <ul>
+        {%- for foundation in collections.foundations %}
+        <li><a href="{{ foundation.url }}">{{ foundation.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
 
       <h2 class="h5">Combinations</h2>
       <ul>

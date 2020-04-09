@@ -1,14 +1,157 @@
 ---
 title: multi-input-form
 layout: branch
-branch: f8c63a377afbdede8fa9a6ff20fa530949f3de27
+branch: 1add65f1d3f48528458eb0743c76c446cbfa1c64
 ---
+<script>
+  function submitForm() {
+    const form = document.querySelector('ns-form');
+    const formData = form.validate();
+    console.log(formData);
+  }
+</script>
+
+<!-- <ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1 enlighten">Gastropub <b>hashtag venmo</b> vape whatever</span>
+  </h1>
+  <p slot="paragraph">Edison bulb bitters organic tilde vice pop-up butcher paleo gentrify paleo woke disrupt palo santo bespoke heirloom neutra.</p>
+</ns-landmark> -->
+
 
 <ns-panel>
   <div class="splash">
-    <h2>Gastropub hashtag venmo vape whatever</h2>
-    <p class="p-feature">Edison bulb bitters organic tilde vice pop-up butcher paleo gentrify paleo woke disrupt palo santo bespoke heirloom neutra.</p>
     <ns-form>
+      <ns-fieldset legend="Your details">
+
+        <ns-inputter>
+          <label slot="label">Raw denim edison bulb</label>
+          <input type="text" placeholder="e.g. Copper mug mixtape">
+        </ns-inputter>
+
+        <ns-inputter helper="So we can send you love letters">
+          <div slot="tip-details">
+            <p>Organic irony slow-carb bicycle rights mixtape brooklyn fanny pack.</p>
+            <p>Cliche small batch skateboard lo-fi single-origin coffee crucifix kinfolk truffaut vice bicycle rights mlkshk raw denim leggings bitters trust fund.</p>
+          </div>
+          <label slot="label">Email address</label>
+          <input type="email" name="email" placeholder="e.g. email@address.co.uk" autocomplete="email">
+        </ns-inputter>
+
+        <ns-inputter validation="[&quot;isRequired&quot;]" name="dob" mask="dd/mm/yyyy" separator="/">
+          <label for="dob" slot="label">Date of birth</label>
+          <input id="dob" type="text">
+        </ns-inputter>
+
+        <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you a British Gas customer?" name="is-customer">
+          <input type="radio" id="answer-yes" name="name-a" value="yes">
+          <label for="answer-yes">Yes</label>
+          <input type="radio" id="answer-no" name="name-a" value="no">
+          <label for="answer-no">No</label>
+          <input type="radio" id="answer-dontknow" name="name-a" value="dontknow">
+          <label for="answer-dontknow">I don't know</label>
+        </ns-inputter>
+
+      </ns-fieldset>
+
+      <!-- <ns-fieldset legend="Bank details">
+        <ns-inputter validation="[&quot;isRequired&quot;]" name="account-holder">
+          <label for="account-holder" slot="label">Name on the account</label>
+          <input id="account-holder" type="text">
+        </ns-inputter>
+        <ns-inputter validation="[&quot;isRequired&quot;]" name="account-number" mask="          ">
+          <label for="account-number" slot="label">Account number</label>
+          <input id="account-number" type="text">
+        </ns-inputter>
+
+        <ns-inputter validation="[&quot;isRequired&quot;]" name="sort-code" mask="  -  -  " separator="-">
+          <label for="sort-code" slot="label">Sort code</label>
+          <input id="sort-code" type="text">
+        </ns-inputter>
+      </ns-fieldset> -->
+
+      <ns-fieldset legend="Meter readings">
+        <ns-inputter mask="00----" validation="[&quot;isRequired&quot;]" helper="Your previous gas reading was 003452" name="gas-reading">
+          <label slot="label">Gas meter reading</label>
+          <input type="text">
+        </ns-inputter>
+
+        <ns-inputter mask="01----" validation="[&quot;isRequired&quot;]" helper="Your previous electricity reading was 015359" name="elec-reading">
+          <label slot="label">Electricity meter reading</label>
+          <input type="text">
+        </ns-inputter>
+
+        <!-- <ns-inputter mask="S     -     -     -     " separator="-" helper="Don't know your meter number?" validation="[&quot;isRequired&quot;]" name="meter-ref">
+          <span slot="tip-details">
+            <p>A Meter Point Administration Number (MPAN) is used to identify individual electricity supply points. It's usually a 21-digit number with the letter 'S' at the beginning and is displayed in a grid.</p>
+
+            <p>You'll also find your MPAN on your electricity bill under the section called 'Details of charges'. You won’t be able to find your MPAN on your physical meter.</p>
+          </span>
+          <label slot="label">Meter Point Administration Number</label>
+          <input type="text">
+        </ns-inputter> -->
+      </ns-fieldset>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" heading="Legal details" helper="" name="legal" value="">
+        <input id="legal" type="checkbox" name="terms" value="1">
+        <label for="legal">Please check to state that you agree to the terms and conditions.</label>
+      </ns-inputter>
+
+      <ns-cta onClick="submitForm()">Submit</ns-cta>
+    </ns-form>
+  </div>
+</ns-panel>
+
+<!-- <ns-panel>
+  <div class="splash triple">
+    <ns-inputter mask="00---" validation="" value="" helper="" name="meter-read-1">
+      <label slot="label">Gas meter reading</label>
+      <input type="text">
+    </ns-inputter>
+    <ns-inputter mask="01-----" validation="" value="" helper="" name="meter-read-2">
+      <label slot="label">Electric meter reading</label>
+      <input type="text">
+    </ns-inputter>
+  </div>
+
+  <div class="splash triple">
+    <ns-inputter mask="00-00-00" separator="-" validation="" value="" helper="" name="sort-code-1">
+      <label slot="label">Sort code</label>
+      <input type="text">
+    </ns-inputter>
+
+    <ns-inputter mask="  -  -  " separator="-" validation="" value="" helper="" name="sort-code-2">
+      <label slot="label">Sort code</label>
+      <input type="text">
+    </ns-inputter>
+
+    <ns-inputter mask="&#9608;&#9608;-&#9608;&#9608;-&#9608;&#9608;" separator="-" validation="" value="" helper="" name="sort-code-3">
+      <label slot="label">Sort code</label>
+      <input type="text">
+    </ns-inputter>
+  </div>
+  <div class="splash triple">
+    <ns-inputter mask="dd/mm/yyyy" separator="/" validation="[&quot;isDate&quot;]" value="" helper="" name="date-1">
+      <label slot="label">Date</label>
+      <input type="text">
+    </ns-inputter>
+
+    <ns-inputter mask="  /  /    " separator="/" validation="[&quot;isDate&quot;]" value="" helper="" name="date-2">
+      <label slot="label">Date</label>
+      <input type="text">
+    </ns-inputter>
+
+    <ns-inputter mask="&#9608;&#9608;/&#9608;&#9608;/&#9608;&#9608;&#9608;&#9608;" separator="/" validation="[&quot;isDate&quot;]" value="" helper="" name="date-3">
+      <label slot="label">Date</label>
+      <input type="text">
+    </ns-inputter>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-form>
+
       <ns-inputter validation="[&quot;isRequired&quot;]" name="title">
         <label slot="label">Small batch</label>
         <select autocomplete="honorific-prefix" name="select">
@@ -44,6 +187,12 @@ branch: f8c63a377afbdede8fa9a6ff20fa530949f3de27
         <label for="vegan">Vegan pie</label>
         <input type="radio" id="cornhole" name="name-a" value="no">
         <label for="cornhole">Cornhole</label>
+      </ns-inputter>
+
+      <ns-inputter mask="ELLIXX-000000-0000000" separator="-" validation="[&quot;isRequired&quot;]" value="ELLI" helper="Don't know your order number?" name="order-number">
+        <div slot="tip-details">You can find it in the email you received from Elli.</div>
+        <label slot="label">Order number</label>
+        <input type="text">
       </ns-inputter>
 
       <ns-inputter validation="[&quot;isRequired&quot;]" class="triple" heading="Gochujang food truck irony dreamcatcher bicycle?" name="dreamcatcher">
@@ -96,3 +245,4 @@ branch: f8c63a377afbdede8fa9a6ff20fa530949f3de27
     </ns-form>
   </div>
 </ns-panel>
+-->
