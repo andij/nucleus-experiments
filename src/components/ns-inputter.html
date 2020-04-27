@@ -21,30 +21,31 @@ title: ns-inputter
   <div class="splash">
     <ns-form>
 
-      <ns-fieldset legend="This is the heading for my fieldset">
-        <ns-inputter validation='["isRequired"]' heading="Select from here" name="select-02">
-          <label slot="label">Select number two</label>
-          <select name="select-02">
-            <option value="">Please select an option</option>
-            <option value="value-02">Two</option>
-            <option value="value-03">Three</option>
-            <option value="value-04">Four</option>
-            <option value="100">100</option>
-          </select>
+      <ns-fieldset legend="This is the legend in the fieldset">
+        <ns-inputter validation='["isPhoneNumber"]'>
+          <label slot="label">Telephone</label>
+          <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
         </ns-inputter>
 
-        <ns-inputter heading="How would you prefer to be receive updates?">
+        <ns-inputter validation='["isPostcode"]'>
+          <label slot="label">Postcode</label>
+          <input type="text" placeholder="e.g. PO57 0DE" name="postcode" autocomplete="postal-code">
+        </ns-inputter>
+
+        <ns-inputter heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
           <input type="radio" id="radio-d-1" name="radio-d" value="first" checked>
           <label for="radio-d-1">Email</label>
           <input type="radio" id="radio-d-2" name="radio-d" value="second">
           <label for="radio-d-2">Text message</label>
         </ns-inputter>
 
-        <ns-inputter heading="Checkbox">
+        <ns-inputter heading="Introduce the checkboxes">
           <input type="checkbox" id="checkbox-b-1" name="thing" value="first">
-          <label for="checkbox-b-1">Jaga</label>
-          <input type="checkbox" id="checkbox-b-2" name="thing" value="second" checked>
-          <label for="checkbox-b-2">Tygra</label>
+          <label for="checkbox-b-1">Yes</label>
+          <input type="checkbox" id="checkbox-b-2" name="thing" value="second">
+          <label for="checkbox-b-2">No</label>
+          <input type="checkbox" id="checkbox-c-2" name="thing" value="third" checked>
+          <label for="checkbox-c-2">Don't know</label>
         </ns-inputter>
       </ns-fieldset>
 
