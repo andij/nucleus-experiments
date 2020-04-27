@@ -9,7 +9,11 @@ module.exports = function(eleventyConfig) {
     codeSync: false
   });
 
+  // copy `src/assets` to `dist/assets`
   eleventyConfig.addPassthroughCopy("src/assets");
+
+  // copy `src/images` to `dist/images`
+  eleventyConfig.addPassthroughCopy("src/images");
 
   return {
     dir: {
