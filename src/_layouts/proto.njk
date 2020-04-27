@@ -1,28 +1,25 @@
 ---
-title: Local development
-tools: true
+title: Live development
 ---
 
 <!doctype html>
-<html class="tools-{{tools}}" lang="en">
+<html class="tools-{{tools}}" lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{title}}">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="/nucleus/dist/styles.min.css">
   <title>{{title}}</title>
 </head>
 <body class="ndsn">
-  {% include 'tools-header.njk' %}
   {% include 'ns-header.njk' %}
   <main id="content">
     {{content | safe}}
   </main>
-  {% include 'ns-footer.njk' %}
-  <script src="/nucleus/dist/polyfill.js"></script>
-  <script src="/nucleus/dist/components.js"></script>
+  <nsx-footer></nsx-footer>
+  <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
+  <script src="https://www.britishgas.co.uk/nucleus-experiences/only.components.min.js"></script>
   <script src="/assets/proto.js"></script>
 </body>
 </html>
