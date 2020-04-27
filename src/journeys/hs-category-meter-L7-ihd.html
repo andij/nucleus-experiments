@@ -1,0 +1,73 @@
+---
+title: Help and support - ihd
+---
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Find my meter.</span>
+    <span class="h1 enlighten">Which <b>In Home Display</b> (IHD) do you have?</span>
+  </h1>
+  <div slot="paragraph">
+    <p>An <b>In Home Display</b> communicates with your smart meter, providing an hourly, weekly or monthly view of your energy usage.</p>
+  </div>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <ns-form nf-model="model.L7-ihd">
+
+      <ns-inputter validation='["isRequired"]' name="inputter-a" class="triple value="">
+        <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=Model 1&text.0.position=center&text.0.outline.width=2&text.0.size=50">
+          <input type="radio" name="radio" value="model-1" id="radio-a">
+          <label for="radio-a">Model 1</label>
+        </ns-selector>
+        <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=Model 2&text.0.position=center&text.0.outline.width=2&text.0.size=50">
+          <input type="radio" name="radio" value="model-2" id="radio-b">
+          <label for="radio-b">Model 2</label>
+          <div slot="description">
+            <p>Rectangular in shape.</p>
+          </div>
+        </ns-selector>
+        <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=Model 3&text.0.position=center&text.0.outline.width=2&text.0.size=50">
+          <input type="radio" name="radio" value="model-3" id="radio-c">
+          <label for="radio-c">A different IHD</label>
+          <div slot="description">
+            <p>Square in shape</p>
+          </div>
+        </ns-selector>
+        <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width=640&text.0.text=Unknown&text.0.position=center&text.0.outline.width=2&text.0.size=50">
+          <input type="radio" name="radio" value="different" id="radio-d">
+          <label for="radio-d">A different smart energy monitor</label>
+          <div slot="description">
+            <p>If your smart meters weren't installed by British Gas.</p>
+          </div>
+        </ns-selector>
+      </ns-inputter>
+
+      <ns-cta nf-href="DYNAMIC">Continue</ns-cta>
+
+    </ns-form>
+  </div>
+</ns-panel>
+
+<script>
+  function getDynamicURL() {
+    var data = document.querySelector('ns-inputter[name="inputter-a"]').value;
+
+    if (data === 'model-1') {
+      return '../hs-category-meter-L9-summary';
+    }
+
+    if (data === 'model-2') {
+      return '../hs-category-meter-L9-summary';
+    }
+
+    if (data === 'model-3') {
+      return '../hs-category-meter-L9-summary';
+    }
+
+    if (data === 'different') {
+      return '../hs-category-meter-L9-summary';
+    }
+  }
+</script>
