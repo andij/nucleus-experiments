@@ -264,10 +264,12 @@ if(addressSelector) {
     });
 }
 
-document.querySelector('nsx-address-selector').addEventListener('address-selected', (event) => {
-    if (event.detail.address) {
-        document.querySelector('#submit-button').setAttribute('style', 'display: block');
-    } else {
-        document.querySelector('#submit-button').setAttribute('style', 'display: none');
-    }
-});
+if(addressSelector) {
+    addressSelector.addEventListener('address-selected', (event) => {
+        if (event.detail.address) {
+            document.querySelector('#submit-button').setAttribute('style', 'display: block');
+        } else {
+            document.querySelector('#submit-button').setAttribute('style', 'display: none');
+        }
+    });
+}
