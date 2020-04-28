@@ -29,6 +29,7 @@ forms.forEach((form, index) => {
 
 var ctas = document.querySelectorAll('ns-cta');
 ctas.forEach((cta) => {
+    cta.setAttribute('loading', 'false');
     if (cta.getAttribute('nf-href')) {
         cta.addEventListener('click', (event) => {
             //doHide();
@@ -68,12 +69,12 @@ function minimise() {
             form.scrollIntoView();
         }
 
-        if (index <= currentFormIndex) { 
+        if (index <= currentFormIndex) {
             form.style.display = 'block';
             setTimeout(() => {
                 form.formVisible = index === currentFormIndex;
             }, 0);
-            
+
         } else {
             // Hide unvisited forms
             form.style.display = 'none';
@@ -134,7 +135,7 @@ function updateUI() {
 
     // Update text with nf-model
     var spans = document.querySelectorAll('[nf-model]');
-    
+
     spans.forEach((span) => {
         var path = span.getAttribute('nf-model').split('.');
         var prop = path.pop();
@@ -146,8 +147,8 @@ function updateUI() {
         if(text && text.value) {
             span.innerText = text.value;
         }
-        
-        
+
+
     });
 }
 
@@ -194,7 +195,7 @@ function getModelData(path) {
         } else {
             throw new Error('Property not found: ', prop);
         }
-        
+
     });
     return obj;
 }
@@ -228,7 +229,7 @@ function setModelData(path, value) {
                 // create field
                 fieldsArray.push({name: prop, value: value});
             }
-        }  
+        }
     });
 }
 
