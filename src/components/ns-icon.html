@@ -8,17 +8,29 @@ testdata:
  - bill
  - boiler
  - electricity
- - error
  - energy
  - gas
  - home
- - info
  - meter
  - protect
  - rewards
  - success
+ - info
+ - error
  - warning
 ---
+
+<ns-panel class="my-tools">
+  <div class="splash">
+    <fieldset>
+      <legend>Prototype tools</legend>
+      <div>
+        <input type="checkbox" id="myCheck" onclick="myCheckboxFunction()">
+        <label for="myCheck">Icon guides</label>
+      </div>
+    </fieldset>
+  </div>
+</ns-panel>
 
 <ns-panel>
   <div class="splash prototype-ns-icon">
@@ -39,3 +51,14 @@ testdata:
   </div>
 </ns-panel>
 
+<script>
+  function myCheckboxFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var element = document.getElementById("tools-id");
+    if (checkBox.checked == true){
+      element.classList.add("tools-page");
+    } else {
+      element.classList.remove("tools-page");
+    }
+  }
+</script>
