@@ -8,24 +8,10 @@
   padding: 0.2em;
 }
 
-.prototype-ns-icon {
-  display: flex;
-  flex-wrap: wrap;
-  .icon {
-    padding-right: 1em;
-    padding-bottom: 1em;
-    .label {
-      text-align: left;
-    }
-    ns-icon {
-      width: 4em;
-      height: 4em;
-    }
-  }
-}
 .tools-page {
   .icon {
-    ns-icon {
+    ns-icon,
+    ns-illustration {
       position: relative;
       &::before,
       &::after {
@@ -63,6 +49,27 @@
     cursor: pointer;
   }
 }
+
+.prototype-ns-icon {
+  display: flex;
+  flex-wrap: wrap;
+  .icon {
+    padding-right: 1em;
+    padding-bottom: 1em;
+    .label {
+      text-align: left;
+    }
+    ns-icon {
+      width: 4em;
+      height: 4em;
+    }
+    ns-illustration {
+      width: 6em;
+      height: 6em;
+    }
+  }
+}
+
 
 pre {
   margin: 0;

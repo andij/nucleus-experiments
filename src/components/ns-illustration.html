@@ -1,0 +1,57 @@
+---
+title: ns-illustration
+pagination:
+  data: testdata
+  size: 100
+testdata:
+ - appliance
+ - boiler
+ - boiler-repair
+ - bulb
+ - clock
+ - dual-fuel
+ - electric-vehicle
+ - engineer
+ - gas
+ - help
+ - home
+ - oven
+ - protect
+ - tap
+ - savings
+---
+
+<ns-panel class="my-tools">
+  <div class="splash">
+    <fieldset>
+      <legend>Prototype tools</legend>
+      <div>
+        <input type="checkbox" id="myCheck" onclick="myCheckboxFunction()">
+        <label for="myCheck">Illustration guides</label>
+      </div>
+    </fieldset>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash prototype-ns-icon">
+    {%- for item in pagination.items %}
+    <div class="icon">
+      <ns-illustration type="{{ item }}"></ns-illustration>
+      <div class="label">{{ item }}</div>
+    </div>
+    {% endfor -%}
+  </div>
+</ns-panel>
+
+<script>
+  function myCheckboxFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var element = document.getElementById("tools-id");
+    if (checkBox.checked == true){
+      element.classList.add("tools-page");
+    } else {
+      element.classList.remove("tools-page");
+    }
+  }
+</script>
