@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/andij/nucleus-experiments#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.5",
-    "less-watch-compiler": "^1.14.1"
+    "less-watch-compiler": "^1.14.6"
   }
 }
