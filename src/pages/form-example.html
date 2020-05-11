@@ -2,8 +2,16 @@
 title: Form example
 ---
 
+<script>
+  function submitForm() {
+    const form = document.querySelector('ns-form');
+    const formData = form.validate();
+    console.log(formData);
+  }
+</script>
+
 <ns-panel>
-  <div class="splosh">
+  <ns-form class="splosh">
     <ns-inputter validation="[&quot;isRequired&quot;]" heading="Select from here" name="select-02">
       <label slot="label">Select number two</label>
       <select name="select-02">
@@ -78,8 +86,8 @@ title: Form example
       <label for="checkbox-d-3">Charlie</label>
     </ns-inputter>
 
-    <a slot="cta" href="#!">
-      <ns-cta type="text" icon="arrow-left">Step backward</ns-cta>
-    </a>
-  </div>
+    <ns-cta onclick="submitForm()">Continue</ns-cta>
+
+  </ns-form>
 </ns-panel>
+
