@@ -5,7 +5,11 @@ title: ns-inputter
 <ns-panel>
   <div class="splash">
     <ns-fieldset legend="This is the heading for my fieldset">
-      <ns-inputter validation='["isPhoneNumber"]'>
+      <ns-inputter validation='["isPhoneNumber"]' helper="This is a place where we can add some helpful content.">
+        <div slot="tip-details">
+          <p>And if the <b>Tip details</b> exists it's revealed by clicking on the helper.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dicta nam, officia, consequatur molestiae at asperiores consequuntur.</p>
+        </div>
         <label slot="label">Telephone</label>
         <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
       </ns-inputter>
