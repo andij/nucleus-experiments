@@ -2,7 +2,7 @@
 title: Guidance
 ---
 
-<ns-landmark type="hillside" gradient="invert-ramp-yellow" image="https://user-images.githubusercontent.com/28779/83658829-a6410300-a5ba-11ea-84ad-a47bee440e40.jpg">
+<ns-landmark type="summit" gradient="invert-ramp-yellow" image="https://user-images.githubusercontent.com/28779/83658829-a6410300-a5ba-11ea-84ad-a47bee440e40.jpg">
   <h1 slot="heading">
     <span class="h5">Help &amp; support.</span>
     <span class="h1 enlighten">If you're <b>struggling to pay</b> for your energy</span>
@@ -10,12 +10,16 @@ title: Guidance
   <div slot="paragraph">
     <p>We can help in lots of ways, including if you’re facing hardship caused by Covid-19.</p>
   </div>
+  <a slot="cta" href="#!">
+    <ns-cta type="direct">See your payment options</ns-cta>
+  </a>
 </ns-landmark>
 
 <ns-panel>
   <div class="splash">
     <h2>We're here to help</h2>
-    <p class="p-feature">Last year, we helped over 300,000 customers manage their debt, <b>and we're here for you too.</b></p>
+    <p class="p-feature">Last year, we helped over 300,000 customers manage their debt, <b>and we're here for you too.</b>
+    </p>
   </div>
 </ns-panel>
 
@@ -110,23 +114,53 @@ title: Guidance
   </ns-lockup>
 </ns-panel>
 
-<ns-editorial>
-  <h2 slot="heading">Other charities</h2>
-  <p>[Chillwave bicycle rights beard blue bottle, tumeric trust fund portland swag artisan whatever master cleanse tilde.]</p>
-  <h3>British Gas Energy Trust</h3>
-  <p>The British Gas Energy Trust is an independent charity we set up to offer advice, assistance and grants to people who are struggling to pay their bills.</p>
-  <p>Visit their website for further help <a href="#!">britishgasenergytrust.org.uk</a>.</p>
-  <h3>Turn2us</h3>
-  <p>Turn2us is a national charity that can help people in financial hardship gain access to welfare benefits, charitable grants and support services.</p>
-  <p>Visit their website for further help <a href="#!">turn2us.org.uk</a>.</p>
-  <h3>Tully</h3>
-  <p>If you're worried about other bills and would like independent help and advice, try Tully. The digital debt advisor can help you build an accurate online budget in minutes. And you'll get free, independent debt advice to help you take control of your money.</p>
-  <p>Visit their website for further help <a href="#!">tully.co.uk</a>.</p>
-  <h3>Income Max</h3>
-  <p>Income Max are experts at helping people get back on track. They find millions of pounds of unclaimed benefits, grants and other financial help for customers every year.</p>
-  <p>They know what help is available for priority bills like energy, water, rent, mortgages and council tax. Plus they can help you regain your financial freedom and stay in control of your finances, in good times and bad.</p>
-  <p>Visit their website for further help <a href="#!">incomemax.org.uk</a>.</p>
-</ns-editorial>
+<ns-panel>
+  <div class="splash">
+    <h2>Other charities</h2>
+    <p class="p-feature">[Chillwave bicycle rights beard blue bottle, tumeric trust fund portland swag artisan whatever master cleanse tilde.]</p>
+  </div>
+  <div class="splash triple">
+    <ns-card type="flat">
+      <h3 slot="heading">British Gas Energy Trust</h3>
+      <p slot="paragraph">The British Gas Energy Trust is an independent charity we set up to offer advice, assistance and grants to people who are struggling to pay their bills.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Call us</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="flat">
+      <h3 slot="heading">Turn2us</h3>
+      <p slot="paragraph">Turn2us is a national charity that can help people in financial hardship gain access to welfare benefits, charitable grants and support services.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">britishgasenergytrust.org.uk</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="flat">
+      <h3 slot="heading">Tully</h3>
+      <p slot="paragraph">If you're worried about other bills and would like independent help and advice, try Tully. The digital debt advisor can help you build an accurate online budget in minutes. And you'll get free, independent debt advice to help you take control of your money.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">turn2us.org.uk</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="flat">
+      <h3 slot="heading">Income Max</h3>
+      <p slot="paragraph">Income Max are experts at helping people get back on track. They find millions of pounds of unclaimed benefits, grants and other financial help for customers every year.</p>
+      <p slot="paragraph">They know what help is available for priority bills like energy, water, rent, mortgages and council tax. Plus they can help you regain your financial freedom and stay in control of your finances, in good times and bad.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">incomemax.org.uk</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-highlighter type="info">
+      <h2 slot="heading">You can also give us a call</h2>
+      <p>Call us on <a href="tel:+44">0333 333 3333</a> if you need to. <a href="#caveat" aria-label="Additional information 1">1</a></p>
+      <p>For a quick response consider using <a href="#!">Live chat</a>.</p>
+    </ns-highlighter>
+  </div>
+</ns-panel>
 
 <ns-panel>
   <div class="splash">
@@ -140,6 +174,7 @@ title: Guidance
       <ns-expander>
         <h3 slot="heading">Can you reduce my payment for the time being?</h3>
         <p>Authentic lo-fi ethical put a bird on it. Retro fam gochujang <a href="#!">cronut selvage</a> tote bag mumblecore poke small batch mixtape pug portland readymade.</p>
+        <h4>This other heading</h4>
         <p>Fixie bushwick, cornhole hella next level food truck retro intelligentsia. Next level art party godard kickstarter venmo franzen. Helvetica whatever offal craft beer hell of adaptogen</p>
       </ns-expander>
       <ns-expander>
@@ -151,21 +186,11 @@ title: Guidance
   </div>
 </ns-panel>
 
-<ns-panel>
-  <div class="splash triple">
-    <ns-card type="flat">
-      <h3 slot="heading">Give us a call</h3>
-      <p slot="paragraph">[Kombucha migas normcore gastropub literally meh tattooed.]</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="text">Call us</ns-cta>
-      </a>
-    </ns-card>
-    <ns-card type="flat">
-      <h3 slot="heading">Use live chat</h3>
-      <p slot="paragraph">[Whatever master cleanse migas normcore gastropub literally meh  venmo disrupt hell.]</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="text">Message us</ns-cta>
-      </a>
-    </ns-card>
+<ns-caveat>
+  <h2 slot="heading">Additional information</h2>
+  <div slot="caveat">
+    <ol>
+      <li>Lines are oprn between 8am and 8pm Monday to Friday and between 9am and 5pm weekends and bank holidays excluding Christmat day.</li>
+    </ol>
   </div>
-</ns-panel>
+</ns-caveat>
