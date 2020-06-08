@@ -1,6 +1,5 @@
 ---
 title: ns-datepicker
-layout: local
 ---
 
 <ns-panel>
@@ -36,11 +35,18 @@ layout: local
       <input type="text" pattern="[0-9]*">
     </ns-inputter>
 
-    <ns-datepicker label="Date" name="datepicker"></ns-datepicker>
+    <ns-datepicker label="Date" helper="Include some helpful content" name="datepicker"></ns-datepicker>
 
-    <ns-datepicker label="Date" name="datepicker"></ns-datepicker>
+    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
+      <div slot="tip-details">Some information</div>
+    </ns-datepicker>
 
-    <ns-inputter validation='["isPhoneNumber"]'>
+    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date of birth" type="mask" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
+      <div slot="tip-details">Some information</div>
+    </ns-datepicker>
+
+    <ns-inputter validation='["isPhoneNumber"]' helper="Include some helpful content">
+      <div slot="tip-details">Some information</div>
       <label slot="label">Telephone</label>
       <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
     </ns-inputter>
