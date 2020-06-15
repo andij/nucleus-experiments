@@ -26,11 +26,30 @@ branch: e7384e077d27f6a09dc61b9b050916466ea5df96
       <label for="radio">Tinkerbell flight</label>
     </ns-inputter>
   </ns-form>
+</ns-panel>
 
-  <div class="splash">
-    <ns-calendar month="6" year="2020" nummonths="3" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
-  </div>
+<ns-tabs>
+  <ns-tab slot="tab">Three months</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      <ns-calendar month="6" year="2020" nummonths="3" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
+    </div>
+  </ns-panel>
+  <ns-tab slot="tab">Two months</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      <ns-calendar month="6" year="2020" nummonths="2" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
+    </div>
+  </ns-panel>
+  <ns-tab slot="tab">One months</ns-tab>
+  <ns-panel slot="panel">
+    <div class="splash">
+      <ns-calendar month="6" year="2020" nummonths="1" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
+    </div>
+  </ns-panel>
+</ns-tabs>
 
+<ns-panel>
   <div class="splash">
     <ns-table>
       <table>
