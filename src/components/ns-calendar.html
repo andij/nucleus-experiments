@@ -1,27 +1,142 @@
 ---
 title: ns-calendar
-layout: branch
+layout: local
 tools: false
-branch: e7384e077d27f6a09dc61b9b050916466ea5df96
 ---
 
-<ns-tabs>
-  <ns-tab slot="tab">Three months</ns-tab>
-  <ns-panel slot="panel">
-    <div class="splash">
-      <ns-calendar month="6" year="2020" nummonths="3" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
+<pre>HTML calendar</pre>
+
+<ns-panel slot="panel">
+  <div class="splash">
+
+    <div class="calendar">
+      <div>Calendar June 2020</div>
+      <nav>
+        <button>Previous Month</button>
+        <button>Next Month</button>
+      </nav>
+
+      <table>
+        <caption>June 2020</caption>
+        <thead>
+          <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
-  </ns-panel>
-  <ns-tab slot="tab">Two months</ns-tab>
-  <ns-panel slot="panel">
-    <div class="splash">
-      <ns-calendar month="6" year="2020" nummonths="2" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
-    </div>
-  </ns-panel>
-  <ns-tab slot="tab">One months</ns-tab>
-  <ns-panel slot="panel">
-    <div class="splash">
-      <ns-calendar month="6" year="2020" nummonths="1" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
-    </div>
-  </ns-panel>
-</ns-tabs>
+  </div>
+</ns-panel>
+
+<pre>ns-calendar</pre>
+
+<ns-panel slot="panel">
+  <div class="splash">
+    <ns-calendar month="6" year="2020" nummonths="1" mindate="2020-06-10" maxdate="2020-08-05" disableddates=""></ns-calendar>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <ns-form class="splash">
+    <ns-inputter>
+      <label slot="label">Brimfull ash</label>
+      <input type="text" placeholder="e.g. Hay bale harvest">
+    </ns-inputter>
+    <ns-cta type="text">Waterfall squash</ns-cta>
+    <ns-inputter>
+      <label slot="label">Uphill walking</label>
+      <select name="select">
+        <option>Numerous grass</option>
+        <option>Private road driver</option>
+        <option>School playground</option>
+      </select>
+    </ns-inputter>
+    <ns-inputter>
+      <input type="radio" id="radio" name="radio">
+      <label for="radio">Tinkerbell flight</label>
+    </ns-inputter>
+  </ns-form>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-table>
+      <table>
+        <caption hidden="">Financial Report</caption>
+        <thead>
+          <tr>
+            <th scope="col">Column - 0</th>
+            <th scope="col">Column - 1</th>
+            <th scope="col">Column - 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Column - 0</td>
+            <td>Column - 1</td>
+            <td>Column - 2</td>
+          </tr>
+          <tr>
+            <td>Column - 0</td>
+            <td>Column - 1</td>
+            <td>Column - 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </ns-table>
+  </div>
+</ns-panel>
