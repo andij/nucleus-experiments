@@ -1,7 +1,5 @@
 ---
 title: multi-input-form
-layout: branch
-branch: 1add65f1d3f48528458eb0743c76c446cbfa1c64
 ---
 <script>
   function submitForm() {
@@ -22,6 +20,16 @@ branch: 1add65f1d3f48528458eb0743c76c446cbfa1c64
 <ns-panel>
   <div class="splash">
     <ns-form>
+
+      <ns-inputter mask="A------" validation="[&quot;isRequired&quot;]" helper="You'll find your booking code on either your reminder letter or email" name="booking-reference">
+        <div slot="tip-details">
+          <p>Your booking reference format starts with a letter followed by six numbers.</p>
+          <p>An example would be <b>A123456</b>.</p>
+        </div>
+        <label slot="label">Booking reference</label>
+        <input type="text" pattern="(?=.*\d)(?=.*[a-zA-Z]).{7,}">
+      </ns-inputter>
+
       <ns-fieldset legend="Your details">
 
         <ns-inputter>
@@ -43,12 +51,12 @@ branch: 1add65f1d3f48528458eb0743c76c446cbfa1c64
           <input id="dob" type="text">
         </ns-inputter>
 
-        <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you an Economy 7 customer?" name="is-customer">
-          <input type="radio" id="answer-yes" name="name-a" value="yes">
+        <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you an Economy 7 customer?" name="name-b">
+          <input type="radio" id="answer-yes" name="name-b" value="yes">
           <label for="answer-yes">Yes</label>
-          <input type="radio" id="answer-no" name="name-a" value="no">
+          <input type="radio" id="answer-no" name="name-b" value="no">
           <label for="answer-no">No</label>
-          <input type="radio" id="answer-dontknow" name="name-a" value="dontknow">
+          <input type="radio" id="answer-dontknow" name="name-b" value="dontknow">
           <label for="answer-dontknow">I don't know</label>
         </ns-inputter>
 
