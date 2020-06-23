@@ -21,6 +21,11 @@ title: multi-input-form
   <div class="splash">
     <ns-form>
 
+      <ns-highlighter type="error">
+        <h2 slot="heading">Unfortunately, we're having technical problems at the moment.</h2>
+        <p>Either stay on this page and try again in a few moments, or try again later.</p>
+      </ns-highlighter>
+
       <ns-inputter mask="A------" validation="[&quot;isRequired&quot;]" helper="You'll find your booking code on either your reminder letter or email" name="booking-reference">
         <div slot="tip-details">
           <p>Your booking reference format starts with a letter followed by six numbers.</p>
