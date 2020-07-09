@@ -39,6 +39,10 @@ title: bug-1431
       <input type="radio" id="answer-no" name="name-a" value="no">
       <label for="answer-no">After the Submit button is clicked</label>
     </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <label slot="label">Bank account name</label>
+      <input type="text" pattern="[a-zA-Z -]+">
+    </ns-inputter>
     <ns-cta onClick="submitForm()">Submit</ns-cta>
   </ns-form>
 </ns-panel>
