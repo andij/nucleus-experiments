@@ -2,9 +2,9 @@
   "name": "nucleus-experiments",
   "version": "1.0.0",
   "description": "A Nucleus experimental environment using eleventy and less compiler.",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ELEVENTY_ENV=development npx eleventy --serve"
   },
   "repository": {
     "type": "git",
