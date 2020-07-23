@@ -3,8 +3,8 @@ title: ns-inputter
 ---
 
 <ns-panel>
-  <div class="splash">
-    <ns-fieldset legend="This is the heading for my fieldset">
+  <ns-form class="splash">
+    <ns-fieldset legend="This is the legend in the fieldset">
       <ns-inputter validation='["isPhoneNumber"]' helper="This is a place where we can add some helpful content.">
         <div slot="tip-details">
           <p>And if the <b>Tip details</b> exists it's revealed by clicking on the helper.</p>
@@ -13,109 +13,98 @@ title: ns-inputter
         <label slot="label">Telephone</label>
         <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
       </ns-inputter>
+
+      <ns-inputter heading="Choose your excess" value="60">
+        <input type="radio" id="excess-1" name="excess" value="60" checked>
+        <label for="excess-1"><ns-price pence="6000"></ns-price></label>
+        <input type="radio" id="excess-2" name="excess" value="0">
+        <label for="excess-2"><ns-price pence="0"></ns-price></label>
+      </ns-inputter>
+
       <ns-inputter validation='["isPostcode"]'>
         <label slot="label">Postcode</label>
         <input type="text" placeholder="e.g. PO57 0DE" name="postcode" autocomplete="postal-code">
       </ns-inputter>
+
+      <ns-inputter validation='["isRequired"]' heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
+        <input type="radio" id="radio-d-1" name="radio-d" value="first">
+        <label for="radio-d-1">Yes</label>
+        <input type="radio" id="radio-d-2" name="radio-d" value="second">
+        <label for="radio-d-2">No</label>
+      </ns-inputter>
+
+      <ns-inputter heading="Introduce the checkboxes">
+        <input type="checkbox" id="checkbox-b-1" name="thing" value="first">
+        <label for="checkbox-b-1">Yes</label>
+        <input type="checkbox" id="checkbox-b-2" name="thing" value="second">
+        <label for="checkbox-b-2">No</label>
+        <input type="checkbox" id="checkbox-c-2" name="thing" value="third" checked>
+        <label for="checkbox-c-2">Don't know</label>
+      </ns-inputter>
     </ns-fieldset>
-  </div>
+
+    <ns-inputter heading="Cardigan meh asymmetrical ennui?" helper="Flannel subway tile brooklyn lyft cronut shabby chic.">
+      <div slot="tip-details">
+        <p>Roof party mixtape typewriter, wayfarers cloud bread taxidermy leggings.</p>
+        <p>Selfies ugh pour-over, austin unicorn cred etsy food truck enamel pin.</p>
+        <p>Meditation single-origin coffee messenger bag green juice before they sold out..</p>
+      </div>
+      <input type="radio" id="radio-e-1" name="radio-e" value="first" checked>
+      <label for="radio-e-1">Shaman mlkshk taxidermy.</label>
+      <input type="radio" id="radio-e-2" name="radio-e" value="second">
+      <label for="radio-e-2">Selfies ugh</label>
+      <input type="radio" id="radio-e-3" name="radio-e" value="third">
+      <label for="radio-e-3">Artisan selvage</label>
+      <input type="radio" id="radio-e-4" name="radio-e" value="fourth">
+      <label for="radio-e-4">Edison bulb cornhole microdose</label>
+    </ns-inputter>
+
+    <ns-inputter heading="Waistcoat listicle banjo?" helper="Hell of lomo blue bottle, kombucha four dollar toast glossier cred.">
+      <input type="radio" id="radio-f-1" name="radio-f" value="first">
+      <label for="radio-f-1">Twee leggings</label>
+      <p>Enamel pin hot chicken cronut tattooed offal edison bulb.</p>
+      <input type="radio" id="radio-f-2" name="radio-f" value="second" checked>
+      <label for="radio-f-2">Cred distillery blog</label>
+      <p>Edison bulb cornhole microdosing shabby chic.</p>
+      <input type="radio" id="radio-f-3" name="radio-f" value="third">
+      <label for="radio-f-3">Intelligentsia unicorn bespoke</label>
+      <p>Taiyaki gentrify cold-pressed tote bag. Lomo cardigan forage trust fund.</p>
+    </ns-inputter>
+
+    <ns-inputter heading="Are you still using Bootstrap?">
+      <input type="radio" id="radio-g-1" name="radio-g" value="first" checked>
+      <label for="radio-g-1">Humblebrag</label>
+      <p>Pinterest roof party chambray marfa prism tofu lomo mixtape poke.</p>
+      <input type="radio" id="radio-g-2" name="radio-g" value="second">
+      <label for="radio-g-2">Jianbing</label>
+      <p>Succulents twee pour-over farm-to-table, slow-carb mixtape tattooed vinyl four dollar toast la croix fixie selvage.</p>
+    </ns-inputter>
+
+    <ns-inputter heading="One two, pick a few, 99 one thundercats" helper="Who are the Thundercats">
+      <div slot="tip-details">
+        <p>Originally released in the 1980s and twice rebooted in the 2010s, ThunderCats is a cartoon featuring a group of humanoid cat aliens and their adventures on a planet called Third Earth.</p>
+      </div>
+      <input type="checkbox" id="checkbox-c-1" name="checkbox-c" value="thing-a">
+      <label for="checkbox-c-1">Jaga</label>
+      <input type="checkbox" id="checkbox-c-2" name="checkbox-c" value="thing-b" checked>
+      <label for="checkbox-c-2">Lion-O, celiac polaroid green juice chillwave ennui pitchfork</label>
+      <input type="checkbox" id="checkbox-c-3" name="checkbox-c" value="thing-c">
+      <label for="checkbox-c-3">Tygra</label>
+    </ns-inputter>
+
+    <ns-inputter heading="This is my heading">
+      <input type="checkbox" id="checkbox-d-1" name="checkbox-d">
+      <label for="checkbox-d-1">Alpha</label>
+      <input type="checkbox" id="checkbox-d-2" name="checkbox-d" checked>
+      <label for="checkbox-d-2">Bravo</label>
+      <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
+      <label for="checkbox-d-3">Charlie</label>
+    </ns-inputter>
+
+    <ns-cta onClick="submitForm()">Submit</ns-cta>
+
+  </ns-form>
 </ns-panel>
-
-<ns-panel>
-  <div class="splash">
-    <ns-form>
-
-      <ns-fieldset legend="This is the legend in the fieldset">
-        <ns-inputter validation='["isPhoneNumber"]'>
-          <label slot="label">Telephone</label>
-          <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
-        </ns-inputter>
-
-        <ns-inputter validation='["isPostcode"]'>
-          <label slot="label">Postcode</label>
-          <input type="text" placeholder="e.g. PO57 0DE" name="postcode" autocomplete="postal-code">
-        </ns-inputter>
-
-        <ns-inputter heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
-          <input type="radio" id="radio-d-1" name="radio-d" value="first" checked>
-          <label for="radio-d-1">Email</label>
-          <input type="radio" id="radio-d-2" name="radio-d" value="second">
-          <label for="radio-d-2">Text message</label>
-        </ns-inputter>
-
-        <ns-inputter heading="Introduce the checkboxes">
-          <input type="checkbox" id="checkbox-b-1" name="thing" value="first">
-          <label for="checkbox-b-1">Yes</label>
-          <input type="checkbox" id="checkbox-b-2" name="thing" value="second">
-          <label for="checkbox-b-2">No</label>
-          <input type="checkbox" id="checkbox-c-2" name="thing" value="third" checked>
-          <label for="checkbox-c-2">Don't know</label>
-        </ns-inputter>
-      </ns-fieldset>
-
-      <ns-inputter heading="Cardigan meh asymmetrical ennui?" helper="Flannel subway tile brooklyn lyft cronut shabby chic.">
-        <div slot="tip-details">
-          <p>Roof party mixtape typewriter, wayfarers cloud bread taxidermy leggings.</p>
-          <p>Selfies ugh pour-over, austin unicorn cred etsy food truck enamel pin.</p>
-          <p>Meditation single-origin coffee messenger bag green juice before they sold out..</p>
-        </div>
-        <input type="radio" id="radio-e-1" name="radio-e" value="first" checked>
-        <label for="radio-e-1">Shaman mlkshk taxidermy.</label>
-        <input type="radio" id="radio-e-2" name="radio-e" value="second">
-        <label for="radio-e-2">Selfies ugh</label>
-        <input type="radio" id="radio-e-3" name="radio-e" value="third">
-        <label for="radio-e-3">Artisan selvage</label>
-        <input type="radio" id="radio-e-4" name="radio-e" value="fourth">
-        <label for="radio-e-4">Edison bulb cornhole microdose</label>
-      </ns-inputter>
-
-      <ns-inputter heading="Waistcoat listicle banjo?" helper="Hell of lomo blue bottle, kombucha four dollar toast glossier cred.">
-        <input type="radio" id="radio-f-1" name="radio-f" value="first">
-        <label for="radio-f-1">Twee leggings</label>
-        <p>Enamel pin hot chicken cronut tattooed offal edison bulb.</p>
-        <input type="radio" id="radio-f-2" name="radio-f" value="second" checked>
-        <label for="radio-f-2">Cred distillery blog</label>
-        <p>Edison bulb cornhole microdosing shabby chic.</p>
-        <input type="radio" id="radio-f-3" name="radio-f" value="third">
-        <label for="radio-f-3">Intelligentsia unicorn bespoke</label>
-        <p>Taiyaki gentrify cold-pressed tote bag. Lomo cardigan forage trust fund.</p>
-      </ns-inputter>
-
-      <ns-inputter heading="Are you still using Bootstrap?">
-        <input type="radio" id="radio-g-1" name="radio-g" value="first" checked>
-        <label for="radio-g-1">Humblebrag</label>
-        <p>Pinterest roof party chambray marfa prism tofu lomo mixtape poke.</p>
-        <input type="radio" id="radio-g-2" name="radio-g" value="second">
-        <label for="radio-g-2">Jianbing</label>
-        <p>Succulents twee pour-over farm-to-table, slow-carb mixtape tattooed vinyl four dollar toast la croix fixie selvage.</p>
-      </ns-inputter>
-
-      <ns-inputter heading="One two, pick a few, 99 one thundercats" helper="Who are the Thundercats">
-        <div slot="tip-details">
-          <p>Originally released in the 1980s and twice rebooted in the 2010s, ThunderCats is a cartoon featuring a group of humanoid cat aliens and their adventures on a planet called Third Earth.</p>
-        </div>
-        <input type="checkbox" id="checkbox-c-1" name="checkbox-c" value="thing-a">
-        <label for="checkbox-c-1">Jaga</label>
-        <input type="checkbox" id="checkbox-c-2" name="checkbox-c" value="thing-b" checked>
-        <label for="checkbox-c-2">Lion-O, celiac polaroid green juice chillwave ennui pitchfork</label>
-        <input type="checkbox" id="checkbox-c-3" name="checkbox-c" value="thing-c">
-        <label for="checkbox-c-3">Tygra</label>
-      </ns-inputter>
-
-      <ns-inputter heading="This is my heading">
-        <input type="checkbox" id="checkbox-d-1" name="checkbox-d">
-        <label for="checkbox-d-1">Alpha</label>
-        <input type="checkbox" id="checkbox-d-2" name="checkbox-d" checked>
-        <label for="checkbox-d-2">Bravo</label>
-        <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
-        <label for="checkbox-d-3">Charlie</label>
-      </ns-inputter>
-
-    </ns-form>
-  </div>
-</ns-panel>
-
-
 
 <ns-panel>
   <div class="splash">
@@ -144,6 +133,14 @@ title: ns-inputter
       <ns-cta>
         Green juice iceland tumblr street art franzen fingerstache paleo tousled occupy readymade shabby chic mixtape synth vexillologist typewriter
       </ns-cta>
-   </ns-fieldset>
+    </ns-fieldset>
   </div>
 </ns-panel>
+
+<script>
+  function submitForm() {
+    const form = document.querySelector('ns-form');
+    const formData = form.validate();
+    console.log(formData);
+  }
+</script>
