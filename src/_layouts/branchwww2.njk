@@ -1,0 +1,26 @@
+---
+title: Branch development
+branch: USE-COMMIT-HASH
+---
+
+<!doctype html>
+<html class="tools-{{tools}}" lang="en">
+<head>
+  <title>{{title}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="https://www2.bgo.bgdigitaltest.co.uk/nucleus/{{branch}}/styles.min.css">
+</head>
+<body>
+  <div class="ndsn">
+    {% include 'ns-header.njk' %}
+    <main id="content">
+      {{content | safe}}
+    </main>
+    {% include 'ns-footer.njk' %}
+  </div>
+  <script type="text/javascript" src="https://www2.bgo.bgdigitaltest.co.uk/nucleus/{{branch}}/nucleus.min.js"></script>
+  <script src="https://www.britishgas.co.uk/nucleus-experiences/components.min.js"></script>
+</body>
+</html>
