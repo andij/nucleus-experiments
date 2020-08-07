@@ -42,6 +42,26 @@ title: form-1298a-01
         <label for="radio-a-3">I don't know</label>
       </ns-inputter>
     </ns-fieldset>
-    <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
+    <ns-inputter heading="Are you a British Gas customer?">
+      <input type="radio" id="radio-a-1" name="radio-a" value="yes">
+      <label for="radio-a-1">Yes</label>
+      <input type="radio" id="radio-a-2" name="radio-a" value="no">
+      <label for="radio-a-2">No</label>
+      <input type="radio" id="radio-a-3" name="radio-a" value="maybe">
+      <label for="radio-a-3">I don't know</label>
+    </ns-inputter>
+  <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
   </ns-form>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-accordion>
+      <h2 slot="heading">Accordion</h2>
+      <ns-expander>
+        <h3 slot="heading">Expander</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quae iste dolores aspernatur dolorum id architecto aperiam repellendus tempora ut quia accusantium, itaque obcaecati ea voluptatum! Asperiores, minima quidem. Dolore.</p>
+      </ns-expander>
+    </ns-accordion>
+  </div>
 </ns-panel>
