@@ -1,0 +1,56 @@
+---
+title: form-1298b-01
+---
+
+<style>
+  fieldset {
+    padding: 1em;
+    border: 1px solid pink;
+  }
+  input[type="text"] {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    border: 1px solid orange;
+  }
+  button {
+    margin: 1em;
+    padding: 0.5em;
+  }
+</style>
+
+<ns-panel>
+  <div class="splash">
+    <h1>Get a quote journey</h1>
+    <p>Are you completing this for someone else?</p>
+    <p>Please answer these questions with their details rather than your own.</p>
+    <form>
+      <fieldset>
+        <legend>Personal details</legend>
+        <div>
+          <label for="name">Your full name</label>
+          <input id="name" type="text">
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" type="text">
+        </div>
+        <fieldset>
+          <legend>Are you a British Gas customer?</legend>
+          <div>
+            <input id="bgc-yes" name="bgc" type="radio">
+            <label for="bgc-yes">Yes</label>
+          </div>
+          <div>
+            <input id="bgc-no" name="bgc" type="radio">
+            <label for="bgc-no">No</label>
+          </div>
+          <div>
+            <input id="bgc-no" name="bgc" type="radio">
+            <label for="bgc-no">I don't know</label>
+          </div>
+        </fieldset>
+      </fieldset>
+      <button>Submit your answers</button>
+    </form>
+  </div>
+</ns-panel>

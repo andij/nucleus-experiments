@@ -1,0 +1,47 @@
+---
+title: form-1298a-01
+---
+
+<script>
+  function submitForm() {
+    const form = document.querySelector('ns-form');
+    const formData = form.validate();
+    console.log(formData);
+  }
+</script>
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1">Get a quote journey</span>
+  </h1>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <ns-highlighter type="warning">
+      <p slot="heading">Are you completing this for someone else?</p>
+      <p>Please answer these questions with their details rather than your own.</p>
+    </ns-highlighter>
+  </div>
+  <ns-form class="splash">
+    <ns-fieldset legend="Personal details">
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isFullName&quot;]">
+        <label slot="label">Your full name</label>
+        <input type="text">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isEmail&quot;]">
+        <label slot="label">Email address</label>
+        <input type="email">
+      </ns-inputter>
+      <ns-inputter heading="Are you a British Gas customer?">
+        <input type="radio" id="radio-a-1" name="radio-a" value="yes">
+        <label for="radio-a-1">Yes</label>
+        <input type="radio" id="radio-a-2" name="radio-a" value="no">
+        <label for="radio-a-2">No</label>
+        <input type="radio" id="radio-a-3" name="radio-a" value="maybe">
+        <label for="radio-a-3">I don't know</label>
+      </ns-inputter>
+    </ns-fieldset>
+    <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
+  </ns-form>
+</ns-panel>
