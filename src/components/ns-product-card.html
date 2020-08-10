@@ -5,57 +5,150 @@ tools: false
 ---
 
 <ns-panel>
-  <div class="splash">
-    <ns-highlighter type="success">
-      <h2 slot="heading">We have received your meter reading</h2>
-      <p>Thank you for providing your meter reading, it helps to keep your bills accurate.</p>
-    </ns-highlighter>
-  </div>
-  <ns-inputter class="splash triple">
-    <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2">
-      <input type="checkbox" id="checkbox-a-1" name="checkbox-a">
-      <label for="checkbox-a-1">Venmo cliche</label>
+  <div class="splash triple">
+    <ns-product-card keyline="cyan">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
+      <p slot="highlight">Microdosing.</p>
+      <h2 slot="name">Food truck umami kickstarter</h2>
+      <p slot="price-heading">Estimated price</p>
+      <div slot="price">
+        <p><b><ns-price pence="120"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="1440"></ns-price> <span>/ year</span></p>
+      </div>
       <div slot="description">
-        <h3 class="h5 enlighten">Shaman kale chips health goth</h3>
-        <ul class="ul-bullet">
-          <li>Bun echo park coloring book seitan raw denim</li>
-          <li>Swag schlitz ethical</li>
-          <li>Leggings shaman photo booth squid lumber</li>
+        <p>Wolf moon marfa literally kickstarter occupy flexitarian cray intelligentsia.</p>
+        <p>Fanny pack crucifix migas:</p>
+        <ul class="ul-ticked">
+          <li>Echo park iPhone aesthetic.</li>
+          <li>Tumeric stumptown messenger bag keffiyeh twee.</li>
         </ul>
       </div>
-    </ns-selector>
-    <ns-card type="support" image="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2">
-      <h3 slot="heading">Discounts</h3>
-      <p slot="paragraph">Get big discounts on things like family days out and great restaurants, plus some of our other products and services.</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="text">Get an engineer</ns-cta>
-      </a>
-    </ns-card>
-  </ns-inputter>
-  <div class="splash triple">
-    <ns-product-card>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Skateboard synth crucifix</h3>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Jean shorts locavore</h3>
+        <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-cta href="#!" slot="cta">Cloud bread scenester</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="green-light">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
+      <p slot="highlight">Narwhal meggings kinfolk direct trade.</p>
+      <h2 slot="name">Mumblecore poke</h2>
+      <p slot="price-heading">Estimated price</p>
+      <div slot="price">
+        <p><b><ns-price pence="1200"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="14400"></ns-price> <span>/ year</span></p>
+      </div>
+      <div slot="description">
+        <p>Fanny pack crucifix poke small migas:</p>
+        <ul class="ul-ticked">
+          <li>Echo park iPhone aesthetic.</li>
+          <li>Tumeric stumptown messenger bag keffiyeh twee.</li>
+          <li>Bicycle rights artisan literally photo booth.</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Skateboard synth crucifix</h3>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Jean shorts locavore</h3>
+        <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-cta href="#!" slot="cta">Beard roof</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="yellow">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
+      <p slot="highlight">Narwhal meggings kinfolk direct trade.</p>
+      <h2 slot="name">Mumblecore poke</h2>
+      <p slot="price-heading">Estimated price</p>
+      <div slot="price">
+        <p><b><ns-price pence="599"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="7188"></ns-price> <span>/ year</span></p>
+      </div>
+      <div slot="description">
+        <p>Wolf moon marfa literally kickstarter occupy.</p>
+        <p>Fanny pack crucifix poke small migas:</p>
+        <ul class="ul-ticked">
+          <li>Echo park iPhone aesthetic.</li>
+          <li>Bicycle rights artisan literally photo booth.</li>
+          <li>Woke try-hard lo-fi organic vinyl.</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Skateboard synth crucifix</h3>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Jean shorts locavore</h3>
+        <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-cta href="#!" slot="cta">Beard roof</ns-cta>
+    </ns-product-card>
+  </div>
+</ns-panel>
+<!-- 
+<ns-panel>
+  <ns-column squashcourt="1" tenniscourt="2" basketballcourt="4" hockeypitch="4" rugbypitch="4" polofield="4">
+    <ns-product-card keyline="blue">
       <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
       <p slot="highlight">Meggings kinfolk direct trade.</p>
       <h2 slot="name">Brooklyn flannel</h2>
-      <p slot="priceHeading">Actual</p>
+      <p slot="price-heading">Actual price</p>
       <div slot="price">
-        <p><b><ns-price pence="10000"></ns-price></b> / month</p>
-        <p><ns-price pence="120000"></ns-price> / year</p>
+        <p><b><ns-price pence="10000"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="120000"></ns-price> <span>/ year</span></p>
       </div>
       <div slot="description">
         <p>Wolf moon marfa literally kickstarter occupy.</p>
         <p>Fanny pack crucifix migas:</p>
         <ul class="ul-ticked">
           <li>Echo park iPhone aesthetic.</li>
-          <li>tumeric stumptown messenger bag keffiyeh twee.</li>
-          <li>Bicycle rights artisan literally photo booth.</li>
-          <li>Woke try-hard lo-fi organic vinyl.</li>
         </ul>
       </div>
       <ns-expander slot="expander">
-        <h3 slot="heading">Ugh jean shorts locavore</h3>
+        <h3 slot="heading">Jean shorts locavore</h3>
         <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
-        <p>Authentic lo-fi ethical put a bird on it.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
         <p>Tote bag mumblecore poke small batch.</p>
         <p>Cornhole hella next level food truck retro intelligentsia.</p>
         <p>Cold-pressed adaptogen waistcoat.</p>
@@ -68,24 +161,22 @@ tools: false
       <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
       <p slot="highlight">Microdosing.</p>
       <h2 slot="name">Food truck umami kickstarter</h2>
-      <p slot="priceHeading">Estimated</p>
+      <p slot="price-heading">Estimated price</p>
       <div slot="price">
-        <p><b><ns-price pence="1200"></ns-price></b> a month</p>
-        <p><ns-price pence="14400"></ns-price> a year</p>
+        <p><b><ns-price pence="120"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="1440"></ns-price> <span>/ year</span></p>
       </div>
       <div slot="description">
-        <p>Wolf moon marfa literally kickstarter occupy flexitarian cray intelligentsia master cleanse cornhole.</p>
+        <p>Wolf moon marfa literally kickstarter occupy flexitarian cray intelligentsia.</p>
         <p>Fanny pack crucifix migas:</p>
         <ul class="ul-ticked">
           <li>Echo park iPhone aesthetic.</li>
-          <li>tumeric stumptown messenger bag keffiyeh twee.</li>
-          <li>Bicycle rights artisan literally photo booth.</li>
-          <li>Woke try-hard lo-fi organic vinyl.</li>
+          <li>Tumeric stumptown messenger bag keffiyeh twee.</li>
         </ul>
       </div>
       <ns-expander slot="expander">
         <h3 slot="heading">Skateboard synth crucifix</h3>
-        <p>Authentic lo-fi ethical put a bird on it.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
         <p>Tote bag mumblecore poke small batch.</p>
         <p>Cornhole hella next level food truck retro intelligentsia.</p>
         <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
@@ -94,40 +185,38 @@ tools: false
         <p>Bespoke kombucha meditation.</p>
       </ns-expander>
       <ns-expander slot="expander">
-        <h3 slot="heading">Ugh jean shorts locavore</h3>
+        <h3 slot="heading">Jean shorts locavore</h3>
         <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
-        <p>Authentic lo-fi ethical put a bird on it.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
         <p>Tote bag mumblecore poke small batch.</p>
         <p>Cornhole hella next level food truck retro intelligentsia.</p>
         <p>Cold-pressed adaptogen waistcoat.</p>
         <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
         <p>Bespoke kombucha meditation.</p>
       </ns-expander>
-      <ns-cta href="#!" slot="cta">Cloud bread pop-up scenester</ns-cta>
+      <ns-cta href="#!" slot="cta">Cloud bread scenester</ns-cta>
     </ns-product-card>
-    <ns-product-card keyline="green">
+    <ns-product-card keyline="green-light">
       <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
       <p slot="highlight">Narwhal meggings kinfolk direct trade.</p>
       <h2 slot="name">Mumblecore poke</h2>
-      <p slot="priceHeading">Estimated</p>
+      <p slot="price-heading">Estimated price</p>
       <div slot="price">
-        <p><b><ns-price pence="1200"></ns-price></b> / month</p>
-        <p><ns-price pence="14400"></ns-price> / year</p>
+        <p><b><ns-price pence="1200"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="14400"></ns-price> <span>/ year</span></p>
       </div>
       <div slot="description">
-        <p>Wolf moon marfa literally kickstarter occupy.</p>
-        <p>Fanny pack crucifix migas:</p>
+        <p>Fanny pack crucifix poke small migas:</p>
         <ul class="ul-ticked">
           <li>Echo park iPhone aesthetic.</li>
-          <li>tumeric stumptown messenger bag keffiyeh twee.</li>
+          <li>Tumeric stumptown messenger bag keffiyeh twee.</li>
           <li>Bicycle rights artisan literally photo booth.</li>
-          <li>Woke try-hard lo-fi organic vinyl.</li>
         </ul>
       </div>
       <ns-expander slot="expander">
         <h3 slot="heading">Skateboard synth crucifix</h3>
-        <p>Authentic lo-fi ethical put a bird on it.</p>
-        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore batch.</p>
         <p>Cornhole hella next level food truck retro intelligentsia.</p>
         <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
         <p>Cold-pressed adaptogen waistcoat.</p>
@@ -135,9 +224,9 @@ tools: false
         <p>Bespoke kombucha meditation.</p>
       </ns-expander>
       <ns-expander slot="expander">
-        <h3 slot="heading">Ugh jean shorts locavore</h3>
+        <h3 slot="heading">Jean shorts locavore</h3>
         <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
-        <p>Authentic lo-fi ethical put a bird on it.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
         <p>Tote bag mumblecore poke small batch.</p>
         <p>Cornhole hella next level food truck retro intelligentsia.</p>
         <p>Cold-pressed adaptogen waistcoat.</p>
@@ -146,5 +235,45 @@ tools: false
       </ns-expander>
       <ns-cta href="#!" slot="cta">Beard roof</ns-cta>
     </ns-product-card>
-  </div>
-</ns-panel>
+    <ns-product-card keyline="yellow">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="Description of image" ratio="16x9"></ns-image>
+      <p slot="highlight">Narwhal meggings kinfolk direct trade.</p>
+      <h2 slot="name">Mumblecore poke</h2>
+      <p slot="price-heading">Estimated price</p>
+      <div slot="price">
+        <p><b><ns-price pence="599"></ns-price></b> <span>/ month</span></p>
+        <p><ns-price pence="7188"></ns-price> <span>/ year</span></p>
+      </div>
+      <div slot="description">
+        <p>Wolf moon marfa literally kickstarter occupy.</p>
+        <p>Fanny pack crucifix poke small migas:</p>
+        <ul class="ul-ticked">
+          <li>Echo park iPhone aesthetic.</li>
+          <li>Bicycle rights artisan literally photo booth.</li>
+          <li>Woke try-hard lo-fi organic vinyl.</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Skateboard synth crucifix</h3>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Jean shorts locavore</h3>
+        <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+        <p>Authentic lo-fi ethical put a bird on.</p>
+        <p>Tote bag mumblecore poke small batch.</p>
+        <p>Cornhole hella next level food truck retro intelligentsia.</p>
+        <p>Cold-pressed adaptogen waistcoat.</p>
+        <p>Meh forage actually cliche tilde, roof party butcher shabby.</p>
+        <p>Bespoke kombucha meditation.</p>
+      </ns-expander>
+      <ns-cta href="#!" slot="cta">Beard roof</ns-cta>
+    </ns-product-card>
+  </ns-column>
+</ns-panel> -->
