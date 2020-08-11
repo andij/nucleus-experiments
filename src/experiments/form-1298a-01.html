@@ -1,5 +1,7 @@
 ---
 title: Nucleus form example
+layout: branch
+branch: def9536b9b9b21d9bc80887641b85f677c1384fd
 ---
 
 <script>
@@ -33,7 +35,7 @@ title: Nucleus form example
         <label slot="label">Email address</label>
         <input type="email">
       </ns-inputter>
-      <ns-inputter heading="Are you a British Gas customer?">
+      <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you a British Gas customer?">
         <input type="radio" id="bgc-yes" name="bgc" value="yes">
         <label for="bgc-yes">Yes</label>
         <input type="radio" id="bgc-no" name="bgc" value="no">
@@ -42,6 +44,6 @@ title: Nucleus form example
         <label for="bgc-maybe">I don't know</label>
       </ns-inputter>
     </ns-fieldset>
-    <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
+  <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
   </ns-form>
 </ns-panel>
