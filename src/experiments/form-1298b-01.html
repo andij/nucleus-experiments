@@ -1,8 +1,11 @@
 ---
-title: form-1298b-01
+title: Vanilla form example
 ---
 
 <style>
+  .vanilla form {
+    font-size: 1.2em;
+  }
   .vanilla fieldset {
     padding: 1em;
     border: 1px solid pink;
@@ -28,11 +31,11 @@ title: form-1298b-01
         <legend>Personal details</legend>
         <div>
           <label for="name">Your full name</label>
-          <input id="name" type="text">
+          <input id="name" type="text" required>
         </div>
         <div>
           <label for="email">Email address</label>
-          <input id="email" type="text">
+          <input id="email" type="text" required>
         </div>
         <fieldset>
           <legend>Are you a British Gas customer?</legend>

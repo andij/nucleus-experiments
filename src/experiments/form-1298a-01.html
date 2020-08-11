@@ -1,5 +1,5 @@
 ---
-title: form-1298a-01
+title: Nucleus form example
 ---
 
 <script>
@@ -19,7 +19,7 @@ title: form-1298a-01
 <ns-panel>
   <div class="splash">
     <ns-highlighter type="warning">
-      <p slot="heading">Are you completing this for someone else?</p>
+      <h2 slot="heading">Are you completing this for someone else?</h2>
       <p>Please answer these questions with their details rather than your own.</p>
     </ns-highlighter>
   </div>
@@ -34,12 +34,12 @@ title: form-1298a-01
         <input type="email">
       </ns-inputter>
       <ns-inputter heading="Are you a British Gas customer?">
-        <input type="radio" id="radio-a-1" name="radio-a" value="yes">
-        <label for="radio-a-1">Yes</label>
-        <input type="radio" id="radio-a-2" name="radio-a" value="no">
-        <label for="radio-a-2">No</label>
-        <input type="radio" id="radio-a-3" name="radio-a" value="maybe">
-        <label for="radio-a-3">I don't know</label>
+        <input type="radio" id="bgc-yes" name="bgc" value="yes">
+        <label for="bgc-yes">Yes</label>
+        <input type="radio" id="bgc-no" name="bgc" value="no">
+        <label for="bgc-no">No</label>
+        <input type="radio" id="bgc-maybe" name="bgc" value="maybe">
+        <label for="bgc-maybe">I don't know</label>
       </ns-inputter>
     </ns-fieldset>
     <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
