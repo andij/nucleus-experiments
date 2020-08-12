@@ -4,18 +4,44 @@ layout: branch
 branch: 9e9ceb4e7d47f814e18ae2358a44a33b963d2af9
 ---
 
-<script>
-  function submitForm() {
-    const form = document.querySelector('ns-form');
-    const formData = form.validate();
-    console.log(formData);
-  }
-</script>
-
-<ns-panel>
-  <div class="splash">
-    <h2>Within <code>ns-fieldset</code></h2>
+<pre>Radio buttons outside ns-fieldset</pre>
+<div>
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Subheading.</span>
+    <span class="h1">Heading</span>
+  </h1>
+  <div slot="paragraph">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit labore earum voluptatibus impedit id explicabo.</p>
   </div>
+</ns-landmark>
+<ns-panel>
+  <ns-form class="splash">
+    <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you an Economy 7 customer?" name="name-b">
+      <input type="radio" id="answer-yes" name="name-b" value="yes">
+      <label for="answer-yes">Yes</label>
+      <input type="radio" id="answer-no" name="name-b" value="no">
+      <label for="answer-no">No</label>
+      <input type="radio" id="answer-dontknow" name="name-b" value="dontknow">
+      <label for="answer-dontknow">I don't know</label>
+    </ns-inputter>
+    <ns-cta onclick="submitForm()">Continue</ns-cta>
+  </ns-form>
+</ns-panel>
+</div>
+
+<pre>Radio buttons inside ns-fieldset</pre>
+<div>
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Subheading.</span>
+    <span class="h1">Heading</span>
+  </h1>
+  <div slot="paragraph">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit labore earum voluptatibus impedit id explicabo.</p>
+  </div>
+</ns-landmark>
+<ns-panel>
   <ns-form class="splash">
     <ns-fieldset legend="Your details">
       <ns-inputter>
@@ -43,39 +69,14 @@ branch: 9e9ceb4e7d47f814e18ae2358a44a33b963d2af9
         <label for="answer-dontknow">I don't know</label>
       </ns-inputter>
     </ns-fieldset>
-    <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
+    <ns-cta onclick="submitForm()">Continue</ns-cta>
   </ns-form>
 </ns-panel>
-
-<ns-panel>
-  <div class="splash">
-    <h2>Without <code>ns-fieldset</code></h2>
-  </div>
-  <ns-form class="splash">
-    <ns-inputter>
-      <label slot="label">Raw denim edison bulb</label>
-      <input type="text" placeholder="e.g. Copper mug mixtape">
-    </ns-inputter>
-    <ns-inputter helper="So we can send you love letters">
-      <div slot="tip-details">
-        <p>Organic irony slow-carb bicycle rights mixtape brooklyn fanny pack.</p>
-        <p>Cliche small batch skateboard lo-fi single-origin coffee crucifix kinfolk truffaut vice bicycle rights mlkshk raw denim leggings bitters trust fund.</p>
-      </div>
-      <label slot="label">Email address</label>
-      <input type="email" name="email" placeholder="e.g. email@address.co.uk" autocomplete="email">
-    </ns-inputter>
-    <ns-inputter validation="[&quot;isRequired&quot;]" name="dob" mask="dd/mm/yyyy" separator="/">
-      <label for="dob" slot="label">Date of birth</label>
-      <input id="dob" type="text">
-    </ns-inputter>
-    <ns-inputter validation="[&quot;isRequired&quot;]" heading="Are you an Economy 7 customer?" name="name-b">
-      <input type="radio" id="answer-yes" name="name-b" value="yes">
-      <label for="answer-yes">Yes</label>
-      <input type="radio" id="answer-no" name="name-b" value="no">
-      <label for="answer-no">No</label>
-      <input type="radio" id="answer-dontknow" name="name-b" value="dontknow">
-      <label for="answer-dontknow">I don't know</label>
-    </ns-inputter>
-    <ns-cta onclick="submitForm()">Submit your answers</ns-cta>
-  </ns-form>
-</ns-panel>
+</div>
+<script>
+  function submitForm() {
+    const form = document.querySelector('ns-form');
+    const formData = form.validate();
+    console.log(formData);
+  }
+</script>
