@@ -4,8 +4,8 @@ layout: branch
 branch: 9e9ceb4e7d47f814e18ae2358a44a33b963d2af9
 ---
 
-<pre>Radio buttons outside ns-fieldset</pre>
-<div>
+<pre>Radio button group without ns-fieldset</pre>
+
 <ns-landmark type="lakeside">
   <h1 slot="heading">
     <span class="h5">Subheading.</span>
@@ -28,10 +28,9 @@ branch: 9e9ceb4e7d47f814e18ae2358a44a33b963d2af9
     <ns-cta onclick="submitForm()">Continue</ns-cta>
   </ns-form>
 </ns-panel>
-</div>
 
-<pre>Radio buttons inside ns-fieldset</pre>
-<div>
+<pre>Radio button group ns-fieldset</pre>
+
 <ns-landmark type="lakeside">
   <h1 slot="heading">
     <span class="h5">Subheading.</span>
@@ -72,7 +71,7 @@ branch: 9e9ceb4e7d47f814e18ae2358a44a33b963d2af9
     <ns-cta onclick="submitForm()">Continue</ns-cta>
   </ns-form>
 </ns-panel>
-</div>
+
 <script>
   function submitForm() {
     const form = document.querySelector('ns-form');
