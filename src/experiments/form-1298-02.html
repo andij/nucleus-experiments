@@ -1,0 +1,49 @@
+---
+title: Nucleus form example
+layout: branch
+branch: 3c6e372e60c927542f97f201b8e29f4fc43fbe09
+---
+
+<pre>Radio button group outside ns-fieldset</pre>
+
+<ns-panel>
+  <ns-form class="splash">
+    <ns-fieldset legend="Skateboard raclette">
+      <ns-inputter>
+        <label slot="label">Raw edison bulb</label>
+        <input type="text">
+      </ns-inputter>
+    </ns-fieldset>
+    <ns-inputter validation="[&quot;isRequired&quot;]" heading="Chambray authentic readymade?" name="name-a">
+      <input type="radio" id="answer-a-yes" name="name-a" value="yes">
+      <label for="answer-a-yes">Yes</label>
+      <input type="radio" id="answer-a-no" name="name-a" value="no">
+      <label for="answer-a-no">No</label>
+      <input type="radio" id="answer-a-dontknow" name="name-a" value="dontknow">
+      <label for="answer-a-dontknow">I don't know</label>
+    </ns-inputter>
+    <ns-cta>Continue</ns-cta>
+  </ns-form>
+</ns-panel>
+
+<pre>Radio button group inside ns-fieldset</pre>
+
+<ns-panel>
+  <ns-form class="splash">
+    <ns-fieldset legend="Skateboard raclette">
+      <ns-inputter>
+        <label slot="label">Raw edison bulb</label>
+        <input type="text">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;]" heading="Chambray authentic readymade?" name="name-b">
+        <input type="radio" id="answer-b-yes" name="name-b" value="yes">
+        <label for="answer-b-yes">Yes</label>
+        <input type="radio" id="answer-b-no" name="name-b" value="no">
+        <label for="answer-b-no">No</label>
+        <input type="radio" id="answer-b-dontknow" name="name-b" value="dontknow">
+        <label for="answer-b-dontknow">I don't know</label>
+      </ns-inputter>
+    </ns-fieldset>
+    <ns-cta>Continue</ns-cta>
+  </ns-form>
+</ns-panel>
