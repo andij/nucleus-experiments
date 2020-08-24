@@ -1,0 +1,62 @@
+---
+title: ns-appointment-picker
+layout: branch
+branch: bfefdf954600cc2769b6e168997d359330f3fa37
+---
+
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Prototype.</span>
+    <span class="h1">Picking an appointment</span>
+  </h1>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <h2>A couple of ns-selectors</h2>
+    <p class="p-feature">Including a short paragraph to introduce the page.</p>
+  </div>
+  <ns-form class="splash">
+    <ns-inputter class="triple" heading="Inputter heading size h4" value="">
+      <ns-selector>
+        <input type="radio" id="radio-a-1" name="radio-a">
+        <label for="radio-a-1">Cliche leggings</label>
+        <div slot="description">
+          <h3 class="h5 enlighten">Shaman chips health </h3>
+          <p>Bun echo park coloring book seitan raw denim swag schlitz ethical leggings shaman photo booth squid lumber</p>
+        </div>
+      </ns-selector>
+      <ns-selector>
+        <input type="radio" id="radio-a-2" name="radio-a">
+        <label for="radio-a-2">Pug enamel pin post</label>
+        <div slot="description">
+          <h3 class="h5 enlighten">Selvage cats celiac and marmite</h3>
+          <p>Tote bag marfa quinoa bilde truffaut drinking vinegar gentrify taxidermy selvage coloring</p>
+        </div>
+      </ns-selector>
+    </ns-inputter>
+  </ns-form>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-appointment-picker></ns-appointment-picker>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <ns-form class="splash">
+    <h2 class="h4" style="margin-bottom: 0;">Select your date and time</h2>
+    <ns-calendar month="8" year="2020" nummonths="1" mindate="2020-08-26" maxdate="2020-10-20"></ns-calendar>
+    <h2 class="h6 enlighten" style="margin-bottom: 0;">Available times</h2>
+    <ns-inputter heading="Wednesday 26 August 2020" value="">
+      <!-- <div slot="tip-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, enim cupiditate? Quo cupiditate, ut ad esse placeat dolores maxime dolorem repellat provident quaerat.</div> -->
+      <input type="radio" id="radio-b-1" name="radio-b">
+      <label for="radio-b-1">8am to 1pm</label>
+      <input type="radio" id="radio-b-2" name="radio-b">
+      <label for="radio-b-2">12pm to 6pm</label>
+      <input type="radio" id="radio-b-3" name="radio-b">
+      <label for="radio-b-3">10am to 2pm</label>
+    </ns-inputter>
+  </ns-form>
+</ns-panel>
