@@ -1,7 +1,8 @@
 ---
 title: ns-appointment-picker
 layout: branch
-branch: 888dd04d91ffaded1fdab8acef32553bad6dca48
+tools: false
+branch: 1efbb19afdefc93f2dfd461ef46cc6ad5afcfb7a
 ---
 
 <ns-landmark type="hillside">
@@ -13,11 +14,11 @@ branch: 888dd04d91ffaded1fdab8acef32553bad6dca48
 
 <ns-panel>
   <div class="splash">
-    <h2>A couple of ns-selectors</h2>
-    <p class="p-feature">Including a short paragraph to introduce the page.</p>
+    <h2 class="h2">Man bun bitters hell of readymade</h2>
+    <p class="p-feature">Deamcatcher organic aesthetic sartorial gastropub. Lomo air plant keffiyeh quinoa pug art party austin viral distillery.</p>
   </div>
   <ns-form class="splash">
-    <ns-inputter class="triple" heading="Inputter heading size h4" value="">
+    <ns-inputter class="triple" heading="Schlitz booth pug quinoa pug" value="">
       <ns-selector>
         <input type="radio" id="radio-a-1" name="radio-a">
         <label for="radio-a-1">Cliche leggings</label>
@@ -35,34 +36,31 @@ branch: 888dd04d91ffaded1fdab8acef32553bad6dca48
         </div>
       </ns-selector>
     </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <label slot="label">Squid</label>
+      <input autocomplete="honorific-prefix" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;,&quot;isFirstName&quot;]">
+      <label slot="label">Fam glossier</label>
+      <input autocomplete="given-name" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;,&quot;isLastName&quot;]">
+      <label slot="label">Heirloom</label>
+      <input autocomplete="family-name" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <label slot="label">Narwhal</label>
+      <input autocomplete="email" type="email" placeholder="e.g. boulger@creekginger.co.uk">
+    </ns-inputter>
   </ns-form>
 </ns-panel>
 
 <ns-panel>
   <div class="splash">
-    <ns-appointment-picker></ns-appointment-picker>
+    <h2 class="h3">Optional introduction to the appointment picker</h2>
   </div>
-</ns-panel>
-
-<ns-panel>
-  <div class="splash">
-    <ns-slot-picker slotdata="[{&quot;date&quot;:&quot;2020-01-02&quot;,&quot;slots&quot;:[]}]"></ns-slot-picker>
-  </div>
-</ns-panel>
-
-<ns-panel>
   <ns-form class="splash">
-    <h2 class="h4" style="margin-bottom: 0;">Select your date and time</h2>
-    <ns-calendar month="8" year="2020" nummonths="1" mindate="2020-08-26" maxdate="2020-10-20"></ns-calendar>
-    <h2 class="h6 enlighten" style="margin-bottom: 0;">Available times</h2>
-    <ns-inputter heading="Wednesday 26 August 2020" value="">
-      <!-- <div slot="tip-details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, enim cupiditate? Quo cupiditate, ut ad esse placeat dolores maxime dolorem repellat provident quaerat.</div> -->
-      <input type="radio" id="radio-b-1" name="radio-b">
-      <label for="radio-b-1">8am to 1pm</label>
-      <input type="radio" id="radio-b-2" name="radio-b">
-      <label for="radio-b-2">12pm to 6pm</label>
-      <input type="radio" id="radio-b-3" name="radio-b">
-      <label for="radio-b-3">10am to 2pm</label>
-    </ns-inputter>
+    <ns-appointment-picker></ns-appointment-picker>
+    <ns-cta type="direct">Juice subway tile</ns-cta>
   </ns-form>
 </ns-panel>
