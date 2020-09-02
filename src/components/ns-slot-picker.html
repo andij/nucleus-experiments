@@ -1,0 +1,105 @@
+---
+title: ns-slot-picker
+layout: branch
+tools: false
+branch: dac430b86ec1a40ce66d4fa0330086cf7d0e3cee
+---
+
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Prototype.</span>
+    <span class="h1">Picking a slot</span>
+  </h1>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <h2 class="h2">Man bun bitters hell of readymade</h2>
+    <p class="p-feature">Deamcatcher organic aesthetic sartorial gastropub. Lomo air plant keffiyeh quinoa pug art party austin viral distillery.</p>
+  </div>
+  <ns-form class="splash">
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <label slot="label">Squid</label>
+      <input autocomplete="honorific-prefix" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;,&quot;isFirstName&quot;]">
+      <label slot="label">Fam glossier</label>
+      <input autocomplete="given-name" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;,&quot;isLastName&quot;]">
+      <label slot="label">Heirloom</label>
+      <input autocomplete="family-name" type="text">
+    </ns-inputter>
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <label slot="label">Narwhal</label>
+      <input autocomplete="email" type="email" placeholder="e.g. boulger@creekginger.co.uk">
+    </ns-inputter>
+  </ns-form>
+</ns-panel>
+
+<pre>ns-slot-picker</pre>
+
+<ns-panel>
+  <div class="splash">
+    <ns-slot-picker slotdata="[{&quot;date&quot;:&quot;2020-01-01&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;slot-1&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;slot-2&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;slot-3&quot;}]},{&quot;date&quot;:&quot;2020-01-02&quot;,&quot;slots&quot;:[]},{&quot;date&quot;:&quot;2020-01-03&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;slot-1&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;slot-2&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;slot-3&quot;}]}]"></ns-slot-picker>
+  </div>
+</ns-panel>
+
+<pre>Two ns-inputters, all radios having the same `name` value</pre>
+
+<style>
+  .mockup span {
+    display: block;
+    font-size: 1em;
+    font-family: "BG Flame Bold", sans-serif;
+    margin-bottom: 0.5em;
+    width: fit-content;
+    max-width: 32em;
+  }
+  .mockup .message {
+    font-family: "BG Flame Regular", sans-serif;
+  }
+  .mockup .available {
+    font-family: "BG Flame Light", sans-serif;
+  }
+  @media (min-width:720px) {
+    .mockup span {
+      font-size: 1.125em;
+    }
+  }
+  @media (min-width:1080px) {
+    .mockup span {
+      font-size: 1.25em;
+    }
+  }
+</style>
+
+<ns-panel>
+  <div class="mockup">
+    <span class="available">Available times</span>
+  </div>
+  <ns-form class="splash">
+    <ns-fieldset>
+      <ns-inputter validation='["isRequired"]' heading="Wednesday 1 january">
+        <input type="radio" id="radio-set-1" name="radio-set" value="2020-01-01-slot-1">
+        <label for="radio-set-1">9am to 12pm</label>
+        <input type="radio" id="radio-set-2" name="radio-set" value="2020-01-01-slot-2">
+        <label for="radio-set-2">10am to 1pm</label>
+        <input type="radio" id="radio-set-3" name="radio-set" value="2020-01-01-slot-3">
+        <label for="radio-set-3">11am to 2pm</label>
+      </ns-inputter>
+      <div class="mockup">
+        <span class="date">Thursday 2 January</span>
+        <span class="message">No slots available for this date</span>
+      </div>
+      <ns-inputter validation='["isRequired"]' heading="Friday 3 January">
+        <input type="radio" id="radio-set-4" name="radio-set" value="2020-01-03-slot-1">
+        <label for="radio-set-4">9am to 12pm</label>
+        <input type="radio" id="radio-set-5" name="radio-set" value="2020-01-03-slot-2">
+        <label for="radio-set-5">10am to 1pm</label>
+        <input type="radio" id="radio-set-6" name="radio-set" value="2020-01-03-slot-3">
+        <label for="radio-set-6">11am to 2pm</label>
+      </ns-inputter>
+    </ns-fieldset>
+  </ns-form>
+</ns-panel>
