@@ -1,5 +1,6 @@
 tools-header {
   position: absolute;
+  padding-right: 1.5em;
   top: 0;
   z-index: 4;
 }
@@ -7,6 +8,15 @@ tools-header::before {
   position: absolute;
   top: 0.5em;
   left: 0.5em;
+}
+.home {
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0.5em;
+  top: 0;
+  right: 0;
+  text-decoration: none !important;
 }
 .reload {
   display: block;
@@ -93,6 +103,7 @@ tools-header::before {
 .tools-true .splish,
 .tools-true .splash,
 .tools-true .splosh,
+.tools-true .splush,
 .tools-true .ns-panel {
   position: relative;
 }
@@ -116,6 +127,7 @@ tools-header::before {
 .tools-true .splish::after,
 .tools-true .splash::after,
 .tools-true .splosh::after,
+.tools-true .splush::after,
 .tools-true .ns-panel::after {
   content: attr(class);
   background-color: rgba(255, 255, 255, 0.375);
@@ -180,7 +192,10 @@ tools-header::before {
 .tools-true ns-editorial .splash,
 .tools-true ns-panel .splosh,
 .tools-true ns-landmark .splosh,
-.tools-true ns-editorial .splosh {
+.tools-true ns-editorial .splosh,
+.tools-true ns-panel .splush,
+.tools-true ns-landmark .splush,
+.tools-true ns-editorial .splush {
   position: relative;
 }
 .tools-true ns-panel .splish::before,
@@ -191,7 +206,10 @@ tools-header::before {
 .tools-true ns-editorial .splash::before,
 .tools-true ns-panel .splosh::before,
 .tools-true ns-landmark .splosh::before,
-.tools-true ns-editorial .splosh::before {
+.tools-true ns-editorial .splosh::before,
+.tools-true ns-panel .splush::before,
+.tools-true ns-landmark .splush::before,
+.tools-true ns-editorial .splush::before {
   position: absolute;
   z-index: -1;
   content: '';
