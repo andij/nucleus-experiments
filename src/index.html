@@ -90,6 +90,13 @@ layout: live
         <li><a href="{{ template.url }}">{{ template.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
+
+      <h2 class="h5">Columns</h2>
+      <ul>
+        {%- for column in collections.columns %}
+        <li><a href="{{ column.url }}">{{ column.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
     </nav>
   </div>
 </ns-panel>
