@@ -1,28 +1,20 @@
 tools-header {
   position: absolute;
-  padding-right: 1.5em;
+  display: flex;
   top: 0;
   z-index: 4;
 }
 tools-header::before {
   position: absolute;
-  top: 0.5em;
-  left: 0.5em;
+  top: 0.25em;
+  left: 2em;
 }
-.home {
-  position: absolute;
-  width: 2.5em;
-  height: 2.5em;
-  padding: 0.5em;
-  top: 0;
-  right: 0;
+tools-header .home,
+tools-header .reload {
+  width: 1.75em;
+  height: 1.75em;
+  padding: 0.25em;
   text-decoration: none !important;
-}
-.reload {
-  display: block;
-  width: 2.5em;
-  height: 2.5em;
-  text-indent: -99em;
 }
 tools-header::before {
   pointer-events: none;
