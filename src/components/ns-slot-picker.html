@@ -1,8 +1,7 @@
 ---
 title: ns-slot-picker
 layout: branch
-tools: false
-branch: dac430b86ec1a40ce66d4fa0330086cf7d0e3cee
+branch: 321bb3f30bb7c3f01e241dd8757b6378034cf418
 ---
 
 <ns-landmark type="hillside">
@@ -45,70 +44,22 @@ branch: dac430b86ec1a40ce66d4fa0330086cf7d0e3cee
   </div>
 </ns-panel>
 
-<pre>Two ns-inputters, all radios having the same `name` value</pre>
+<pre>ns-calendar</pre>
 
-<style>
-  .mockup span {
-    display: block;
-    font-size: 1em;
-    font-family: "BG Flame Bold", sans-serif;
-    margin-bottom: 0.5em;
-    width: fit-content;
-    max-width: 32em;
-  }
+<ns-panel slot="panel">
+  <div class="splash">
+    <ns-calendar month="10" year="2020" nummonths="1" mindate="2020-09-03" maxdate="2020-12-20" disableddates="[&quot;2020-10-08&quot;,&quot;2020-10-09&quot;,&quot;2020-10-15&quot;, &quot;2020-10-16&quot;]"></ns-calendar>
+  </div>
+</ns-panel>
 
-  .mockup .unavailable {
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-
-  .mockup .message {
-    font-family: "BG Flame Regular", sans-serif;
-  }
-
-  .mockup .available {
-    font-family: "BG Flame Light", sans-serif;
-  }
-
-  @media (min-width:720px) {
-    .mockup span {
-      font-size: 1.125em;
-    }
-  }
-
-  @media (min-width:1080px) {
-    .mockup span {
-      font-size: 1.25em;
-    }
-  }
-
-</style>
+<pre>ns-appointment-picker</pre>
 
 <ns-panel>
-  <ns-form class="splash mockup">
-    <ns-fieldset>
-      <ns-inputter validation='["isRequired"]' heading="Available times">
-        <span class="heading">Wednesday 1 January</span>
-        <input type="radio" id="radio-set-1" name="radio-set" value="2020-01-01-slot-1">
-        <label for="radio-set-1">9am to 12pm</label>
-        <input type="radio" id="radio-set-2" name="radio-set" value="2020-01-01-slot-2">
-        <label for="radio-set-2">10am to 1pm</label>
-        <input type="radio" id="radio-set-3" name="radio-set" value="2020-01-01-slot-3">
-        <label for="radio-set-3">11am to 2pm</label>
-
-        <div class="unavailable">
-          <span class="heading">Thursday 2 January</span>
-          <span class="message">No slots available for this date</span>
-        </div>
-
-        <span class="heading">Friday 3 January</span>
-        <input type="radio" id="radio-set-4" name="radio-set" value="2020-01-03-slot-1">
-        <label for="radio-set-4">9am to 12pm</label>
-        <input type="radio" id="radio-set-5" name="radio-set" value="2020-01-03-slot-2">
-        <label for="radio-set-5">10am to 1pm</label>
-        <input type="radio" id="radio-set-6" name="radio-set" value="2020-01-03-slot-3">
-        <label for="radio-set-6">11am to 2pm</label>
-      </ns-inputter>
-    </ns-fieldset>
+  <div class="splash">
+    <h2 class="h3">Optional introduction to the appointment picker</h2>
+  </div>
+  <ns-form class="splash">
+    <ns-appointment-picker></ns-appointment-picker>
+    <ns-cta type="direct">Juice subway tile</ns-cta>
   </ns-form>
 </ns-panel>
