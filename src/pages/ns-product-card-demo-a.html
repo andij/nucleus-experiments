@@ -1,0 +1,760 @@
+---
+title: A ns-product-card-demo
+layout: branch
+branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
+tools: false
+---
+
+<ns-panel>
+  <ns-lockup type="lockjaw">
+    <h1 slot="heading">
+      <span class="h5">HomeCare.</span>
+      <span class="h1 enlighten"><b>Boiler and heating cover</b> for your home</span>
+    </h1>
+    <div slot="paragraph">
+      <p>Get the peace of mind you need with complete protection from our HomeCare range or choose a single-cover product. All our cover includes:</p>
+      <p><a href="../ns-product-card-demo-b">Swap to demo B</a></p>
+    </div>
+    <div slot="paragraph">
+      <ul class="ul-ticked">
+        <li>Engineer expertise as a standard</li>
+        <li>Unlimited callouts</li>
+        <li>Parts and labour cost included</li>
+        <li>A 24/hr customer helpline</li>
+        <li>Change your cover anytime</li>
+      </ul>
+    </div>
+    <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/95891573-2a7f7000-0d7d-11eb-9e71-2f58272651a6.jpg"></ns-image>
+  </ns-lockup>
+</ns-panel>
+
+<ns-panel decoration="invert-concave-grey-light" class="homecare-packages">
+  <div class="splash">
+    <h2>Our HomeCare packages</h2>
+  </div>
+  <div class="splash">
+    <h3>Why choose HomeCare?</h3>
+    <p class="p-normal">One of our friendly, expert engineers will pop in to make sure everything’s in tip-top condition once a year, alongside your cover to protect you against any unwanted surprises.</p>
+  </div>
+  <ns-form class="splash">
+    <ns-inputter heading="Choose your excess" helper="What does excess mean?" class="excess" value="60">
+      <div slot="tip-details">
+        <p>This is the fee you will pay once for each completed repair. The higher the excess fee you select, the lower the monthly or annual price you pay.</p>
+      </div>
+      <input type="radio" id="excess-1" name="excess" value="60">
+      <label for="excess-1">
+        <ns-price pence="6000"></ns-price>
+      </label>
+      <input type="radio" id="excess-2" name="excess" value="zero">
+      <label for="excess-2">
+        <ns-price pence="0"></ns-price>
+      </label>
+    </ns-inputter>
+  </ns-form>
+  <ns-column basketballcourt="2" hockeypitch="4">
+    <ns-product-card keyline="green-light">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="image" ratio="16x9"></ns-image>
+      <h2 slot="name">Product Name</h2>
+      <h3 slot="price-heading">Estimated</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="1400"></ns-price>
+          </b><span> / month</span></p>
+        <p>
+          <ns-price pence="15600"></ns-price> / year
+        </p>
+      </div>
+      <div slot="description">
+        <ul class="ul-ticked">
+          <li>Full boiler service</li>
+          <li>Boiler and controls</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas boiler and controls , including your thermostat and programmer</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Accidental Damage</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers or taps</li>
+          <li>Repairs to the central heating system, including radiators</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="#!" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+
+    <ns-product-card keyline="blue">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="image" ratio="16x9"></ns-image>
+      <h2 slot="name">Standard</h2>
+      <h3 slot="price-heading">Estimated price</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="1700"></ns-price>
+          </b><span> / month</span></p>
+        <p>
+          <ns-price pence="19200"></ns-price> / year
+        </p>
+      </div>
+      <div slot="description">
+        <ul class="ul-ticked">
+          <li>Full boiler service</li>
+          <li>Boiler and controls</li>
+          <li>Central heating</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Accidental Damage</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers or taps</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="yellow">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="image" ratio="16x9"></ns-image>
+      <h2 slot="name">Plus</h2>
+      <h3 slot="price-heading">Estimated price</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="2100"></ns-price>
+          </b><span> / month</span></p>
+        <p>
+          <ns-price pence="24000"></ns-price> / year
+        </p>
+      </div>
+      <div slot="description">
+        <ul class="ul-ticked">
+          <li>Full boiler service</li>
+          <li>Boiler and controls</li>
+          <li>Central heating</li>
+          <li>Plumbing</li>
+          <li>Drains</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Repairs to the plumbing system in your home and outbuildings and the water supply pipe within the boundary of your property.</li>
+          <li>Unblocking and repairing your drains and waste pipes to restore flow</li>
+          <li>Accidental Damage</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers and their parts, shower pumps, sanitary ware and sealant</li>
+          <li>Shared drains</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="red">
+      <ns-image slot="image" src="https://andijcdn.sirv.com/nds/testcard-16x9.png?scale.width&#x3D;640&amp;text.0.text&#x3D;640x360&amp;text.0.position&#x3D;center&amp;text.0.outline.width&#x3D;2" alt="image" ratio="16x9"></ns-image>
+      <h2 slot="name">Premier</h2>
+      <h3 slot="price-heading">Estimated price</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="2350"></ns-price>
+          </b><span> / month</span></p>
+        <p>
+          <ns-price pence="27000"></ns-price> / year
+        </p>
+      </div>
+      <div slot="description">
+        <ul class="ul-ticked">
+          <li>Full boiler service</li>
+          <li>Boiler and controls</li>
+          <li>Central heating</li>
+          <li>Plumbing</li>
+          <li>Drains</li>
+          <li>Home electrics</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Repairs to the plumbing system in your home and outbuildings and the water supply pipe within the boundary of your property.</li>
+          <li>Unblocking and repairing your drains and waste pipes to restore flow</li>
+          <li>Repairs to the mains electrical system and wiring in your home and outbuildings</li>
+          <li>Accidental Damage</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers and their parts, shower pumps, sanitary ware and sealant</li>
+          <li>Shared drains</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+          <li>Electrical appliances, cooker hoods or extractor fans over 15cm diameter</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+  </ns-column>
+  <div class="splash" style="margin-top: 3em;">
+    <h2 class="h4">Some important documents to read</h2>
+    <ul class="download-list">
+      <li>
+        <ns-download href="//www.britishgas.co.uk/content/dam/british-gas/documents/home_services/HomeCare_Range_Terms_and_Conditions.pdf" filesize="2MB">Terms and Conditions</ns-download>
+      </li>
+      <li>
+        <ns-download href="//www.britishgas.co.uk/content/dam/british-gas/documents/home_services/About_our_insurance_services.pdf" filesize="113Kb">About our insurance services</ns-download>
+      </li>
+    </ul>
+  </div>
+</ns-panel>
+
+<ns-panel decoration="invert-bridge-blue">
+  <ns-lockup reverse type="lockbox">
+    <h2 slot="heading">
+      <span class="h5">You're in good hands.</span>
+      <span class="h1 enlighten"><b>HomeCare starts with a visit</b></span>
+    </h2>
+    <div slot="paragraph">
+      <p>Join HomeCare today and one of our expert engineers will pop in for a First Visit to make sure everything’s in good working order. They’ll do a full boiler service, check we’ll have the right parts for any future work – and even offer you some energy-saving tips, too.</p>
+    </div>
+    <div slot="paragraph">
+      <p>And to make sure that your system continues to run safely and efficiently, we’ll follow up with a Service visit every year that you’re with us.</p>
+    </div>
+    <a slot="cta" href="/hs">
+      <ns-cta type="direct">Book a visit</ns-cta>
+    </a>
+    <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/95891572-29e6d980-0d7d-11eb-8f4b-b9dbef159d9c.jpg"></ns-image>
+  </ns-lockup>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <h2>Our breakdown protection</h2>
+    <p class="p-normal">If you don’t need a package, and just want protection for your Boiler and Controls or Central Heating, we’ve got you covered. Not to mention, you can buy a service for your boiler and we’ll make sure it ticks all the boxes.</p>
+  </div>
+  <ns-column class="splash" basketballcourt="2" hockeypitch="3">
+    <ns-product-card keyline="blue">
+      <h2 slot="name">Boiler and Controls Breakdown Cover</h2>
+      <h3 slot="price-heading">Estimated price (<ns-price pence="9900"></ns-price> excess)</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="250"></ns-price>
+          </b><span> / month</span></p>
+      </div>
+      <div slot="description">
+        <ul class="ul-bullet">
+          <li>All repairs to your gas boiler and controls, including your thermostat and programmer</li>
+          <li>No boiler service</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas boiler and controls , including your thermostat and programmer</li>
+          <li>All parts and labour</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Anything that happens within the first 14 days of you taking out the product</li>
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers or taps</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Accidental Damage</li>
+          <li>Repairs to the central heating system, including radiators</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="blue">
+      <h2 slot="name">Central Heating Breakdown cover</h2>
+      <h3 slot="price-heading">Estimated price (<ns-price pence="9900"></ns-price> excess)</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="550"></ns-price>
+          </b><span> / month</span></p>
+      </div>
+      <div slot="description">
+        <ul class="ul-bullet">
+          <li>All repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
+          <li>No boiler service</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
+          <li>All parts and labour</li>
+          <li>Up to £1,000 to gain access and make good for each repair</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Anything that happens within the first 14 days of you taking out the product</li>
+          <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
+          <li>Showers or taps</li>
+          <li>Full service of your boiler to make sure it's running safely and efficiently</li>
+          <li>Accidental Damage</li>
+          <li>Faults caused by someone else you used for repairs or design faults</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+    <ns-product-card keyline="blue">
+      <h2 slot="name">Boiler Service</h2>
+      <h3 slot="price-heading">Estimated price</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="8500"></ns-price>
+          </b></p>
+      </div>
+      <div slot="description">
+        <ul class="ul-bullet">
+          <li>A one-off service for your gas boiler to make sure its running safely and efficiently</li>
+          <li>We recommend getting your boiler serviced around once a year to stop it from breaking down</li>
+        </ul>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's included?</h3>
+        <ul class="ul-ticked">
+          <li>Full service of your gas boiler to make sure it's running safely and efficiently</li>
+          <li>Testing your flue to make sure your appliance isn't leaking carbon monoxide</li>
+          <li>Checking your gas pressure to make sure it's right and inspecting your appliance for any wear or leaks</li>
+        </ul>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">What's not included?</h3>
+        <ul class="ul-crossed">
+          <li>Repairs to your gas boiler</li>
+        </ul>
+      </ns-expander>
+      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+    </ns-product-card>
+  </ns-column>
+</ns-panel>
+
+<ns-panel decoration="circle-yellow-left">
+  <ns-lockup reverse type="lockjaw">
+    <h2 slot="heading">
+      <span class="h5">Existing customers.</span>
+      <span class="h1 enlighten">Got HomeCare? <b>Book an engineer</b></span>
+    </h2>
+    <div slot="paragraph">
+      <p>From annual service visits, to keeping your boiler at peak performance or one-off repairs when your hot water has stopped working.</p>
+    </div>
+    <a slot="cta" href="/hs">
+      <ns-cta type="direct">Book an engineer</ns-cta>
+    </a>
+    <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/95891570-294e4300-0d7d-11eb-81b7-b5674646ec48.jpg"></ns-image>
+  </ns-lockup>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash">
+    <ns-accordion>
+      <h2 slot="heading">Frequently asked questions</h2>
+      <ns-expander>
+        <h3 slot="heading">What’s included in the Service Visit and First Visit?</h3>
+        <p>On a Service Visit, one of our expert engineers will closely inspect your boiler and central heating system to check for leaks, damage and wear. They’ll make sure your boiler’s running safely and efficiently, is using the right amount of gas and not letting off carbon monoxide or other harmful gases.</p>
+        <p>The First Visit includes all of the above, plus an inspection of your water system to ensure your pipes and taps are flowing properly. We’ll also check that your boiler’s on our approved list, and that your heating, boiler and ventilation system don’t have any pre-existing faults.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">When will my cover start?</h3>
+        <p>Your cover starts the day you buy it. You can also set your cover to start any day up to 35 days in future.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">Can I amend or cancel my cover before the contract ends?</h3>
+        <p>You have 14 days cool off period to cancel your cover from the cover start date. During that time we won’t charge you anything provided you have not availed a boiler service or any repairs. After cool off period ends you can still amend or cancel your cover. We will charge you a prorated amount for the time you were covered or for when you have made amends to the cover.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">Can I control my account online?</h3>
+        <p>Yes you can. Just <a href="/hs" data-di-id="di-id-76741e74-edae2c70">click here</a> to access your account. Then
+          follow the instructions. To discover the benefit(s) of having an online account, <a aria-label="Opens in new window" href="https://www.youtube.com/watch?v=bW6LGBSfDSE&amp;list=PLUbxnTyy5NQkFDQ56Cm-0I_2NFya4WaGr&amp;index=3" target="_blank" class=" " data-di-id="di-id-d39c61b4-3e37c08e">watch this video</a>.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">Can I speak to someone if I have a question about buying HomeCare?</h3>
+        <p>You can call us on 0333 202 9604 on Monday to Friday, 8am to 8pm, or on Saturday, 8am to 6pm.&nbsp; Or you can speak to one of our live chat team. Just click on the ‘Chat’ button in the corner of the screen.</p>
+        <p>We may record calls to help improve our service to you. Calls to 0330/0333 numbers will cost you no more than 01 or 02 numbers from landlines or mobiles. If you get 'inclusive minutes' with your package, calls to 0330/0333 numbers will be part of these.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">How do I book my full boiler service*?</h3>
+        <p>You can book a full boiler service visit using your <u><a href="/hs" data-di-id="di-id-f24c7283-7815d8c8">online account</a></u> or through our app.</p>
+        <p>If your service isn't due for some time, you might not be able to book it just yet.</p>
+        <p>For more information, <a href="https://www.youtube.com/watch?v=cjXXbizi4_U&amp;list=PLUbxnTyy5NQkFDQ56Cm-0I_2NFya4WaGr&amp;index=15&amp;t=0s" target="_blank" aria-label="Opens in new window" data-di-id="di-id-6e3747d0-b39ac5d9">watch this video</a>.<br>
+          <br>*Your full boiler service may be more than 12 months apart.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">How do I book a repair?</h3>
+        <p><a href="/hs" data-di-id="di-id-830bb3a9-edae2c70">Click here</a> to access your account and book a repair in just a few click(s). Or book it on our app.</p>
+        <p>For more information, <a href="https://www.youtube.com/watch?v=cjXXbizi4_U&amp;list=PLUbxnTyy5NQkFDQ56Cm-0I_2NFya4WaGr&amp;index=15&amp;t=0s" target="_blank" aria-label="Opens in new window" data-di-id="di-id-5cd0c631-45df533b">watch this video</a>.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">Why has my HomeCare price changed?</h3>
+        <p>Your HomeCare price can change for a number of reasons, our <a href="/hs" data-di-id="di-id-8c8a5024-c3266555">pricing guide</a> provides all the info on how we calculate things.</p>
+      </ns-expander>
+      <ns-expander>
+        <h3 slot="heading">How much is the excess?</h3>
+        <p>Excess is the amount you’ll pay for every completed repair. You can usually choose the amount of excess you’d like to pay when you buy your cover. Our excess options tend to be £0, £60 and £99.</p>
+        <p>If you have a £0 excess, you won’t pay any excess for a completed repair. If you have a £60 excess, you'll pay £60 for every completed repair. If you don't have a repair, you won't pay any excess. The same goes for £99 excess.</p>
+        <p>If you’ve already got cover with us, you can find your excess amount in your online account.</p>
+      </ns-expander>
+    </ns-accordion>
+  </div>
+</ns-panel>
+
+
+<ns-panel>
+  <div class="splash">
+    <h2 class="enlighten">We've got <b>4 energy tariffs for you</b></h2>
+  </div>
+  <ns-column basketballcourt="2" hockeypitch="4">
+    <ns-product-card keyline="green-light">
+      <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95592775-03553580-0a41-11eb-8546-4b0bc5758b4e.jpg" alt="Description of image"></ns-image>
+      <h2 slot="name">The Green One</h2>
+      <h3 slot="price-heading">Estimated</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="9600"></ns-price>
+          </b> / month</p>
+        <p>
+          <ns-price pence="115200"></ns-price> / year
+        </p>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">Tariff overview</h3>
+        <dl class="dl-stack">
+          <div>
+            <dt>Our greenest tariff</dt>
+            <dd>
+              <ul class="ul-ticked">
+                <li>Prices guaranteed until Nov 2021</li>
+                <li>We’ll match 6% of the gas you use and 100% of the electricity you use on this tariff with renewable sources</li>
+                <li>We’ll offset your gas carbon footprint from 94% of the gas you use on this tariff</li>
+                <li>We’ll support the growth of up to 5 trees in the UK per fuel for each year you are on this tariff</li>
+                <li>Help protect the Amazon rainforest and vulnerable species</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">Price breakdown</h3>
+        <dl class="dl-stack">
+          <h4>Gas tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£690</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£172.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£57.50</dd>
+            <dt>Standard unit rate</dt>
+            <dd>3.089p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>34.293p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/11/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>£30</dd>
+          </div>
+        </dl>
+        <a href="">Gas tariff information</a></p>
+        <dl class="dl-stack">
+          <h4>Electricity tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£462</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£115.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£38.50</dd>
+            <dt>Standard unit rate</dt>
+            <dd>17.664p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>32.721p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/11/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>£30</dd>
+          </div>
+        </dl>
+        <a href="">Electricity tariff information</a></p>
+      </ns-expander>
+      <a href="../06-personal-details" slot="cta" onClick="tarrifOne()">
+        <ns-cta>Select this tariff</ns-cta>
+      </a>
+    </ns-product-card>
+
+    <ns-product-card keyline="cyan">
+      <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95077991-5448ef00-070c-11eb-8763-9d623a3c2c49.jpg" alt="Description of image"></ns-image>
+      <h2 slot="name">The Fixed One</h2>
+      <h3 slot="price-heading">Estimated</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="9400"></ns-price>
+          </b> / month</p>
+        <p>
+          <ns-price pence="112800"></ns-price> / year
+        </p>
+      </div>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">Tariff overview</h3>
+        <dl class="dl-stack">
+          <div>
+            <dt>Lock in your energy unit rates</dt>
+            <dd>
+              <ul class="ul-ticked">
+                <li>Prices guaranteed until Nov 2021</li>
+                <li>We’ll match all the electricity you use with 100% renewable sources</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </ns-expander>
+      <ns-expander slot="expander" open="true">
+        <h3 slot="heading">Price breakdown</h3>
+        <dl class="dl-stack">
+          <h4>Gas tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£678</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£169.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£56.50</dd>
+            <dt>Standard unit rate</dt>
+            <dd>3.089p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>29.404p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/11/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>£30</dd>
+          </div>
+        </dl>
+        <a href="">Gas tariff information</a></p>
+        <dl class="dl-stack">
+          <h4>Electricity tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£450</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£112.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£37.50</dd>
+            <dt>Standard unit rate</dt>
+            <dd>17.664p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>24.789p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/11/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>£30</dd>
+          </div>
+        </dl>
+        <a href="">Electricity tariff information</a></p>
+      </ns-expander>
+      <a href="../06-personal-details" slot="cta" onClick="tarrifTwo()">
+        <ns-cta>Select this tariff</ns-cta>
+      </a>
+    </ns-product-card>
+
+    <ns-product-card keyline="blue">
+      <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95101696-5de14f80-072a-11eb-85f6-3704601838f7.jpg" alt="Description of image"></ns-image>
+      <h2 slot="name">The Variable One</h2>
+      <h3 slot="price-heading">Estimated</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="9100"></ns-price>
+          </b> / month</p>
+        <p>
+          <ns-price pence="109200"></ns-price> / year
+        </p>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Tariff overview</h3>
+        <dl class="dl-stack">
+          <div>
+            <dt>Enjoy total flexibility with no end date and no exit fees</dt>
+            <dd>
+              <ul class="ul-ticked">
+                <li>No end date or exit fees</li>
+                <li>Prices may go up or down over time</li>
+                <li>You’ll get 30 days’ notice of increases</li>
+                <li>Maximum price capped by Ofgem</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Price breakdown</h3>
+        <dl class="dl-stack">
+          <h4>Gas tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£658</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£164.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£54.83</dd>
+            <dt>Standard unit rate</dt>
+            <dd>17.664p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>24.501p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>Not applicable</dd>
+            <dt>Exit fees</dt>
+            <dd>None</dd>
+          </div>
+        </dl>
+        <a href="">Gas tariff information</a></p>
+        <dl class="dl-stack">
+          <h4>Electricity tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£434</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£108.50</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£36.16</dd>
+            <dt>Standard unit rate</dt>
+            <dd>3.773p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>24.708p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>Not applicable</dd>
+            <dt>Exit fees</dt>
+            <dd>None</dd>
+          </div>
+        </dl>
+        <a href="">Electricity tariff information</a></p>
+      </ns-expander>
+      <a href="../06-personal-details" slot="cta" onClick="tarrifThree()">
+        <ns-cta>Select this tariff</ns-cta>
+      </a>
+    </ns-product-card>
+
+    <ns-product-card keyline="yellow">
+      <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95101754-70f41f80-072a-11eb-8e0c-5cf0127e3dd7.jpg" alt="Description of image"></ns-image>
+      <h2 slot="name">The Electric Driver One</h2>
+      <h3 slot="price-heading">Estimated</h3>
+      <div slot="price">
+        <p><b>
+            <ns-price pence="8600"></ns-price>
+          </b> / month</p>
+        <p>
+          <ns-price pence="103200"></ns-price> / year
+        </p>
+      </div>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Tariff overview</h3>
+        <dl class="dl-stack">
+          <div>
+            <dt>Charge your car on the cheap while you’re asleep</dt>
+            <dd>
+              <ul class="ul-ticked">
+                <li>Cheaper electricity prices from midnight to 5am</li>
+                <li>Prices guaranteed to Sep 2021</li>
+                <li>We’ll match all the electricity you use with 100% renewable sources</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </ns-expander>
+      <ns-expander slot="expander">
+        <h3 slot="heading">Price breakdown</h3>
+        <dl class="dl-stack">
+          <h4>Gas tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>532</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£133</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£44.33</dd>
+            <dt>Standard unit rate</dt>
+            <dd>3.165p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>25.216p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/09/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>None</dd>
+          </div>
+        </dl>
+        <a href="">Gas tariff information</a></p>
+        <dl class="dl-stack">
+          <h4>Electricity tariff costs</h4>
+          <div>
+            <dt>Estimated cost per year</dt>
+            <dd>£500</dd>
+            <dt>Estimated cost per quarter</dt>
+            <dd>£125</dd>
+            <dt>Estimated cost per month</dt>
+            <dd>£41.67</dd>
+            <dt>Peak unit rate</dt>
+            <dd>20.001p per kWh</dd>
+            <dt>Off Peak unit rate</dt>
+            <dd>4.700p per kWh</dd>
+            <dt>Standing charge</dt>
+            <dd>24.780p per day</dd>
+            <dt>Price guaranteed until</dt>
+            <dd>30/09/2021</dd>
+            <dt>Exit fees</dt>
+            <dd>None</dd>
+          </div>
+        </dl>
+        <a href="">Electricity tariff information</a></p>
+      </ns-expander>
+      <a href="../06-personal-details" slot="cta" onClick="tarrifFour()">
+        <ns-cta>Select this tariff</ns-cta>
+      </a>
+    </ns-product-card>
+  </ns-column>
+</ns-panel>
+
+<ns-caveat>
+  <h2 slot="heading">Additional information</h2>
+  <div slot="caveat">
+    <ol>
+      <li>
+        <p>Offer of a Gift Card is available to new domestic homeowners and landlords who buy HomeCare Two or HomeCare Four online
+          from 9th July 2020 and 24th August 2020. In order to qualify we must have received your first payment and your policy must still
+          be active 60 days after purchase. Instructions on how to choose your Gift Card will be emailed 60 days after purchase. Offer
+          excludes HomeCare One and HomeCare Three. Offer is not available with any other offer or promotion, other than Refer A Friend.
+          This offer can be withdrawn at any time. You may not be eligible for the Gift Card if you have had a HomeCare product with
+          similar features in the last 3 months, or more than once in the last 3 years. This is an online only offer. Restrictions apply
+          see <a class=" " aria-label="Opens in new window" href="https://www.amazon.co.uk/gc-legal" target="_blank" data-di-id="di-id-874e82a-30a8097d">www.amazon.co.uk/gc-legal</a></p>
+      </li>
+    </ol>
+  </div>
+</ns-caveat>
