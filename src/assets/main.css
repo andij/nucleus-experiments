@@ -1,3 +1,6 @@
+tools-header {
+  display: none;
+}
 .tools-true tools-header {
   position: absolute;
   display: flex;
