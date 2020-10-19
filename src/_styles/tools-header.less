@@ -5,6 +5,7 @@ tools-header {
   display: flex;
   top: 0;
   z-index: 4;
+
   &::before {
     position: absolute;
     top: 0.25em;
@@ -28,6 +29,35 @@ tools-header {
   }
 }
 
+tools-guide {
+  display: grid;
+  pointer-events: none;
+  grid-template-columns: 5% 1fr 5%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+
+  .wide,
+  .norm,
+  .slim {
+    position: absolute;
+    top: 0;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    justify-self: center;
+    max-width: 1600px;
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+
+  .tp {
+    background-image:
+      linear-gradient(to left, rgba(#FF3B30, 0.75) 3px, transparent 3px, transparent 100%),
+      linear-gradient(to right, rgba(#FF3B30, 0.75) 3px, transparent 3px, transparent 100%);
+  }
+}
+
 // @tennis-court
 @media only screen and (min-width: 30em) {
   tools-header {
@@ -42,6 +72,13 @@ tools-header {
   tools-header {
     &::before {
       content: "🏀";
+    }
+  }
+
+  tools-guide {
+    .slim {
+      padding-left: 12.5%;
+      padding-right: 12.5%;
     }
   }
 }
@@ -60,6 +97,18 @@ tools-header {
   tools-header {
     &::before {
       content: "🏉";
+    }
+  }
+
+  tools-guide {
+    .norm {
+      padding-left: 9.31322575em;
+      padding-right: 9.31322575em;
+    }
+
+    .slim {
+      padding-left: 11.5em;
+      padding-right: 11.5em;
     }
   }
 }

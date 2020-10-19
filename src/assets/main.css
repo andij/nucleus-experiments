@@ -1,47 +1,83 @@
-tools-header {
+.tools-true tools-header {
   position: absolute;
   display: flex;
   top: 0;
   z-index: 4;
 }
-tools-header::before {
+.tools-true tools-header::before {
   position: absolute;
   top: 0.25em;
   left: 2em;
 }
-tools-header .home,
-tools-header .reload {
+.tools-true tools-header .home,
+.tools-true tools-header .reload {
   width: 1.75em;
   height: 1.75em;
   padding: 0.25em;
   text-decoration: none !important;
 }
-tools-header::before {
+.tools-true tools-header::before {
   pointer-events: none;
   content: "⚫️";
 }
+.tools-true tools-guide {
+  display: grid;
+  pointer-events: none;
+  grid-template-columns: 5% 1fr 5%;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.tools-true tools-guide .wide,
+.tools-true tools-guide .norm,
+.tools-true tools-guide .slim {
+  position: absolute;
+  top: 0;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  justify-self: center;
+  max-width: 1600px;
+  grid-column-start: 2;
+  grid-column-end: -2;
+}
+.tools-true tools-guide .tp {
+  background-image: linear-gradient(to left, rgba(255, 59, 48, 0.75) 3px, transparent 3px, transparent 100%), linear-gradient(to right, rgba(255, 59, 48, 0.75) 3px, transparent 3px, transparent 100%);
+}
 @media only screen and (min-width: 30em) {
-  tools-header::before {
+  .tools-true tools-header::before {
     content: "🎾";
   }
 }
 @media only screen and (min-width: 45em) {
-  tools-header::before {
+  .tools-true tools-header::before {
     content: "🏀";
+  }
+  .tools-true tools-guide .slim {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
   }
 }
 @media only screen and (min-width: 67.5em) {
-  tools-header::before {
+  .tools-true tools-header::before {
     content: "🏑";
   }
 }
 @media only screen and (min-width: 101.25em) {
-  tools-header::before {
+  .tools-true tools-header::before {
     content: "🏉";
+  }
+  .tools-true tools-guide .norm {
+    padding-left: 9.31322575em;
+    padding-right: 9.31322575em;
+  }
+  .tools-true tools-guide .slim {
+    padding-left: 11.5em;
+    padding-right: 11.5em;
   }
 }
 @media only screen and (min-width: 151.875em) {
-  tools-header::before {
+  .tools-true tools-header::before {
     content: "👕";
   }
 }
