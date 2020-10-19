@@ -4,16 +4,18 @@ tools-header {
   position: absolute;
   display: flex;
   top: 0;
-  z-index: 4;
+  z-index: 5;
 
   &::before {
     position: absolute;
     top: 0.25em;
-    left: 2em;
+    left: 3.75em;
   }
 
+  .guide,
   .home,
   .reload {
+    cursor: pointer;
     width: 1.75em;
     height: 1.75em;
     padding: 0.25em;
@@ -29,6 +31,17 @@ tools-header {
   }
 }
 
+#tools-guide {
+  &:not(:checked) {
+    + tools-guide {
+      display: none;
+      + .tools-layout {
+        display: none;
+      }
+    }
+  }
+}
+
 tools-guide {
   display: grid;
   pointer-events: none;
@@ -36,6 +49,17 @@ tools-guide {
   position: sticky;
   top: 0;
   z-index: 4;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(white, 0.5);
+    z-index: -1;
+  }
 
   .wide,
   .norm,

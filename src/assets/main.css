@@ -1,28 +1,43 @@
 tools-header,
-.tools-layout {
+.tools-layout,
+#tools-guide {
   display: none;
 }
 .tools-true .tools-layout {
-  background-color: white;
+  background-color: transparent;
+  background-image: none;
   display: block;
   position: sticky;
-  opacity: 0.5;
   top: 0;
   z-index: 4;
+}
+.tools-true .tools-layout tools-placeholder {
+  padding-bottom: 3px;
+  background-color: rgba(255, 59, 48, 0.75);
+  box-shadow: none;
+}
+.tools-true .tools-layout tools-placeholder:before {
+  display: none;
+}
+.tools-true .tools-layout::before,
+.tools-true .tools-layout div::before {
+  display: none;
 }
 .tools-true tools-header {
   position: absolute;
   display: flex;
   top: 0;
-  z-index: 4;
+  z-index: 5;
 }
 .tools-true tools-header::before {
   position: absolute;
   top: 0.25em;
-  left: 2em;
+  left: 3.75em;
 }
+.tools-true tools-header .guide,
 .tools-true tools-header .home,
 .tools-true tools-header .reload {
+  cursor: pointer;
   width: 1.75em;
   height: 1.75em;
   padding: 0.25em;
@@ -32,6 +47,12 @@ tools-header,
   pointer-events: none;
   content: "⚫️";
 }
+.tools-true #tools-guide:not(:checked) + tools-guide {
+  display: none;
+}
+.tools-true #tools-guide:not(:checked) + tools-guide + .tools-layout {
+  display: none;
+}
 .tools-true tools-guide {
   display: grid;
   pointer-events: none;
@@ -39,6 +60,16 @@ tools-header,
   position: sticky;
   top: 0;
   z-index: 4;
+}
+.tools-true tools-guide::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
 }
 .tools-true tools-guide .wide,
 .tools-true tools-guide .norm,
