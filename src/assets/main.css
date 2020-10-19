@@ -1,5 +1,9 @@
-tools-header {
+tools-header,
+.tools-layout {
   display: none;
+}
+.tools-true .tools-layout {
+  display: initial;
 }
 .tools-true tools-header {
   position: absolute;
@@ -180,7 +184,7 @@ tools-header {
 .tools-true tools-placeholder {
   position: relative;
   display: block;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   background-color: rgba(0, 0, 255, 0.25);
   box-shadow: inset 0 0 1px 0 rgba(0, 0, 255, 0.75);
 }

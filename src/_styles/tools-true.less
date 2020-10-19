@@ -60,9 +60,10 @@ main {
 tools-placeholder {
   position: relative;
   display: block;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   background-color: rgba(blue, 0.25);
   box-shadow: inset 0 0 1px 0 rgba(blue, 0.75);
+
   &:before {
     pointer-events: none;
     counter-increment: nds-structure-item-counter;
@@ -74,10 +75,12 @@ tools-placeholder {
     opacity: 0.5;
   }
 }
+
 ns-panel,
 ns-landmark,
 ns-editorial {
   position: relative;
+
   &::before {
     position: absolute;
     z-index: -1;
@@ -93,11 +96,13 @@ ns-editorial {
     background-attachment: fixed;
     box-shadow: inset 0 0 1px 0 rgba(purple, 0.75);
   }
+
   .splish,
   .splash,
   .splosh,
   .splush {
     position: relative;
+
     &::before {
       position: absolute;
       z-index: -1;
@@ -114,8 +119,10 @@ ns-editorial {
     }
   }
 }
+
 ns-card {
   position: relative;
+
   &::after {
     pointer-events: none;
     // background-color: rgba(red, 0.25);
@@ -129,6 +136,7 @@ ns-card {
     left: 0;
   }
 }
+
 ns-inputter {
   background-color: rgba(yellow, 0.25);
 }

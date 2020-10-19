@@ -1,10 +1,15 @@
 // main
 
-tools-header {
+tools-header,
+.tools-layout {
   display: none;
 }
 
 .tools-true {
+  .tools-layout {
+    display: initial;
+  }
+
   @import '_styles/tools-header.less';
   @import '_styles/tools-true.less';
 }
