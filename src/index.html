@@ -21,24 +21,10 @@ layout: live
         {%- endfor -%}
       </ul>
 
-      <h2 class="h5">Combinations</h2>
-      <ul>
-        {%- for combination in collections.combinations %}
-        <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-
       <h2 class="h5">Components</h2>
       <ul>
         {%- for component in collections.components %}
         <li><a href="{{ component.url }}">{{ component.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-
-      <h2 class="h5">Experiences</h2>
-      <ul>
-        {%- for experience in collections.experiences %}
-        <li><a href="{{ experience.url }}">{{ experience.fileSlug }}</a></li>
         {%- endfor -%}
       </ul>
 
@@ -56,13 +42,6 @@ layout: live
         {%- endfor -%}
       </ul>
 
-      <h2 class="h5">Journeys</h2>
-      <ul>
-        {%- for journey in collections.journeys %}
-        <li><a href="{{ journey.url }}">{{ journey.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-
       <h2 class="h5">Pages</h2>
       <ul>
         {%- for page in collections.pages %}
@@ -77,13 +56,6 @@ layout: live
         {%- endfor -%}
       </ul>
 
-      <h2 class="h5">Supports</h2>
-      <ul>
-        {%- for support in collections.supports %}
-        <li><a href="{{ support.url }}">{{ support.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
-
       <h2 class="h5">Templates</h2>
       <ul>
         {%- for template in collections.templates %}
@@ -91,12 +63,6 @@ layout: live
         {%- endfor -%}
       </ul>
 
-      <h2 class="h5">Columns</h2>
-      <ul>
-        {%- for column in collections.columns %}
-        <li><a href="{{ column.url }}">{{ column.fileSlug }}</a></li>
-        {%- endfor -%}
-      </ul>
     </nav>
   </div>
 </ns-panel>
