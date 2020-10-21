@@ -1,8 +1,3 @@
----
-title: A ns-product-card-demo
-layout: branch
-branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
----
 
 <ns-panel>
   <ns-lockup type="lockjaw">
@@ -12,7 +7,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
     </h1>
     <div slot="paragraph">
       <p>Get the peace of mind you need with complete protection from our HomeCare range or choose a single-cover product. All our cover includes:</p>
-      <p><a href="../ns-product-card-demo-b">Swap to demo B</a></p>
+      <p><a href="../ns-product-card-demo-a">Swap to demo A</a></p>
     </div>
     <div slot="paragraph">
       <ul class="ul-ticked">
@@ -69,7 +64,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Boiler and controls</li>
         </ul>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's included?</h3>
         <ul class="ul-ticked">
           <li>Repairs to your gas boiler and controls , including your thermostat and programmer</li>
@@ -78,7 +73,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Up to £1,000 to gain access and make good for each repair</li>
         </ul>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's not included?</h3>
         <ul class="ul-crossed">
           <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
@@ -87,9 +82,8 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Faults caused by someone else you used for repairs or design faults</li>
         </ul>
       </ns-expander>
-      <ns-cta href="#!" slot="cta">Get a quote</ns-cta>
+      <ns-cta href="#!" slot="cta">Get a Product Name quote</ns-cta>
     </ns-product-card>
-
     <ns-product-card keyline="blue">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/96252937-a5799e00-0faa-11eb-9504-888f08a3b6d4.jpg" alt="image"></ns-image>
       <h2 slot="name">Standard</h2>
@@ -109,7 +103,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Central heating</li>
         </ul>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's included?</h3>
         <ul class="ul-ticked">
           <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
@@ -118,7 +112,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Up to £1,000 to gain access and make good for each repair</li>
         </ul>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's not included?</h3>
         <ul class="ul-crossed">
           <li>Removing sludge or scale or repairing the damage it causes if we tell you it might be a problem for your system or boiler</li>
@@ -126,7 +120,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Faults caused by someone else you used for repairs or design faults</li>
         </ul>
       </ns-expander>
-      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+      <ns-cta href="/hs" slot="cta">Get a Standard quote</ns-cta>
     </ns-product-card>
     <ns-product-card keyline="yellow">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/96252939-a6123480-0faa-11eb-8a74-0a5e479a3812.jpg" alt="image"></ns-image>
@@ -169,7 +163,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Faults caused by someone else you used for repairs or design faults</li>
         </ul>
       </ns-expander>
-      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+      <ns-cta href="/hs" slot="cta">Get a Plus quote</ns-cta>
     </ns-product-card>
     <ns-product-card keyline="red">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/28779/96252940-a6aacb00-0faa-11eb-8e82-fb98091b031c.jpg" alt="image"></ns-image>
@@ -215,7 +209,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Electrical appliances, cooker hoods or extractor fans over 15cm diameter</li>
         </ul>
       </ns-expander>
-      <ns-cta href="/hs" slot="cta">Get a quote</ns-cta>
+      <ns-cta href="/hs" slot="cta">Get a Premier quote</ns-cta>
     </ns-product-card>
   </ns-column>
   <div class="splash" style="margin-top: 3em;">
@@ -255,7 +249,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
     <h2>Our breakdown protection</h2>
     <p class="p-normal">If you don’t need a package, and just want protection for your Boiler and Controls or Central Heating, we’ve got you covered. Not to mention, you can buy a service for your boiler and we’ll make sure it ticks all the boxes.</p>
   </div>
-  <ns-column class="splash" basketballcourt="2" hockeypitch="3">
+  <ns-column basketballcourt="2" hockeypitch="3">
     <ns-product-card keyline="blue">
       <h2 slot="name">Boiler and Controls Breakdown Cover</h2>
       <h3 slot="price-heading">Estimated price (<ns-price pence="9900"></ns-price> excess)</h3>
@@ -270,7 +264,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>No boiler service</li>
         </ul>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's included?</h3>
         <ul class="ul-ticked">
           <li>Repairs to your gas boiler and controls , including your thermostat and programmer</li>
@@ -278,7 +272,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Up to £1,000 to gain access and make good for each repair</li>
         </ul>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's not included?</h3>
         <ul class="ul-crossed">
           <li>Anything that happens within the first 14 days of you taking out the product</li>
@@ -306,7 +300,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>No boiler service</li>
         </ul>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's included?</h3>
         <ul class="ul-ticked">
           <li>Repairs to your gas central heating system, including boiler, controls, radiators and hot water cylinder</li>
@@ -314,7 +308,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <li>Up to £1,000 to gain access and make good for each repair</li>
         </ul>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">What's not included?</h3>
         <ul class="ul-crossed">
           <li>Anything that happens within the first 14 days of you taking out the product</li>
@@ -481,7 +475,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <ns-price pence="115200"></ns-price> / year
         </p>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">Tariff overview</h3>
         <dl class="dl-stack">
           <div>
@@ -498,7 +492,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           </div>
         </dl>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">Price breakdown</h3>
         <dl class="dl-stack">
           <h4>Gas tariff costs</h4>
@@ -542,10 +536,9 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
         <a href="">Electricity tariff information</a></p>
       </ns-expander>
       <a href="../06-personal-details" slot="cta" onClick="tarrifOne()">
-        <ns-cta>Select this tariff</ns-cta>
+        <ns-cta>Select Green tariff</ns-cta>
       </a>
     </ns-product-card>
-
     <ns-product-card keyline="cyan">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95077991-5448ef00-070c-11eb-8763-9d623a3c2c49.jpg" alt="Description of image"></ns-image>
       <h2 slot="name">The Fixed One</h2>
@@ -558,7 +551,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           <ns-price pence="112800"></ns-price> / year
         </p>
       </div>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">Tariff overview</h3>
         <dl class="dl-stack">
           <div>
@@ -572,7 +565,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
           </div>
         </dl>
       </ns-expander>
-      <ns-expander slot="expander" open="true">
+      <ns-expander slot="expander" open="false">
         <h3 slot="heading">Price breakdown</h3>
         <dl class="dl-stack">
           <h4>Gas tariff costs</h4>
@@ -616,10 +609,9 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
         <a href="">Electricity tariff information</a></p>
       </ns-expander>
       <a href="../06-personal-details" slot="cta" onClick="tarrifTwo()">
-        <ns-cta>Select this tariff</ns-cta>
+        <ns-cta>Select Fixed tariff</ns-cta>
       </a>
     </ns-product-card>
-
     <ns-product-card keyline="blue">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95101696-5de14f80-072a-11eb-85f6-3704601838f7.jpg" alt="Description of image"></ns-image>
       <h2 slot="name">The Variable One</h2>
@@ -692,10 +684,9 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
         <a href="">Electricity tariff information</a></p>
       </ns-expander>
       <a href="../06-personal-details" slot="cta" onClick="tarrifThree()">
-        <ns-cta>Select this tariff</ns-cta>
+        <ns-cta>Select Variable tariff</ns-cta>
       </a>
     </ns-product-card>
-
     <ns-product-card keyline="yellow">
       <ns-image slot="image" src="https://user-images.githubusercontent.com/53818498/95101754-70f41f80-072a-11eb-8e0c-5cf0127e3dd7.jpg" alt="Description of image"></ns-image>
       <h2 slot="name">The Electric Driver One</h2>
@@ -769,7 +760,7 @@ branch: 4f1610428d0d8928709b43bed09fd7d80b8efa73
         <a href="">Electricity tariff information</a></p>
       </ns-expander>
       <a href="../06-personal-details" slot="cta" onClick="tarrifFour()">
-        <ns-cta>Select this tariff</ns-cta>
+        <ns-cta>Select Electric Driver tariff</ns-cta>
       </a>
     </ns-product-card>
   </ns-column>
