@@ -71,18 +71,5 @@
         </li>
       </ul>
     </li>
-    <li>
-      <h2><a href="?">Pages</a></h2>
-      <ul>
-        <li>
-          <h3>Pages</h3>
-          <ul>
-            {%- for pages in collections.pagess %}
-            <li><a href="{{ pages.url }}">{{ pages.fileSlug }}</a></li>
-            {%- endfor -%}
-          </ul>
-        </li>
-      </ul>
-    </li>
   </ul>
 </ns-header>
