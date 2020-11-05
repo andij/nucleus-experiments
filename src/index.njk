@@ -21,6 +21,13 @@ layout: live
         {%- endfor -%}
       </ul>
 
+      <h2 class="h5">Combinations</h2>
+      <ul>
+        {%- for combination in collections.combinations %}
+        <li><a href="{{ combination.url }}">{{ combination.fileSlug }}</a></li>
+        {%- endfor -%}
+      </ul>
+
       <h2 class="h5">Components</h2>
       <ul>
         {%- for component in collections.components %}
