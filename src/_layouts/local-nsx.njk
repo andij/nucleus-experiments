@@ -4,14 +4,15 @@ tools: true
 ---
 
 <!doctype html>
-<html class="tools-{{tools}}" lang="en">
+<html class="tools-{{tools}}" lang="en" dir="ltr">
 <head>
-  <title>{{title}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{title}}">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="/nucleus/dist/styles.min.css">
+  <link rel="stylesheet" href="/assets/main.css">
+  <title>{{title}}</title>
 </head>
 <body class="ndsn">
   {% include 'tools-header.njk' %}
@@ -19,11 +20,12 @@ tools: true
   <main id="content">
     {{content | safe}}
   </main>
-  <nsx-footer></nsx-footer>
-  <!-- <script src="https://www.britishgas.co.uk/nucleus-experiences/components.min.js"></script> -->
-  <!-- <script type="text/javascript" src="/nsx/dist/polyfill.js"></script> -->
-  <!-- <script type="text/javascript" src="/nsx/dist/components.js"></script> -->
-  <script type="text/javascript" src="/nucleus/dist/polyfill.js"></script>
-  <script type="text/javascript" src="/nucleus/dist/components.js"></script>
+  {% include 'ns-footer.njk' %}
+  <script src="/nucleus/dist/polyfill.js"></script>
+  <script src="/nucleus/dist/components.js"></script>
+  <script src="https://www.britishgas.co.uk/nucleus-experiences/only.components.min.js"></script>
+  <!-- <script src="/nsx/dist/polyfill.js"></script> -->
+  <!-- <script src="/nsx/dist/components.js"></script> -->
+  <script src="/assets/proto.js"></script>
 </body>
 </html>
