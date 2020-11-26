@@ -1,0 +1,69 @@
+---
+title: ns-datepicker
+layout: branch
+branch: 6d4f1b164328453d9aef52dcd1f6bfd4b67939b0
+---
+
+<ns-panel>
+  <ns-form class="splash">
+
+    <ns-datepicker label="Date" helper="Include some helpful content" name="datepicker"></ns-datepicker>
+
+    <ns-datepicker type="calendar" validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="23/11/2020" min="2020-10-24" max="2020-12-23" name="date">
+      <p slot="tip-details">Some information</p>
+    </ns-datepicker>
+
+    <ns-cta type="text">Continue</ns-cta>
+
+    <ns-calendar type="compact" isoselecteddate="2020-11-23" focusdate="2020-11-23" year="2020" month="11" mindate="2020-10-24" maxdate="2020-12-23"></ns-calendar>
+
+    <ns-appointment-picker slotdata="[{&quot;date&quot;:&quot;2020-11-10&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-11&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-12&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-13&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-14&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-15&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-16&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-17&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-18&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-19&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-20&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-21&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-22&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-23&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-24&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-25&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-26&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-27&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-28&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-29&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-11-30&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-01&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-02&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-03&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-04&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-05&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-06&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-07&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-08&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]},{&quot;date&quot;:&quot;2020-12-09&quot;,&quot;slots&quot;:[{&quot;name&quot;:&quot;9am to 12pm&quot;,&quot;value&quot;:&quot;0900-1200&quot;},{&quot;name&quot;:&quot;10am to 1pm&quot;,&quot;value&quot;:&quot;1000-1300&quot;},{&quot;name&quot;:&quot;11am to 2pm&quot;,&quot;value&quot;:&quot;1100-1400&quot;}]}]" value="2020-11-10-0900-1200"></ns-appointment-picker>
+
+    <ns-inputter validation="[&quot;isRequired&quot;]" name="title">
+      <label slot="label">Small batch</label>
+      <select autocomplete="honorific-prefix" name="select">
+        <option>Cronut truffaut</option>
+        <option>Copper mug</option>
+        <option>
+          Elba
+          DUNS
+          TD11 3RY
+        </option>
+        <option>
+          Isle of Man Government Office of Human Resources,
+          Learning Education and Development,
+          The Lodge Education and Training Centre,
+          Braddan Road,
+          Strang,
+          Douglas,
+          ISLE OF MAN.
+          IM4 4QN
+        </option>
+        <option>Craft beer</option>
+        <optgroup label=""></optgroup>
+      </select>
+    </ns-inputter>
+
+    <ns-inputter mask="dd/mm/yyyy" separator="/" validation="[&quot;isDate&quot;]" value="" helper="" name="date-1">
+      <label slot="label">Date</label>
+      <input type="text" pattern="[0-9]*">
+    </ns-inputter>
+
+    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
+      <div slot="tip-details">Some information</div>
+    </ns-datepicker>
+
+    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date of birth" type="mask" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
+      <div slot="tip-details">Some information</div>
+    </ns-datepicker>
+
+    <ns-inputter validation='["isPhoneNumber"]' helper="Include some helpful content">
+      <div slot="tip-details">Some information</div>
+      <label slot="label">Telephone</label>
+      <input type="tel" name="tel" placeholder="e.g. 07890123987" autocomplete="tel">
+    </ns-inputter>
+
+    <ns-cta>Continue</ns-cta>
+
+  </ns-form>
+</ns-panel>
