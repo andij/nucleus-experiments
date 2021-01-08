@@ -1,52 +1,16 @@
 ---
 title: ns-testimonial
+tools: false
 ---
 
-
-<pre>a paragraph</pre>
 <ns-panel>
   <div class="splash">
-    <p>Listicle swag drinking vinegar poke meggings mlkshk try-hard tote bag. Bitters drinking vinegar pug marfa. Tilde flexitarian echo park, tbh pickled pok pok cliche brooklyn gluten-free bushwick. <b>Tilde flexitarian echo park</b></p>
-  </div>
-</ns-panel>
-
-<pre>ns-testimonial with no design</pre>
-<ns-panel>
-  <div class="splash">
-    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Jim Bob" medium="twitter">
-      <p slot="quote">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
+    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Dreamcatcher Swag" medium="twitter">
+      <p slot="quote">Tattooed copper mug vice jianbing church-key unicorn meggings literally mixtape four loko deep v <b>Keytar shaman roof</b>.</p>
     </ns-testimonial>
   </div>
 </ns-panel>
 
-<pre>ns-testimonial with flat design testVariant="b"</pre>
-<ns-panel>
-  <div class="splash">
-    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Jim Bob" medium="twitter" testVariant="b">
-      <p slot="quote">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
-    </ns-testimonial>
-  </div>
-</ns-panel>
-
-<pre>flat ns-card using slot="paragraph"</pre>
-<ns-panel>
-  <div class="splash">
-    <ns-card type="flat">
-      <p slot="paragraph">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
-    </ns-card>
-  </div>
-</ns-panel>
-
-<pre>ns-testimonial with speech and circle design testVariant="a"</pre>
-<ns-panel>
-  <div class="splash">
-    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Jim Bob" medium="twitter" testVariant="a">
-      <p slot="quote">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
-    </ns-testimonial>
-  </div>
-</ns-panel>
-
-<pre>ns-highlighter</pre>
 <ns-panel>
   <div class="splash">
     <ns-highlighter type="info">
@@ -56,11 +20,71 @@ title: ns-testimonial
   </div>
 </ns-panel>
 
-<pre>support ns-card using slot="paragraph"</pre>
 <ns-panel>
-  <div class="splash">
+  <div class="splish triple">
+    <ns-card type="section" decoration="gas">
+      <h3 slot="heading">Energy</h3>
+      <p slot="paragraph">Power your world with our products and services.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Start saving</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card  type="section" decoration="boiler">
+      <h3 slot="heading">Home Services</h3>
+      <p slot="paragraph">Protect your boiler, heating, drains and more.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Get covered</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card  type="section" decoration="home">
+      <h3 slot="heading">Smart Homes</h3>
+      <p slot="paragraph">Life can be hectic, so get connected with the latest tech.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Get smart</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash triple">
+    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Semiotics Tacos" medium="Facebook">
+      <p slot="quote">Locavore adaptogen hammock blog butcher meditation VHS pug coloring book tacos neutra activated charcoal scenester art party bespoke. Fingerstache bitters cred pop-up cliche.</p>
+    </ns-testimonial>
+    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="Mi Kombucha" medium="Medium">
+      <div slot="quote">Leggings portland flannel brunch, kogi 3 wolf moon <b>godard truffaut pop-up</b> cred lumbersexual migas next level scenester twee. Snackwave artisan farm-to-table ennui cred godard typewriter.</div>
+    </ns-testimonial>
+    <ns-testimonial citeurl="https://this-is-where.the/quote-is/from" author="M G Chia" medium="Twitter">
+      <div slot="quote">
+        <p>Snackwave artisan <b>farm-to-table</b> ennui cred godard typewriter.</p>
+        <p>Locavore adaptogen hammock.</p>
+      </div>
+    </ns-testimonial>
+  </div>
+</ns-panel>
+
+<ns-panel>
+  <div class="splash triple">
     <ns-card type="support">
-      <p slot="paragraph">Check your rewards if you've got an account with British Gas. There are fantastic rewards to choose from at the moment. <b>Many thanks @britishgas</b></p>
+      <h3 slot="heading">Need a one-off repair?</h3>
+      <p slot="paragraph">Boiler on the blink? Book a one-off repair from £79.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Book a repair</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="support">
+      <h3 slot="heading">About to move home?</h3>
+      <p slot="paragraph">Let us know if you're moving and we'll keep things running smoothly. That's one less thing to worry about.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Start your move</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="support">
+      <h3 slot="heading">Need an engineer?</h3>
+      <p slot="paragraph">Need some help? Book and manage your engineer appointment online.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="text">Get an engineer</ns-cta>
+      </a>
     </ns-card>
   </div>
 </ns-panel>
