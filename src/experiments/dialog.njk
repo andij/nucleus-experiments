@@ -48,7 +48,6 @@ layout: basic
     margin: 0;
     left: auto;
     right: auto;
-    margin-top: 1.2em;
   }
 
 </style>
@@ -75,13 +74,18 @@ layout: basic
     <p>You can also hit the <code>ESC</code> on your keyboard to close the top-most modal dialog.</p>
   </template>
 
-  <template id="demo-nearby">
+  <template id="demo-nonmodal">
     <p>This dialog opens but does not block the page from being accessed. It was opened with <code>dialog.show()</code>.</p>
   </template>
 
-  <template id="demo-sidebar">
-    <p>This repurposes a <code>dialog</code> as a sidebar!</p>
-    <p>While the dialog, by default, shows centered where it was opened, it's easy to place it in fixed positions on your page.</p>
+  <template id="demo-nearby">
+    <p>This dialog was opened with <code>dialog.show()</code>. Which allows it to be positioned.</p>
+    <p>The Close button is focussed by default when using the polyfill</p>
+    <p><button>futton</button></p>
+    <p>
+      <label for="text-field"></label>
+      <input type="text" id="text-field" value="text field">
+    </p>
   </template>
 
   <script>
@@ -133,7 +137,7 @@ layout: basic
         const description = Object.assign(document.createElement('span'), { textContent: title });
 
         const holder = Object.assign(document.createElement('div'), { className: 'demo' });
-        holder.append(dialog, button, description);
+        holder.append(button, description, dialog);
 
         if (options.close) {
           dialogContent.append(createButton('Close', () => dialog.close()));
@@ -159,9 +163,9 @@ layout: basic
 
       createDemo('Basic modal', fromTemplate('demo-modal'));
 
-      createDemo('Nearby demo', fromTemplate('demo-nearby'), { className: 'nearby', modal: false });
+      createDemo('Basic nonmodal', fromTemplate('demo-nonmodal'), { modal: false });
 
-      createDemo('Dialog as sidebar', fromTemplate('demo-sidebar'), { className: 'sidebar' });
+      createDemo('Nearby demo', fromTemplate('demo-nearby'), { className: 'nearby', modal: false, });
 
     }());
   </script>
