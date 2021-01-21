@@ -29,12 +29,20 @@ layout: basic
     display: none !important;
   }
 
+  dialog {
+    max-width: 24em;
+  }
+
+  dialog button:first-child {
+    float: right;
+  }
+
   dialog.sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 90%;
-    max-width: 240px;
+    max-width: 24em;
     bottom: 0;
     margin: 0;
     height: 100%;
@@ -63,11 +71,13 @@ layout: basic
 
   <p><strong>Native support: <span id="support"></span></strong></p>
 
+  <p><a href="#demos">Demos</a></p>
+
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p>&nbsp;</p>
+  <p id="demos">&nbsp;</p>
 
   <template id="demo-modal">
     <p>I'm a modal dialog! This blocks the page from being accessed behind me, and is a core reason <code>&lt;dialog&gt;</code> is useful.</p>
@@ -81,10 +91,10 @@ layout: basic
   <template id="demo-nearby">
     <p>This dialog was opened with <code>dialog.show()</code>. Which allows it to be positioned.</p>
     <p>The Close button is focussed by default when using the polyfill</p>
-    <p><button>futton</button></p>
     <p>
       <label for="text-field"></label>
       <input type="text" id="text-field" value="text field">
+      <button>button</button>
     </p>
   </template>
 
@@ -101,11 +111,11 @@ layout: basic
       const supportNode = document.getElementById('support');
       const testDialog = document.createElement('dialog');
       if (testDialog.showModal) {
-        supportNode.style.color = 'blue';
-        supportNode.textContent = 'YES';
+        supportNode.style.color = 'green';
+        supportNode.textContent = 'YES ✅';
       } else {
         supportNode.style.color = 'red';
-        supportNode.textContent = 'NO';
+        supportNode.textContent = 'NO ⛔️';
       }
 
       function createDemo(title, content, options) {
@@ -140,7 +150,7 @@ layout: basic
         holder.append(button, description, dialog);
 
         if (options.close) {
-          dialogContent.append(createButton('Close', () => dialog.close()));
+          dialogContent.prepend(createButton('Close', () => dialog.close()));
         }
 
         document.body.append(holder);
