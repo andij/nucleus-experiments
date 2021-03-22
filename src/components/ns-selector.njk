@@ -1,134 +1,95 @@
 ---
 title: ns-selector
+layout: branch
+branch: 54a35e122b6e23a59aa9535f35278dbabfda62fe
 ---
 
 <ns-panel>
-  <ns-form class="splash">
+  <ns-form>
     <ns-inputter class="triple">
-      <ns-selector decoration="boiler">
-        <input type="checkbox" id="checkbox-a-1" name="checkbox-a">
+      <ns-selector decoration="boiler" keyline="green-light">
+        <input type="checkbox" id="checkbox-a-1" name="checkbox-a" value="hammock">
         <label for="checkbox-a-1">Venmo cliche</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Shaman kale chips health goth</h3>
+        <ns-content slot="description">
+          <h3 class="h2 enlighten"><b>2 months</b> <span>free</span></h3>
           <ul class="ul-bullet">
-            <li>Bun echo park coloring book seitan raw denim</li>
-            <li>Swag schlitz ethical</li>
-            <li>Leggings shaman photo booth squid lumber</li>
+            <li>Wolf plaid crucifix hammock</li>
+            <li>Kale chips live-edge</li>
+            <li>Subway tile squid godard occupy shabby chic blog hell</li>
           </ul>
-          <ul class="download-list">
-            <li>
-              <ns-download href="pdf.pdf" filesize="89kB">Hell of enamel pin selvage snackwave tilde</ns-download>
-            </li>
-          </ul>
-        </div>
+          <ns-accordion>
+            <ns-expander>
+              <h3 slot="heading">What's included?</h3>
+              <ns-content>
+                <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+                <ul class="ul-ticked">
+                  <li>Authentic lo-fi ethical put a bird on.</li>
+                  <li>Tote bag mumblecore poke small batch.</li>
+                  <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                  <li>Cold-pressed adaptogen waistcoat.</li>
+                  <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                  <li>Bespoke kombucha meditation.</li>
+                </ul>
+              </ns-content>
+            </ns-expander>
+            <ns-expander>
+              <h3 slot="heading">What's not included?</h3>
+              <ns-content>
+                <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+                <ul class="ul-crossed">
+                  <li>Authentic lo-fi ethical put a bird on.</li>
+                  <li>Tote bag mumblecore poke small batch.</li>
+                  <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                  <li>Cold-pressed adaptogen waistcoat.</li>
+                  <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                  <li>Bespoke kombucha meditation.</li>
+                </ul>
+              </ns-content>
+            </ns-expander>
+          </ns-accordion>
+        </ns-content>
       </ns-selector>
-      <ns-selector decoration="home">
-        <input type="checkbox" id="checkbox-a-2" name="checkbox-a">
-        <label for="checkbox-a-2">Pug enamel pin post</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Selvage asymmetrical cats celiac toasted marmite</h3>
+      <ns-selector decoration="" image="">
+        <input type="checkbox" id="checkbox-a-2" name="checkbox-a" value="gas">
+        <label for="checkbox-a-2">Gas</label>
+        <ns-content slot="description">
+          <h3 class="h2 enlighten"><b>2 months</b> <span>free</span></h3>
           <ul class="ul-bullet">
-            <li>Tote bag marfa quinoa</li>
-            <li>Bilde truffaut drinking vinegar</li>
-            <li>Gentrify taxidermy selvage coloring</li>
+            <li>Wolf plaid crucifix hammock</li>
+            <li>Kale chips live-edge</li>
+            <li>Subway tile squid godard occupy shabby chic blog hell</li>
           </ul>
-          <ul class="download-list">
-            <li>
-              <ns-download href="pdf.pdf" filesize="19B">Artisan literally - Retro aesthetic</ns-download>
-            </li>
-          </ul>
-        </div>
-      </ns-selector>
-      <ns-selector decoration="protect">
-        <input type="checkbox" id="checkbox-a-3" name="checkbox-a">
-        <label for="checkbox-a-3">Taiyaki actually tousled</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Normcore artisan everyday carry whatever</h3>
-          <ul class="ul-bullet">
-            <li>Artisan iceland hammock echo park</li>
-            <li>Paleo tumblr cardigan man braid</li>
-            <li>Ditch sustainable typewriter gentrify distillery ramps</li>
-          </ul>
-          <ul class="download-list">
-            <li>
-              <ns-download href="pdf.pdf" filesize="1293MB">Woke try</ns-download>
-            </li>
-          </ul>
-        </div>
-      </ns-selector>
-    </ns-inputter>
-  </ns-form>
-</ns-panel>
-
-<ns-panel>
-  <ns-form class="splash">
-    <ns-inputter class="triple">
-      <ns-selector>
-        <input type="radio" id="radio-b-1" name="radio-b">
-        <label for="radio-b-1">Cliche leggings</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Shaman chips health </h3>
-          <p>Bun echo park coloring book seitan raw denim swag schlitz ethical leggings shaman photo booth squid lumber</p>
-        </div>
-      </ns-selector>
-      <ns-selector>
-        <input type="radio" id="radio-b-2" name="radio-b">
-        <label for="radio-b-2">Pug enamel pin post</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Selvage  cats celiac  and marmite</h3>
-          <p>Tote bag marfa quinoa bilde truffaut drinking vinegar gentrify taxidermy selvage coloring</p>
-        </div>
-      </ns-selector>
-      <ns-selector>
-        <input type="radio" id="radio-b-3" name="radio-b">
-        <label for="radio-b-3">Taiyaki actually tousled</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Normcore  everyday carry </h3>
-          <p>Artisan iceland hammock echo park paleo tumblr cardigan man braid ditch sustainable typewriter gentrify distillery ramps</p>
-        </div>
-      </ns-selector>
-    </ns-inputter>
-  </ns-form>
-</ns-panel>
-
-<ns-panel>
-  <ns-form class="splash">
-    <ns-inputter class="triple">
-      <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?w=640x360&text.0.text=640x360&text.0.position.gravity=center&text.0.size=20">
-        <input type="radio" id="radio-a-1" name="radio-a">
-        <label for="radio-a-1">Subway tile wayfarers</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Shaman kale chips health goth</h3>
-          <ul class="ul-bullet">
-            <li>Bun echo park coloring book seitan raw denim</li>
-            <li>Swag schlitz ethical</li>
-            <li>Leggings shaman photo booth squid lumber</li>
-          </ul>
-        </div>
-      </ns-selector>
-      <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?w=640x360&text.0.text=640x360&text.0.position.gravity=center&text.0.size=20">
-        <input type="radio" id="radio-a-2" name="radio-a">
-        <label for="radio-a-2">Pug enamel pin post</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Selvage asymmetrical cats celiac toasted marmite</h3>
-          <ul class="ul-bullet">
-            <li>Tote bag marfa quinoa</li>
-            <li>Bilde truffaut drinking vinegar</li>
-            <li>Gentrify taxidermy selvage coloring</li>
-          </ul>
-        </div>
-      </ns-selector>
-      <ns-selector image="https://andijcdn.sirv.com/nds/testcard-16x9.png?w=640x360&text.0.text=640x360&text.0.position.gravity=center&text.0.size=20">
-        <input type="radio" id="radio-a-3" name="radio-a">
-        <label for="radio-a-3">Taiyaki actually tousled</label>
-        <div slot="description">
-          <h3 class="h5 enlighten">Normcore artisan everyday carry whatever</h3>
-          <ul class="ul-bullet">
-            <li>Artisan iceland hammock echo park</li>
-            <li>Paleo tumblr cardigan man braid</li>
-            <li>Ditch sustainable typewriter gentrify distillery ramps</li>
-          </ul>
-        </div>
+          <ns-accordion>
+            <ns-expander>
+              <h3 slot="heading">What's included?</h3>
+              <ns-content>
+                <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+                <ul class="ul-ticked">
+                  <li>Authentic lo-fi ethical put a bird on.</li>
+                  <li>Tote bag mumblecore poke small batch.</li>
+                  <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                  <li>Cold-pressed adaptogen waistcoat.</li>
+                  <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                  <li>Bespoke kombucha meditation.</li>
+                </ul>
+              </ns-content>
+            </ns-expander>
+            <ns-expander>
+              <h3 slot="heading">What's not included?</h3>
+              <ns-content>
+                <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+                <ul class="ul-crossed">
+                  <li>Authentic lo-fi ethical put a bird on.</li>
+                  <li>Tote bag mumblecore poke small batch.</li>
+                  <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                  <li>Cold-pressed adaptogen waistcoat.</li>
+                  <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                  <li>Bespoke kombucha meditation.</li>
+                </ul>
+              </ns-content>
+            </ns-expander>
+          </ns-accordion>
+        </ns-content>
       </ns-selector>
     </ns-inputter>
   </ns-form>
