@@ -1,0 +1,32 @@
+---
+title: identity
+---
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">My account online.</span>
+    <span class="h1">Log in to your account</span>
+  </h1>
+  <p slot="paragraph">Stay in control with easy access to your British Gas account.</p>
+  <ns-form slot="action" id="email-form">
+    <ns-inputter validation="[&quot;isRequired&quot;]" name="email-address" value="">
+      <label slot="label" for="loginForm-email">Email address</label>
+      <input id="loginForm-email" autocomplete="email" type="email" data-di-id="#loginForm-email">
+    </ns-inputter>
+    <ns-cta id="loginForm-next" loadingmessage="Checking">
+      Continue
+    </ns-cta>
+  </ns-form>
+</ns-landmark>
+
+<ns-panel>
+  <div class="splash">
+    <ns-card type="flat">
+      <h2 slot="heading" role="heading" aria-level="3">Register for an online account</h2>
+      <p slot="paragraph">If you haven't yet got an online British Gas account you will need to register.</p>
+      <ns-cta slot="cta" id="register-cta" loading="false" style="touch-action: manipulation; -ms-touch-action: manipulation; cursor: pointer;" type="text">
+        Register here
+      </ns-cta>
+    </ns-card>
+  </div>
+</ns-panel>
