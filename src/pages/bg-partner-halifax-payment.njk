@@ -1,0 +1,128 @@
+---
+title: bg-partner-halifax-payment
+layout: live
+---
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1">Payment</span>
+  </h1>
+  <p slot="paragraph">
+    You are setting up a regular Direct Debit of <ns-price showdecimal="true" pence="495"></ns-price> per month for
+    <span role="list" id="ember96" class="product__list ember-view">
+      <span class="product__listitem" role="listitem">
+        <span class="product__title">Central Heating Breakdown Cover</span>
+        <span class="product__excess grey">(excess £99)</span>
+      </span>
+    </span>
+  </p>
+</ns-landmark>
+
+<ns-panel>
+  <ns-form>
+    <ns-fieldset legend="Your bank details">
+      <ns-inputter validation="[&quot;isRequired&quot;]" name="bankAccountName" value="">
+        <label slot="label" for="bankAccountName">Name of the account holder</label>
+        <input autocomplete="family-name" data-di-mask="" id="bankAccountName" type="text">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;, &quot;isNumber&quot;, &quot;minLength(6)&quot;, &quot;maxLength(6)&quot;]" name="bankSortCode" mask="00-00-00" separator="-" ignoreseparator="true" value="">
+        <label slot="label" for="bankSortCode">Sortcode</label>
+        <input data-di-mask="" id="bankSortCode" type="text" maxlength="8" style="--maxlength:8em">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;, &quot;isNumber&quot;, &quot;minLength(8)&quot;, &quot;maxLength(8)&quot;]" name="bankAccountNumber" mask="00000000" value="">
+        <label slot="label" for="bankAccountNumber">Bank or building society account number</label>
+        <input data-di-mask="" id="bankAccountNumber" type="text" maxlength="8" style="--maxlength:8em">
+      </ns-inputter>
+    </ns-fieldset>
+
+    <ns-fieldset legend="Your cover">
+      <ns-datepicker class="mb10" label="When would you like your cover to start?" name="contractStartdate" value="2021-03-23"></ns-datepicker>
+      <ns-inputter validation="[&quot;isRequired&quot;]" value="1" name="preferredPaymentDay">
+        <label slot="label" for="nsid-2eqemtwpzx3-input">Choose your preferred payment date</label>
+        <select name="preferredPaymentDay" id="nsid-2eqemtwpzx3-input" data-test-helper="preferredPaymentDay">
+          <option data-test-option-text="" value="">
+            Please select
+          </option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+        </select>
+      </ns-inputter>
+
+      <ns-content>
+        <p>Your payment will be taken within <b>14 days</b> of contract start date. After that, payments will be taken on the 1st of the month.</p>
+
+        <h2 class="h4">Have you read all the important information?</h2>
+
+        <ul class="download-list">
+          <li>
+            <ns-download href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/downloads/home-care/HomeCare-Range-Terms-and-Conditions.pdf" class="ipid-link">Terms and conditions</ns-download>
+          </li>
+          <li>
+            <ns-download href="https://www.britishgas.co.uk/aem6/content/dam/britishgas/downloads/home-care/IPID_Central_Heating_Breakdown_Cover.pdf" class="ipid-link">Central Heating Breakdown Cover - Insurance Product Information Document</ns-download>
+          </li>
+          <li>
+            <ns-download href="http://www.britishgas.co.uk/aem6/content/dam/britishgas/documents/Direct-Debit-Guarantee.pdf" filesize="945kB">Direct Debit guarantee</ns-download>
+          </li>
+        </ul>
+
+        <figure>
+          <img src="http://www.britishgas.co.uk/aem6/content/dam/britishgas/icons/direct-debit-side.svg" width="160" alt="Direct debit">
+          <figcaption>British Gas originators identification number: <b>948555</b></figcaption>
+        </figure>
+      </ns-content>
+
+      <ns-inputter validation="[&quot;isRequired&quot;]" helper="" name="termsAndConditions" value="">
+        <input name="termsAndConditions" id="termsAndConditions" value="agree" type="checkbox">
+        <label for="termsAndConditions">I have read and understood the Central Heating Breakdown Cover Terms and conditions and the Direct Debit guarantee</label>
+      </ns-inputter>
+    </ns-fieldset>
+
+    <ns-content>
+      <h2 class="h4">Create a password</h2>
+      <p>This password is for your British Gas account so you can <b>track and manage your appointment</b></p>
+      <h3 class="h6">
+        Your username:<br>
+        <span class="enlighten email" data-di-mask=""></span>
+      </h3>
+    </ns-content>
+
+    <!-- The Nucleus `ns-password` component is currently in development, it would be great to include it here https://github.com/ConnectedHomes/nucleus/issues/1991 -->
+    <div>
+      <ns-inputter name="password" validation="[&quot;isRequired&quot;,&quot;isPassword&quot;]" helper="Your password should be between 8 and 20 characters and a mix of both letters and numbers.">
+        <label slot="label" for="password">Enter password</label>
+        <input id="password" type="password">
+      </ns-inputter>
+
+      <ns-cta id="inputToggle" role="button" type="text">Show password</ns-cta>
+    </div>
+
+    <ns-cta id="serviceOrderForm" role="button" loadingmessage="Submitting" data-disable-on-request="data-disable-on-request">Finish</ns-cta>
+
+  </ns-form>
+</ns-panel>
