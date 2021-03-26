@@ -1,0 +1,62 @@
+---
+title: bg-identity-find
+---
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h5">Registration step 1 of 3.</span>
+    <span class="h1 enlighten"><b>Verify your account</b></span>
+  </h1>
+  <div slot="paragraph">
+    <p>
+      As a final security check, please confirm your reference number.
+      You'll find this on some of our emails, and any bills or headed letters we've sent you.
+      If you're not sure where to find it, simply click below for more help.
+    </p>
+  </div>
+</ns-landmark>
+<ns-panel>
+  <div id="ember214" class="__a3028 ember-view">
+    <ns-form>
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isNumber&quot;,&quot;minLength(10)&quot;,&quot;maxLength(12)&quot; ]" name="reference-number" value="">
+        <label slot="label" for="reference-number-input">Reference Number</label>
+        <input id="reference-number-input" type="text">
+      </ns-inputter>
+      <ns-accordion>
+        <h3 slot="heading">Where can I find my reference number?</h3>
+        <ns-expander open="false">
+          <h4 slot="heading">HomeCare customer?</h4>
+          <ns-column hockeypitch="1:2">
+            <figure>
+              <ns-image src="https://www5.bgo.bgdigitaltest.co.uk/aem6/content/dam/britishgas/beta/images/Find-your-HomeCare-reference-number.png" ratio="1x1" alt=""></ns-image>
+            </figure>
+            <div>
+              <p><b>A 12-digit number starting with '91'.</b></p>
+              <p>Find it at the top of HomeCare emails and letters from us.</p>
+            </div>
+          </ns-column>
+        </ns-expander>
+        <ns-expander open="false">
+          <h4 slot="heading">Energy customer?</h4>
+          <ns-editorial image="https://www5.bgo.bgdigitaltest.co.uk/aem6/content/dam/britishgas/beta/images/Find-your-Energy-reference-number.png" reverse="">
+            <p><b>A 12-digit number starting with '85'.</b></p>
+            <p>Find it at the top of energy bills, emails and letters from us.</p>
+          </ns-editorial>
+        </ns-expander>
+        <ns-expander open="false">
+          <h4 slot="heading">Just joined us?</h4>
+          <ns-editorial image="https://www5.bgo.bgdigitaltest.co.uk/aem6/content/dam/britishgas/beta/images/Find-your-Sales-Order-reference-number.png" reverse="">
+            <p>
+              <b>
+                A 10-digit number starting with '20'.
+              </b>
+            </p>
+            <p>
+              Find it on the top of the first page of your welcome letters from us.
+            </p>
+          </ns-editorial>
+        </ns-expander>
+      </ns-accordion>
+      <ns-cta icon="arrow-right" loadingmessage="Loading..." type="direct">Next step</ns-cta>
+    </ns-form>
+  </div>
+</ns-panel>
