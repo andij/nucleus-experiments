@@ -1,0 +1,159 @@
+---
+title: Home Insurance
+---
+
+<div class="drew">
+
+  <ns-landmark type="lakeside">
+    <h1 slot="heading">
+      <span class="h5">Subheading</span>
+      <span class="h1 enlighten">Introductory <b>heading</b> to frame the context</span>
+    </h1>
+    <div slot="paragraph">
+      <p>Please provide information about what to expect from this part of the journey.</p>
+    </div>
+  </ns-landmark>
+
+  <ns-panel>
+    <div class="splash">
+      <ns-form>
+        <ns-fieldset legend="About your home">
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="type">
+            <label slot="label">What type of home do you have?</label>
+            <select autocomplete="honorific-prefix" name="select">
+              <option>Please select</option>
+              <option value="d">Detached</option>
+              <option value="sd">Semi-detached</option>
+              <option value="t">Terraced</option>
+              <option value="db">Detached bungalow</option>
+              <option value="sb">Semi bungalow</option>
+              <option value="qs">Quasi semi</option>
+              <option value="t">Town house</option>
+              <option value="scf">Self contained flat</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" heading="Is your home a listed building?" name="current" value="n">
+            <input type="radio" id="question-a-n" name="current" value="n">
+            <label for="question-a-n">No</label>
+            <input type="radio" id="question-a-y" name="current" value="y">
+            <label for="question-a-y">Yes</label>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="years">
+            <label slot="label">How long you have lived here?</label>
+            <select autocomplete="honorific-prefix" name="select">
+              <option>Please select</option>
+              <option value="u">Under 1 year</option>
+              <option value="1">1 year</option>
+              <option value="2">2 years</option>
+              <option value="3">3 years</option>
+              <option value="4">4 years</option>
+              <option value="5">5 years</option>
+              <option value="6">6 years</option>
+              <option value="7">7 years</option>
+              <option value="8">8 years</option>
+              <option value="9">9 years</option>
+              <option value="10">10+ years</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter name="built" mask="    ">
+            <label slot="label">What year was it built?</label>
+            <input type="text" maxlength="4">
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="walls">
+            <label slot="label">What’s the main material of your walls?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="roof">
+            <label slot="label">What’s the main material of your roof?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="roof">
+            <label slot="label">What percentage of your roof is flat?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="bed">
+            <label slot="label">How many bedrooms are there?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="bath" helper="This is any room with a bath, shower or toilet including en-suites">
+            <label slot="label">How many bathrooms are there?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="adults" helper="This is anyone over 18 living in your home">
+            <label slot="label">How many adults live in your home?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="child" helper="This means anyone under 18 living in your home">
+            <label slot="label">How many children live in your home?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="occ">
+            <label slot="label">When are there usually people at home?</label>
+            <select>
+              <option>Please select</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" heading="Do you have approved windows and door locks?" name="current" value="n" helper="What does 'approved' mean?">
+            <div slot="tip-details">
+              <ul class="bullet-list">
+                <li>All external doors are fitted with either locks conforming to British Standard, or a 3 bolt multiple locking system</li>
+                <li>Patio doors are fitted with key operated locks top and bottom or multi point locking system</li>
+                <li>Domestic garages and outbuildings are fitted with locks</li>
+                <li>All ground floor and accessible windows are fitted with key operated locks with detachable keys.</li>
+              </ul>
+            </div>
+            <input type="radio" id="question-b-n" name="current" value="n">
+            <label for="question-b-n">No</label>
+            <input type="radio" id="question-b-y" name="current" value="y">
+            <label for="question-b-y">Yes</label>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" name="alarm">
+            <label slot="label">What type of burglar alarm do you have?</label>
+            <select>
+              <option>No alarm</option>
+            </select>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" heading="Do you have a smoke alarm at your home?" name="current" value="all">
+            <input type="radio" id="question-c-n" name="current" value="n">
+            <label for="question-c-n">No</label>
+            <input type="radio" id="question-c-y" name="current" value="1">
+            <label for="question-c-y">On one floor</label>
+            <input type="radio" id="question-c-all" name="current" value="all">
+            <label for="question-c-all">On all floors</label>
+          </ns-inputter>
+        </ns-fieldset>
+
+        <ns-fieldset legend="Your previous Home Insurance">
+          <ns-inputter validation="[&quot;isRequired&quot;]" heading="Have you had <b>buildings</b> insurance in the past?" name="pastb" value="n">
+            <input type="radio" id="question-d-n" name="pastb" value="n">
+            <label for="question-d-n">No</label>
+            <input type="radio" id="question-d-y" name="pastb" value="y">
+            <label for="question-d-y">Yes</label>
+          </ns-inputter>
+          <ns-inputter validation="[&quot;isRequired&quot;]" heading="Have you had <b>contents</b> insurance in the past?" name="pastc" value="n">
+            <input type="radio" id="question-e-n" name="pastc" value="n">
+            <label for="question-e-n">No</label>
+            <input type="radio" id="question-e-y" name="pastc" value="y">
+            <label for="question-e-y">Yes</label>
+          </ns-inputter>
+        </ns-fieldset>
+
+      </ns-form>
+    </div>
+  </ns-panel>
+
+</div>

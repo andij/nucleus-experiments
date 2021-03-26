@@ -37,7 +37,7 @@ layout: live
 
     <ns-fieldset legend="Your cover">
       <ns-datepicker class="mb10" label="When would you like your cover to start?" name="contractStartdate" value="2021-03-23"></ns-datepicker>
-      <ns-inputter validation="[&quot;isRequired&quot;]" value="1" name="preferredPaymentDay">
+      <ns-inputter validation="[&quot;isRequired&quot;]" value="1" name="preferredPaymentDay" helper="Your payment will be taken within 14 days of contract start date. After that, payments will be taken on the 1st of the month.">
         <label slot="label" for="nsid-2eqemtwpzx3-input">Choose your preferred payment date</label>
         <select name="preferredPaymentDay" id="nsid-2eqemtwpzx3-input" data-test-helper="preferredPaymentDay">
           <option data-test-option-text="" value="">
@@ -75,8 +75,6 @@ layout: live
       </ns-inputter>
 
       <ns-content>
-        <p>Your payment will be taken within <b>14 days</b> of contract start date. After that, payments will be taken on the 1st of the month.</p>
-
         <h2 class="h4">Have you read all the important information?</h2>
 
         <ul class="download-list">

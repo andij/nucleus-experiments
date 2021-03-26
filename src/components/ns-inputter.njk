@@ -26,13 +26,6 @@ title: ns-inputter
         <input type="text" placeholder="e.g. PO57 0DE" name="postcode" autocomplete="postal-code">
       </ns-inputter>
 
-      <ns-inputter validation='["isRequired"]' heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
-        <input type="radio" id="radio-d-1" name="radio-d" value="first">
-        <label for="radio-d-1">Yes</label>
-        <input type="radio" id="radio-d-2" name="radio-d" value="second">
-        <label for="radio-d-2">No</label>
-      </ns-inputter>
-
       <ns-inputter heading="Introduce the checkboxes">
         <input type="checkbox" id="checkbox-b-1" name="thing" value="first">
         <label for="checkbox-b-1">Yes</label>
@@ -99,6 +92,18 @@ title: ns-inputter
       <label for="checkbox-d-2">Bravo</label>
       <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
       <label for="checkbox-d-3">Charlie</label>
+    </ns-inputter>
+
+    <ns-inputter validation='["isRequired"]' heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
+      <input type="radio" id="radio-d-1" name="radio-d" value="first">
+      <label for="radio-d-1">Yes</label>
+      <input type="radio" id="radio-d-2" name="radio-d" value="second">
+      <label for="radio-d-2">No</label>
+    </ns-inputter>
+
+    <ns-inputter heading="Provide further information" name="comment" value="">
+      <label for="comment-feedback" slot="label">Leave a comment (optional)</label>
+      <textarea id="comment-feedback"></textarea>
     </ns-inputter>
 
     <ns-cta onClick="submitForm()">Submit</ns-cta>

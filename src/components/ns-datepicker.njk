@@ -1,7 +1,5 @@
 ---
 title: ns-datepicker
-layout: branch
-branch: 30dc3010e782efb3c30086c09b0b3513b868f77b
 ---
 
 <ns-landmark type="hillside">
@@ -14,15 +12,21 @@ branch: 30dc3010e782efb3c30086c09b0b3513b868f77b
 </ns-landmark>
 
 <ns-panel>
+  <ns-form>
+    <ns-datepicker label="Date" helper="Include some helpful content" name="datepicker"></ns-datepicker>
+    <ns-cta type="text">Select a date</ns-cta>
+  </ns-form>
+</ns-panel>
+
+<ns-panel>
   <ns-form class="splash">
 
     <ns-datepicker label="Date" helper="Include some helpful content" name="datepicker"></ns-datepicker>
+    <ns-cta type="text">Continue</ns-cta>
 
     <ns-datepicker type="calendar" validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="23/11/2020" min="2020-10-24" max="2020-12-23" name="date">
       <p slot="tip-details">Some information</p>
     </ns-datepicker>
-
-    <ns-cta type="text">Continue</ns-cta>
 
     <ns-calendar isoselecteddate="2020-11-23" focusdate="2020-11-23" year="2020" month="11" mindate="2020-10-24" maxdate="2020-12-23"></ns-calendar>
 
@@ -63,10 +67,6 @@ branch: 30dc3010e782efb3c30086c09b0b3513b868f77b
       <input type="text" pattern="[0-9]*">
     </ns-inputter>
 
-    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
-      <div slot="tip-details">Some information</div>
-    </ns-datepicker>
-
     <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date of birth" type="mask" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
       <div slot="tip-details">Some information</div>
     </ns-datepicker>
@@ -78,6 +78,36 @@ branch: 30dc3010e782efb3c30086c09b0b3513b868f77b
     </ns-inputter>
 
     <ns-cta>Continue</ns-cta>
-
   </ns-form>
+
+  <div class="splish triple">
+    <ns-card type="section" decoration="gas">
+      <h3 slot="heading">Power your world with our</h3>
+      <p slot="paragraph">Power your world with our products and services.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Start saving</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="section" decoration="boiler">
+      <h3 slot="heading">Home Services</h3>
+      <p slot="paragraph">Protect your boiler, heating, drains and more.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Get covered</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="section" decoration="home">
+      <h3 slot="heading">Smart Homes</h3>
+      <p slot="paragraph">Life can be hectic, so get connected with the latest tech.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct">Get smart</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+
+  <div class="splash">
+    <ns-datepicker validation="[&quot;isRequired&quot;]" label="Date" helper="Helper text" value="2020-06-03" min="2020-05-04" max="2020-07-03" name="date">
+      <div slot="tip-details">Some information</div>
+    </ns-datepicker>
+  </div>
+
 </ns-panel>
