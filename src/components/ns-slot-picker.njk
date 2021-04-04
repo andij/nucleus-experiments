@@ -1,7 +1,5 @@
 ---
 title: ns-slot-picker
-layout: branch
-branch: 321bb3f30bb7c3f01e241dd8757b6378034cf418
 ---
 
 <ns-landmark type="hillside">
@@ -25,14 +23,30 @@ branch: 321bb3f30bb7c3f01e241dd8757b6378034cf418
       <label slot="label">Fam glossier</label>
       <input autocomplete="given-name" type="text">
     </ns-inputter>
-    <ns-inputter validation="[&quot;isRequired&quot;,&quot;isLastName&quot;]">
-      <label slot="label">Heirloom</label>
-      <input autocomplete="family-name" type="text">
+    <ns-inputter heading="This is my heading">
+      <input type="checkbox" id="checkbox-d-1" name="checkbox-d">
+      <label for="checkbox-d-1">Alpha</label>
+      <input type="checkbox" id="checkbox-d-2" name="checkbox-d" checked>
+      <label for="checkbox-d-2">Bravo</label>
+      <input type="checkbox" id="checkbox-d-3" name="checkbox-d">
+      <label for="checkbox-d-3">Charlie</label>
     </ns-inputter>
-    <ns-inputter validation="[&quot;isRequired&quot;]">
-      <label slot="label">Narwhal</label>
-      <input autocomplete="email" type="email" placeholder="e.g. boulger@creekginger.co.uk">
-    </ns-inputter>
+    <ns-fieldset legend="Legend for the group of inputters">
+      <ns-inputter validation='["isRequired"]' heading="Heading for the radio buttons" helper="Include some helper text here to support the question if further clarification is required.">
+        <input type="radio" id="radio-d-1" name="radio-d" value="first">
+        <label for="radio-d-1">Yes</label>
+        <input type="radio" id="radio-d-2" name="radio-d" value="second">
+        <label for="radio-d-2">No</label>
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;,&quot;isLastName&quot;]">
+        <label slot="label">Heirloom</label>
+        <input autocomplete="family-name" type="text">
+      </ns-inputter>
+      <ns-inputter validation="[&quot;isRequired&quot;]">
+        <label slot="label">Narwhal</label>
+        <input autocomplete="email" type="email" placeholder="e.g. boulger@creekginger.co.uk">
+      </ns-inputter>
+    </ns-fieldset>
   </ns-form>
 </ns-panel>
 
