@@ -1,0 +1,43 @@
+---
+title: otp-blog-item
+---
+
+<ns-landmark type="hillside" gradient="invert-ramp-cyan">
+  <h1 slot="heading">
+    <span class="h5">Deepan Subbiah.</span>
+    <span class="h1 enlighten">Living on the <b>Edge</b></span>
+  </h1>
+  <div slot="paragraph">
+    <p>Using Lambda Edge functions for single page application routing.</p>
+  </div>
+</ns-landmark>
+
+<ns-panel>
+  <ns-column hockeypitch="2:1">
+    <ns-content>
+      <p class="p-small">Published on <time datetime="2021-04-08">April 8, 2021</time></p>
+      <p>AWS’s Lambda@Edge service is a nifty tool to implement push state routing support for your single page applications.</p>
+      <p>So the requirement in general is to be able to map a URL like <code>https://your-domain/app-name/app-route</code> to the single page app’s <code>index.html</code> that then loads/initialises the application and renders the appropriate view for the URL.</p>
+      <p>If you are serving the application off a web server, then you could configure appropriate redirects to handle this. However, if you are using a CloudFront/S3 configuration, this was previously a pain as it forced you to now setup an EC2 instance or another mechanism to handle this redirection. Enter Lambda@Edge and you now have an alternative!</p>
+      <p>Lambda@Edge is a compute service that allows you to map CloudFront events to Lambda functions. You can map functions to both inbound and outbound events and attach them to CloudFront behaviours. The functions themselves are called with parameters that contain the request details and can hence redirect a request to a specific S3 bucket asset (in our case, the single page app’s index.html) conditionally.</p>
+      <p>So say you had a CloudFront behaviour with the path pattern as <code>app-name/*</code> to handle your application requests, the following Lambda@Edge snippet will redirect requests without an extension to the app’s index.html.</p>
+      <pre>const path = require(‘path’)
+exports.handler = (evt, ctx, cb) => {
+  const { request } = evt.Records[0].cf
+  
+  if (!path.extname(request.uri)) {
+  request.uri = ‘/app-name/index.html’
+  }
+  
+  cb(null, request)
+}</pre>
+      <p>You can now attach this lambda to the behaviour and you have routing to support push state!</p>
+    </ns-content>
+    <ns-content>
+      <h2 class="h4">List of related stuff</h2>
+      <ul class="ul-bullet">
+        <li><a href="#!">Item</a></li>
+      </ul>
+    </ns-content>
+  </ns-column>
+</ns-panel>
