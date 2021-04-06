@@ -5,22 +5,22 @@ tools: false
 
 <!doctype html>
 <html class="tools-{{tools}}" lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{title}}">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="/assets/main.css">
-  <title>{{title}}</title>
-</head>
-<body class="ndsn">
-  {% include 'tools-header.njk' %}
-  {% include 'ns-header-bg.njk' %}
-  <main id="content">
-    {{content | safe}}
-  </main>
-  <nsx-footer></nsx-footer>
-  <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
-  <script src="https://www.britishgas.co.uk/nucleus-experiences/only.components.min.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{title}}">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/assets/main.css">
+    <title>{{title}}</title>
+  </head>
+  <body class="ndsn">
+    {% include 'tools-header.njk' %}
+    <nsx-header></nsx-header>
+    <main id="content">
+      {{content | safe}}
+    </main>
+    <nsx-footer></nsx-footer>
+    <script src="https://www.britishgas.co.uk/nucleus/nucleus.min.js"></script>
+    <script src="https://www.britishgas.co.uk/nucleus-experiences/only.components.min.js"></script>
+  </body>
 </html>

@@ -15,11 +15,11 @@ title: Branch development
   </head>
   <body class="ndsn">
     {% include 'tools-header.njk' %}
-    {% include 'ns-header-bg.njk' %}
+    <nsx-header></nsx-header>
     <main id="content">
       {{content | safe}}
     </main>
-    {% include 'ns-footer.njk' %}
+    <nsx-footer></nsx-footer>
     <script type="text/javascript" src="https://www5.bgo.bgdigitaltest.co.uk/nucleus/{{branch}}/nucleus.min.js"></script>
     <script src="https://www.britishgas.co.uk/nucleus-experiences/components.min.js"></script>
   </body>
