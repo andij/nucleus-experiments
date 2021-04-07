@@ -1,0 +1,74 @@
+---
+title: hs-search
+---
+
+<ns-landmark type="lakeside">
+  <h1 slot="heading">
+    <span class="h1" id="search-label">How can we help you today?</span>
+  </h1>
+  <ns-form slot="action">
+    <ns-inputter validation="[&quot;isRequired&quot;]">
+      <input type="search" aria-labelledby="search-label" autofocus>
+    </ns-inputter>
+    <ns-cta onclick="showresults()" loading="false" loadingmessage="Searching...">Search</ns-cta>
+  </ns-form>
+</ns-landmark>
+
+<ns-panel id="results" style="display: none">
+  <ns-column hockeypitch="2:1">
+    <div>
+      <h2>Your search results</h2>
+      <ns-card type="support">
+        <h3 slot="heading">Learn about smart meters</h3>
+        <p slot="paragraph">Find out everything you'd like to know about how smart meters work and how to get one.</p>
+        <ns-cta type="text" slot="cta">Learn about smart meters</ns-cta>
+      </ns-card>
+    </div>
+  </ns-column>
+  <ns-column hockeypitch="2:1">
+    <div>
+      <h4>Further reading</h4>
+      <dl class="dl-stack">
+        <div>
+          <dt><a href="#!">Using your smart energy monitor</a>
+          </dt>
+          <dd>Your smart energy monitor can help you save energy and money, so find out how to use it and read your energy's display device.</dd>
+        </div>
+        <div>
+          <dt><a href="#!">Using pay as you go meters in your new home</a>
+          <dd>If your new home has a pay as you go meter, you can find out everything you need to know about your British Gas prepayment meter here.
+          </dd>
+        </div>
+        <div>
+          <dt><a href="#!">
+              Changing between pay as you go and credit meters</a>
+          <dd>If you're looking to switch from a Pay As You Go meter to a credit meter, we might be able to help. Find the best meter option for you.
+          </dd>
+        </div>
+        <div>
+          <dt><a href="#!">
+              How to read your credit meter</a>
+          <dd>Is it time for a gas or electricity meter reading? Taking meter readings can differ depending on your meter type - so find out how to take a reading here.
+          </dd>
+        </div>
+        <div>
+          <dt><a href="#!">
+              Submitting a credit meter reading online</a>
+          <dd>Do you want to submit a meter reading online? Use our handy smart meter guide to help you submit your reading the right way.
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </ns-column>
+</ns-panel>
+
+<script>
+  function showresults() {
+    var x = document.getElementById("results");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
