@@ -1,37 +1,16 @@
 ---
 title: ns-selector
+layout: branch
+branch: 2162daf175a1ba970814fa60bce9ac2a47227676
 ---
-
-<ns-panel>
-  <div class="splash triple">
-    <ns-card type="support">
-      <h3 slot="heading">HomeCare Two includes</h3>
-      <div slot="paragraph">
-        <ul class="ul-ticked">
-          <li>Annual boiler service</li>
-          <li>Boiler and controls</li>
-          <li>Central heating</li>
-        </ul>
-      </div>
-    </ns-card>
-    <ns-card type="support">
-      <h3 slot="heading">Your offers</h3>
-      <p slot="paragraph">You can spend your gift card at Amazon.co.uk, John Lewis &amp; Partners, Sainsbury's, Argos or on a gift experience.</p>
-      <div slot="paragraph">
-        <ns-pill colour="white" icon="tag"><ns-price pence="2000"></ns-price>gift card</ns-pill>
-        <ns-pill colour="white" icon="tag"><ns-price pence="5000"></ns-price> referral gift card</ns-pill>
-      </div>
-    </ns-card>
-  </div>
-</ns-panel>
 
 <ns-panel>
   <ns-form>
     <ns-inputter>
       <ns-column hockeypitch="3">
-        <ns-selector decoration="boiler" keyline="green-light">
-          <input type="checkbox" id="checkbox-a-1" name="checkbox-a" value="hammock">
-          <label for="checkbox-a-1">Venmo cliche</label>
+        <ns-selector decoration="gas" keyline="cyan">
+          <input type="checkbox" id="checkbox-a-1" name="checkbox-a" value="gas">
+          <label for="checkbox-a-1">Gas</label>
           <ns-content slot="description">
             <h3 class="h2 enlighten"><b>2 months</b> <span>free</span></h3>
             <ul class="ul-bullet">
@@ -71,9 +50,51 @@ title: ns-selector
             </ns-accordion>
           </ns-content>
         </ns-selector>
-        <ns-selector decoration="" image="">
-          <input type="checkbox" id="checkbox-a-2" name="checkbox-a" value="gas">
-          <label for="checkbox-a-2">Gas</label>
+        <ns-selector decoration="bulb" keyline="yellow">
+          <input type="checkbox" id="checkbox-a-2" name="checkbox-a" value="electric">
+          <label for="checkbox-a-2">Electric</label>
+          <ns-content slot="description">
+            <h3 class="h2 enlighten"><b>2 months</b> <span>free</span></h3>
+            <ul class="ul-bullet">
+              <li>Wolf plaid crucifix hammock</li>
+              <li>Kale chips live-edge</li>
+              <li>Subway tile squid godard occupy shabby chic blog hell</li>
+            </ul>
+            <ns-accordion>
+              <ns-expander>
+                <h3 slot="heading">What's included?</h3>
+                <ns-content>
+                  <p>Treet art wolf you probably haven't heard of them butcher, trust fund tilde af typewriter blue bottle kinfolk pinterest helvetica.</p>
+                  <ul class="ul-ticked">
+                    <li>Authentic lo-fi ethical put a bird on.</li>
+                    <li>Tote bag mumblecore poke small batch.</li>
+                    <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                    <li>Cold-pressed adaptogen waistcoat.</li>
+                    <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                    <li>Bespoke kombucha meditation.</li>
+                  </ul>
+                </ns-content>
+              </ns-expander>
+              <ns-expander>
+                <h3 slot="heading">What's not included?</h3>
+                <ns-content>
+                  <p>Pour-over pok pok selfies hexagon gastropub crucifix try-hard. Selfies seitan letterpress iPhone. Food truck you probably haven't heard of them pork belly poke master cleanse pok pok. Cardigan cronut hoodie plaid intelligentsia tousled <a href="#!">succulents etsy</a>.</p>
+                  <ul class="ul-crossed">
+                    <li>Authentic lo-fi ethical put a bird on.</li>
+                    <li>Tote bag mumblecore poke small batch.</li>
+                    <li>Cornhole hella next level food truck retro intelligentsia.</li>
+                    <li>Cold-pressed adaptogen waistcoat.</li>
+                    <li>Meh forage actually cliche tilde, roof party butcher shabby.</li>
+                    <li>Bespoke kombucha meditation.</li>
+                  </ul>
+                </ns-content>
+              </ns-expander>
+            </ns-accordion>
+          </ns-content>
+        </ns-selector>
+        <ns-selector decoration="boiler" keyline="green-light">
+          <input type="checkbox" id="checkbox-a-3" name="checkbox-a" value="boiler">
+          <label for="checkbox-a-3">Venmo cliche</label>
           <ns-content slot="description">
             <h3 class="h2 enlighten"><b>2 months</b> <span>free</span></h3>
             <ul class="ul-bullet">
