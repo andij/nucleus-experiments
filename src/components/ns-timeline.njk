@@ -1,0 +1,85 @@
+---
+title: ns-timeline
+layout: branch
+branch: d91845da50289cc92b20e0d7859ac215d98c1832
+---
+
+
+<ns-landmark type="hillside">
+  <h1 slot="heading">
+    <span class="h5">Confirmation.</span>
+    <span class="h1">Your annual service is booked.</span>
+  </h1>
+  <div slot="paragraph">
+    <p>We'll be with you <b>Tuesday 20 June</b> between <b>10am and 2pm.</b></p>
+  </div>
+</ns-landmark>
+
+<ns-panel>
+  <ns-timeline showstepcount>
+    <h2 slot="heading">Your appointment</h2>
+    <ns-timeline-event slot="event" status="completed" updatedat="11/06/2021, 15:38:14">
+      <h3 slot="heading">Engineer is booked</h3>
+      <dl class="dl-row">
+        <div>
+          <dt>Your customer number</dt>
+          <dd>911001253857</dd>
+        </div>
+      </dl>
+    </ns-timeline-event>
+    <ns-timeline-event slot="event" status="completed" updatedat="11/06/2021, 15:42:03">
+      <h3 slot="heading">Confirmation email sent</h3>
+      <dl class="dl-row">
+        <div>
+          <dt>Your email address</dt>
+          <dd>johnsmith@gmail.com</dd>
+        </div>
+      </dl>
+    </ns-timeline-event>
+    <ns-timeline-event slot="event" status="pending">
+      <h3 slot="heading">We'll call you</h3>
+      <p>Our engineers will call to let you know when they're on their way.</p>
+    </ns-timeline-event>
+    <ns-timeline-event slot="event" status="pending">
+      <h3 slot="heading">Expert engineers</h3>
+      <p>One of our expert engineers will repair your boiler and central heating.</p>
+    </ns-timeline-event>
+    <ns-timeline-event slot="event" status="pending">
+      <h3 slot="heading">Boiler service</h3>
+      <p>Our engineer will also carry out your first boiler service to make sure everything is running safely and efficiently.</p>
+    </ns-timeline-event>
+    <ns-timeline-event slot="event" status="pending" icon="boiler">
+      <h3 slot="heading">Completion</h3>
+      <p>We provide you with a checklist of work completed at the end of our visit.</p>
+    </ns-timeline-event>
+  </ns-timeline>
+</ns-panel>
+
+<ns-panel decoration="invert-concave-grey-light">
+  <div class="splash">
+    <h2>It's quick and easy with an online account</h2>
+  </div>
+  <div class="splish triple">
+    <ns-card type="section" decoration="boiler">
+      <h2 slot="heading" role="heading" aria-level="3">Track your booking</h2>
+      <p slot="paragraph">Track your engineer when you've booked a breakdown appointment or service visit.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct" loading="false">Track your booking</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="section" decoration="clock">
+      <h2 slot="heading" role="heading" aria-level="3">Change appointment</h2>
+      <p slot="paragraph">Make a change or cancel your appointment.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct" loading="false">Change your booking</ns-cta>
+      </a>
+    </ns-card>
+    <ns-card type="section" decoration="home">
+      <h2 slot="heading" role="heading" aria-level="3">Join Rewards</h2>
+      <p slot="paragraph">Enjoy great discounts, exclusive giveaways, tickets to The O2 and much more.</p>
+      <a slot="cta" href="#!">
+        <ns-cta type="direct" loading="false">Register for Rewards</ns-cta>
+      </a>
+    </ns-card>
+  </div>
+</ns-panel>
