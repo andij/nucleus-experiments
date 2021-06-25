@@ -1,7 +1,5 @@
 ---
 title: Page type - Confirmation
-layout: branch
-branch: d91845da50289cc92b20e0d7859ac215d98c1832
 ---
 
 <ns-landmark type="hillside">
@@ -9,16 +7,14 @@ branch: d91845da50289cc92b20e0d7859ac215d98c1832
     <span class="h5">Confirmation.</span>
     <span class="h1">Your annual service is booked.</span>
   </h1>
-  <div slot="paragraph">
-    <p>We'll be with you <b>Tuesday 20 June</b> between <b>10am and 2pm.</b></p>
-  </div>
+  <p slot="paragraph">We'll be with you <b>Tuesday 22 June</b> between <b>10am and 2pm.</b></p>
 </ns-landmark>
 
 <ns-panel>
   <ns-timeline showstepcount>
     <h2 slot="heading">Your appointment</h2>
-    <ns-timeline-event slot="event" status="completed" updatedat="11/06/2021, 15:38:14">
-      <h3 slot="heading">Engineer is booked</h3>
+    <ns-timeline-event slot="event" status="completed">
+      <h3 slot="heading">Annual service is booked</h3>
       <dl class="dl-row">
         <div>
           <dt>Your customer number</dt>
@@ -26,7 +22,7 @@ branch: d91845da50289cc92b20e0d7859ac215d98c1832
         </div>
       </dl>
     </ns-timeline-event>
-    <ns-timeline-event slot="event" status="completed" updatedat="11/06/2021, 15:42:03">
+    <ns-timeline-event slot="event" status="completed">
       <h3 slot="heading">Confirmation email sent</h3>
       <dl class="dl-row">
         <div>
@@ -55,30 +51,24 @@ branch: d91845da50289cc92b20e0d7859ac215d98c1832
 </ns-panel>
 
 <ns-panel decoration="invert-concave-grey-light">
-  <div class="splash">
+  <ns-content>
     <h2>It's quick and easy with an online account</h2>
-  </div>
-  <div class="splish triple">
+  </ns-content>
+  <ns-column hockeypitch="3">
     <ns-card type="section" decoration="boiler">
-      <h2 slot="heading" role="heading" aria-level="3">Track your booking</h2>
+      <h2 slot="heading">Track your booking</h2>
       <p slot="paragraph">Track your engineer when you've booked a breakdown appointment or service visit.</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="direct" loading="false">Track your booking</ns-cta>
-      </a>
+      <ns-cta slot="cta" href="#!">Track your booking</ns-cta>
     </ns-card>
     <ns-card type="section" decoration="clock">
-      <h2 slot="heading" role="heading" aria-level="3">Change appointment</h2>
+      <h2 slot="heading">Change appointment</h2>
       <p slot="paragraph">Make a change or cancel your appointment.</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="direct" loading="false">Change your booking</ns-cta>
-      </a>
+      <ns-cta slot="cta" href="#!">Change your booking</ns-cta>
     </ns-card>
     <ns-card type="section" decoration="home">
-      <h2 slot="heading" role="heading" aria-level="3">Join Rewards</h2>
+      <h2 slot="heading">Join Rewards</h2>
       <p slot="paragraph">Enjoy great discounts, exclusive giveaways, tickets to The O2 and much more.</p>
-      <a slot="cta" href="#!">
-        <ns-cta type="direct" loading="false">Register for Rewards</ns-cta>
-      </a>
+      <ns-cta slot="cta" href="#!">Register for Rewards</ns-cta>
     </ns-card>
-  </div>
+  </ns-column>
 </ns-panel>
